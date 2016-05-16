@@ -22,7 +22,6 @@ on boot
     # Touchscreen
     chown system system /proc/touchpanel/double_tap_enable
     chown 0660 /proc/touchpanel/double_tap_enable
-    write /proc/touchpanel/double_tap_enable 1
 
     # Disable edge limit control interface
     write /proc/touchpanel/oppo_tp_limit_enable 0
