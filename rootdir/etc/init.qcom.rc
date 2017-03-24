@@ -1,3 +1,10 @@
+on init
+    # set default schedTune value for foreground/top-app
+    # Set default values for foreground and top-app stune
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
 on late-fs
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
