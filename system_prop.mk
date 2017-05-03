@@ -18,3 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_max_cpu=4 \
     ro.vendor.qti.core_ctl_min_cpu=2
 
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1
