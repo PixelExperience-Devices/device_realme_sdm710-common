@@ -31,11 +31,11 @@ lib64/libdpmctmgr.so|20101d5929ba97f16083ad9c71933111cb9ae8ff
 lib64/libdpmfdmgr.so|45061fee7721b8f94aef431f589e4024d4eae374
 lib64/libdpmframework.so|623095565a453e10498a5a28ef689f52c85e8784
 lib64/libdpmtcm.so|1b43a23871a0a247e4adbe1e63c5e0864740938b
-lib/com.qualcomm.qti.dpm.api@1.0.so|5611079765fce66c5997eb61ae64ec2e7d7eadda
-lib/libdpmctmgr.so|39a22fed0691797322ad3361ab064cce944a1621
-lib/libdpmfdmgr.so|cbba45c4b84d0eea7b014fb7b9b861fc62607d9f
-lib/libdpmframework.so|b2af27bc930e61d06cbbb9c90d5f150354708630
-lib/libdpmtcm.so|326cc53ac27ef6598a61ca257ac080eaee6090a5
+lib/com.qualcomm.qti.dpm.api@1.0.so|2f0691c71c5c8d2330f5db04582cf766c192d465
+lib/libdpmctmgr.so|995723ead7cf4519cbf0f6ce709f1815d28198ae
+lib/libdpmfdmgr.so|9e2dd9627116cc63262cb3752d0b034c97e5304d
+lib/libdpmframework.so|b457438cf92795a035af58ef3fe563f33d11a1ed
+lib/libdpmtcm.so|2321e7a3678c8a0224702d96a14bbfacfd0b6675
 -priv-app/dpmserviceapp/dpmserviceapp.apk|a642336052f3e5d70580700e2aebba230a5f663f
 
 # Fingerprint sensor 
