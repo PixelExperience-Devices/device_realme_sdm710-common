@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
+# Doze
+PRODUCT_PACKAGES += \
+    OppoDoze
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
