@@ -635,7 +635,6 @@ system_ext/lib/libmmosal.so|175c890c965a14043777000cd2cfc20264b04810
 system_ext/lib64/libmmparser_lite.so|03437c5126ff9e171401654ee8a5d650a82b25d1
 vendor/bin/vppservice|555301b19a86374900159423c88efd7bd9cea2f9
 vendor/etc/init/vppservice.rc|9daea1a00124d65ecb6978936785273edb74a8ed
-vendor/lib64/libI420colorconvert.so|088f8e9615276d8b95b9b7b81234b755fdc2af79
 vendor/lib64/libOmxVpp.so|d773cc27df9fbd571e96ab103bcb52b2070dbfe3
 vendor/lib64/libmm-color-convertor.so|218c14814a524c3e4331b1aed6807828e22eaec3
 vendor/lib64/libswvdec.so|ae1f55c7094e2a006e28dcfb0f2b9c32634fb849
@@ -645,7 +644,6 @@ vendor/lib64/libvpplibrary.so|aed735c3a754b695ed2596cd8ace94f6b7d37565
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so|49bd6d4ad9881c23266f093e2a533a8410953e43
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|60b902481d0339d292ba1e0f1370470b1f3f68d9
 vendor/lib/libFileMux_proprietary.so|e59edd4604a7c73147118161cab5b7ac6bb16c82
-vendor/lib/libI420colorconvert.so|dd04b1851c394f42aabadeed64fb327cad4a52fa
 vendor/lib/libOmxDsdDec.so|5a58c8b54578c6c7520666df4040a422fea67df9
 vendor/lib/libOmxMux_proprietary.so|b771a6f751502e85a0e98bdf5f54b5ccf9b2e5c1
 vendor/lib/libOmxVideoDSMode.so|5862b9d707ca00cd87b70a7f581df49fa3304d2c
