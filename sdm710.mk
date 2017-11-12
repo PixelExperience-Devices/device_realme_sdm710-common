@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    fstab.qcom
+    fstab.qcom \
+    init.safailnet.rc
 
 # Fingerprint
 PRODUCT_PACKAGES += \
