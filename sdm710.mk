@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.safailnet.rc
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUIGoogle
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
