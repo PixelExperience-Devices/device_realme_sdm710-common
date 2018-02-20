@@ -51,6 +51,9 @@ product/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Display postprocessing
+product/lib64/libsdm-disp-apis.qti.so
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
