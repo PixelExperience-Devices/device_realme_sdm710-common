@@ -45,7 +45,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # RIL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.telephony.default_network=22,18
+    ro.telephony.default_network=22,18 \
+    persist.radio.add_power_save=1
 
 # UI
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
