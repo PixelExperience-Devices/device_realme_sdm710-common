@@ -25,7 +25,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Graphics
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
-    debug.sf.enable_gl_backpressure=1	
+    debug.sf.enable_gl_backpressure=1 \
+    debug.sf.early_phase_offset_ns=5000000	
 
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
