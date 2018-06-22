@@ -6,6 +6,8 @@
 
 BOARD_VENDOR := realme
 
+BUILD_BROKEN_DUP_RULES := true
+
 COMMON_PATH := device/realme/sdm710-common
 
 # Architecture
