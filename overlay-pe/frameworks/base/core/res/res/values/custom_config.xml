@@ -15,9 +15,6 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Whether notify fingerprint client of successful cancelled authentication -->
-    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
-
     <!-- Whether to post reset runnable for all clients -->
     <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
 
