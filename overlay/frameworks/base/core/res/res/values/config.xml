@@ -400,4 +400,8 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">88.0px</dimen>
     <dimen name="status_bar_height_landscape">28.0dp</dimen>
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
 </resources>
