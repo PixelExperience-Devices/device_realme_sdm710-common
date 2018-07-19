@@ -69,4 +69,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # SSR
 PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.ssr.enable_ramdumps=0 \
     persist.vendor.ssr.restart_level=ALL_ENABLE
