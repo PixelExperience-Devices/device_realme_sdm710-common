@@ -442,4 +442,8 @@
         <item>"/system/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
+
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
+
 </resources>
