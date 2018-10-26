@@ -10,7 +10,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.attr.detect.enable=1 \
     ro.camera.notify_nfc=1 \
     ro.camera.frontonly.motor=1 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.miui.cit,com.qualcomm.qti.qmmi
+    camera.disable_zsl_mode=true \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
