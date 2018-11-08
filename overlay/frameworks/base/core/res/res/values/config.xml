@@ -318,6 +318,13 @@
         <item>"/product/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/product/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
+        <item>/system/lib64/libRScpp.so</item>
+        <item>/system/lib64/libRS.so</item>
+        <item>/system/lib64/libRS_internal.so</item>
+        <item>/system/lib64/libbcinfo.so</item>
+        <item>/system/lib64/libRSDriver.so</item>
+        <item>/system/lib64/libRSCpuRef.so</item>
+        <item>/system/lib64/libblas.so</item>
     </string-array>
 
     <!-- List of files pinned by the Pinner Service with the apex boot image -->
@@ -404,3 +411,4 @@
     <dimen name="status_bar_height_portrait">88.0px</dimen>
     <dimen name="status_bar_height_landscape">28.0dp</dimen>
 </resources>
+
