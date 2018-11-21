@@ -27,6 +27,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:title="@string/kcal">
+         <PreferenceScreen
+                android:key="kcal"
+                android:fragment="com.lineageos.settings.lepref.DisplayCalibration"
+                android:summary="@string/kcal_summary"
+                android:icon="@drawable/ic_kcal"
+                android:title="@string/kcal_title" />
+     </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/vibrator_intensity_control">
 
         <com.kharame.kharameparts.vibration.VibratorStrengthPreference

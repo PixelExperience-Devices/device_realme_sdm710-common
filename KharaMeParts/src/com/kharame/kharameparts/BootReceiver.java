@@ -28,6 +28,7 @@ import com.kharame.kharameparts.settings.ScreenOffGesture;
 import com.kharame.kharameparts.util.Utils;
 import com.kharame.kharameparts.doze.DozeUtils;
 import com.kharame.kharameparts.vibration.VibratorStrengthPreference;
+import com.kharame.kharameparts.kcal.DisplayCalibration;
 import java.io.File;
 import androidx.preference.PreferenceManager;
 

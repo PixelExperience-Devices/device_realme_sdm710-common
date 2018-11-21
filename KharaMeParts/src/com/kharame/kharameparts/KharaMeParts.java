@@ -30,6 +30,7 @@ import androidx.preference.TwoStatePreference;
 
 import com.kharame.kharameparts.settings.ScreenOffGestureSettings;
 import com.kharame.kharameparts.doze.DozeSettingsActivity;
+import com.kharame.kharameparts.kcal.DisplayCalibration;
 import com.kharame.kharameparts.vibration.VibratorStrengthPreference;
 
 import java.text.DateFormat;
@@ -53,6 +54,7 @@ public class KharaMeParts extends PreferenceFragment implements
     private Preference mGesturesPref;
     private Context mContext;
     private SharedPreferences mPreferences;
+    private Preference mKcalPref;
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
@@ -80,6 +82,16 @@ public class KharaMeParts extends PreferenceFragment implements
         mVibratorStrength = (VibratorStrengthPreference) findPreference(VibratorStrengthPreference.KEY_VIBSTRENGTH);
         mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
     }
+
+	mKcalPref = findPreference("kcal");
+                mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                     @Override
+                     public boolean onPreferenceClick(Preference preference) {
+                         Intent intent = new Intent(getContext(), DisplayCalibration.class);
+                         startActivity(intent);
+                         return true;
+                     }
+                });
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
