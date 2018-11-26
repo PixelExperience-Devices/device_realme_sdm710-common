@@ -378,6 +378,8 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
     qcrilhook
 
 PRODUCT_BOOT_JARS += \
