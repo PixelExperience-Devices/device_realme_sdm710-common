@@ -50,8 +50,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Perf
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.vendor.qti.core_ctl_min_cpu=4 \
-    ro.vendor.qti.core_ctl_max_cpu=6 \
     vendor.iop.enable_prefetch_ofr=0 \
     vendor.iop.enable_uxe=0
 
