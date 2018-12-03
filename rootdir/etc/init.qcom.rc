@@ -27,7 +27,7 @@ service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.s
 service fps_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
     class late_start
     user system
-    group system input
+    group system input uhid
 
 on post-fs-data
     mkdir /data/gf_data 0700 system system
