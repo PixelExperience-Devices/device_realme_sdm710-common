@@ -86,6 +86,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     vendor.gralloc.disable_ubwc=0
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
