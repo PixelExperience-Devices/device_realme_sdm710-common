@@ -36,6 +36,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q670-14477-1
 
+# Memory optimizations
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Perf
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.qti.core_ctl_min_cpu=4 \
