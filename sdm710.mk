@@ -95,3 +95,7 @@ PRODUCT_PACKAGES += \
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
+
+# Trust HAL
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
