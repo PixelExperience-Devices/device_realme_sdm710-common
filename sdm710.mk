@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
+# Touch
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.realme_sdm710
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.realme_sdm710
