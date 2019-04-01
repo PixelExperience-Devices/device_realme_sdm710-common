@@ -138,6 +138,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# HEH filename encryption is being dropped
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.radio.force_lte_ca=true \
