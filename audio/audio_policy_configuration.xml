@@ -15,7 +15,7 @@
 -->
 
 <audioPolicyConfiguration version="1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <!-- version section contains a “version” tag in the form “major.minor” e.g version=”1.0” -->
+    <!-- version section contains a "version" tag in the form "major.minor" e.g version="1.0" -->
 
     <!-- Global configuration Decalaration -->
     <globalConfiguration speaker_drc_enabled="true"/>
@@ -23,24 +23,24 @@
 
     <!-- Modules section:
         There is one section per audio HW module present on the platform.
-        Each module section will contains two mandatory tags for audio HAL “halVersion” and “name”.
+        Each module section will contains two mandatory tags for audio HAL "halVersion" and "name".
         The module names are the same as in current .conf file:
-                “primary”, “A2DP”, “remote_submix”, “USB”
+                "primary", "A2DP", "remote_submix", "USB"
         Each module will contain the following sections:
-        “devicePorts”: a list of device descriptors for all input and output devices accessible via this
+        "devicePorts": a list of device descriptors for all input and output devices accessible via this
         module.
         This contains both permanently attached devices and removable devices.
-        “mixPorts”: listing all output and input streams exposed by the audio HAL
-        “routes”: list of possible connections between input and output devices or between stream and
+        "mixPorts": listing all output and input streams exposed by the audio HAL
+        "routes": list of possible connections between input and output devices or between stream and
         devices.
             "route": is defined by an attribute:
                 -"type": <mux|mix> means all sources are mutual exclusive (mux) or can be mixed (mix)
                 -"sink": the sink involved in this route
                 -"sources": all the sources than can be connected to the sink via vis route
-        “attachedDevices”: permanently attached devices.
+        "attachedDevices": permanently attached devices.
         The attachedDevices section is a list of devices names. The names correspond to device names
         defined in <devicePorts> section.
-        “defaultOutputDevice”: device to be used by default when no policy rule applies
+        "defaultOutputDevice": device to be used by default when no policy rule applies
     -->
     <modules>
         <!-- Primary Audio HAL -->
@@ -251,18 +251,6 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_MONO,AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
-                <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                </devicePort>
-                <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                </devicePort>
-                <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
-                </devicePort>
                 <devicePort tagName="USB Device Out" type="AUDIO_DEVICE_OUT_USB_DEVICE" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="44100,48000,64000,88200,96000,128000,176400,192000" channelMasks="dynamic"/>
@@ -355,38 +343,13 @@
                        sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic"/>
                 <route type="mix" sink="mmap_no_irq_in"
                        sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,USB Device In,USB Headset In"/>
-                <route type="mix" sink="BT A2DP Out"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload"/>
-                <route type="mix" sink="BT A2DP Headphones"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload"/>
-                <route type="mix" sink="BT A2DP Speaker"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload"/>
                 <route type="mix" sink="hifi_input" sources="USB Device In,USB Headset In" />
             </routes>
 
         </module>
 
         <!-- A2DP Audio HAL -->
-        <module name="a2dp" halVersion="2.0">
-            <mixPorts>
-                <mixPort name="a2dp input" role="sink">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000" channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO"/>
-                </mixPort>
-            </mixPorts>
-
-            <devicePorts>
-                <devicePort tagName="BT A2DP In" type="AUDIO_DEVICE_IN_BLUETOOTH_A2DP" role="source">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000" channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO"/>
-                </devicePort>
-            </devicePorts>
-
-            <routes>
-                <route type="mix" sink="a2dp input"
-                       sources="BT A2DP In"/>
-            </routes>
-        </module>
+        <xi:include href="/vendor/etc/a2dp_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
