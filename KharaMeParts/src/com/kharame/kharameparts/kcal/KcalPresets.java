@@ -7,6 +7,8 @@ public class KcalPresets {
     public static final String[] blue = {"256", "255", "235", "240", "251", "255", "255", "255", "255", "243", "255"};
     public static final String[] satIntensity = {"255", "264", "251", "257", "290", "284", "257", "274", "289", "274", "264"};
     public static final String[] scrContrast = {"255", "255", "260", "255", "260", "264", "264", "258", "264", "258", "260"};
+    public static final String[] scrHue = {"0", "0", "1520", "0", "1526", "0", "0", "0", "0", "0", "10"};
+    public static final String[] scrValue = {"255", "255", "240", "255", "264", "245", "245", "251", "242", "251", "247"};
 
     enum Presets {
         DEFAULT, VERSION1, VERSION2, VERSION3, TRILUMINOUS, DEEPBW, DEEPND, COOLAMOLED, EXTREMEAMOLED, WARMAMOLED, HYBRIDMAMBA;
@@ -44,6 +46,8 @@ public class KcalPresets {
         DisplayCalibration.setValueRGB(red[index], green[index], blue[index]);
         DisplayCalibration.setValueSat(satIntensity[index]);
         DisplayCalibration.setValueCon(scrContrast[index]);
+        DisplayCalibration.setValueHue(scrHue[index]);
+        DisplayCalibration.setValueVal(scrValue[index]);
     }
 }
 

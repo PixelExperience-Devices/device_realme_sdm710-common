@@ -199,5 +199,7 @@
     <string name="extreme_amoled">Extreme Amoled</string>
     <string name="warm_amoled">Warm Amoled</string>
     <string name="hybrid_mamba">Hybrid Mamba</string>
+    <string name="kcal_hue">Hue</string>
+    <string name="kcal_value">Value</string>
 
 </resources>

@@ -21,6 +21,16 @@
         android:summary="@string/kcal_enabled_summary"
         android:persistent="false" />
     <com.kharame.kharameparts.kcal.utils.SeekBarPreference
+        android:key="kcal_value"
+        android:title="@string/kcal_value"
+        android:dependency="kcal_enabled"
+        android:persistent="false"
+        android:layout="@layout/slider_preference"
+        android:recycleEnabled="false"
+        app:max_value="383"
+        app:min_value="128"
+        app:default_value="255"/>
+    <com.kharame.kharameparts.kcal.utils.SeekBarPreference
         android:key="kcal_color_temp"
         android:title="@string/kcal_color_temp"        
         android:dependency="kcal_enabled"
@@ -81,6 +91,16 @@
         app:min_value="224"
         app:default_value="256"/>
 
+    <com.kharame.kharameparts.kcal.utils.SeekBarPreference
+        android:key="kcal_hue"
+        android:title="@string/kcal_hue"
+        android:dependency="kcal_enabled"
+        android:persistent="false"
+        android:layout="@layout/slider_preference"
+        android:recycleEnabled="false"
+        app:max_value="1536"
+        app:min_value="0"
+        app:default_value="0"/>
     <SwitchPreference
         android:key="kcal_greyscale"
         android:title="@string/kcal_greyscale_title"
