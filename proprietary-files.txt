@@ -1,37 +1,42 @@
-# CNE
-etc/permissions/cneapiclient.xml
-etc/permissions/com.quicinc.cne.xml
-framework/cneapiclient.jar
-framework/com.quicinc.cne.api-V1.0-java.jar
-framework/com.quicinc.cne.api-V1.1-java.jar
-framework/com.quicinc.cne.constants-V1.0-java.jar
-framework/com.quicinc.cne.constants-V2.0-java.jar
-framework/com.quicinc.cne.constants-V2.1-java.jar
-framework/com.quicinc.cne.jar
-framework/com.quicinc.cne.server-V1.0-java.jar
-framework/com.quicinc.cne.server-V2.0-java.jar
-framework/com.quicinc.cne.server-V2.1-java.jar
-framework/com.quicinc.cne.server-V2.2-java.jar
-framework/vendor.qti.data.factory-V1.0-java.jar
-framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--priv-app/CNEService/CNEService.apk
- 
-# DPM
-bin/dpmd
-etc/dpm/dpm.conf
-etc/init/dpmd.rc
-etc/permissions/com.qti.dpmframework.xml
-etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
-lib64/libdiag_system.so
-lib64/com.qualcomm.qti.dpm.api@1.0.so
-lib64/libdpmctmgr.so
-lib64/libdpmfdmgr.so
-lib64/libdpmframework.so
-lib64/libdpmtcm.so
--priv-app/dpmserviceapp/dpmserviceapp.apk
+# CNE - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
+etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
+framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
+framework/com.quicinc.cne.api-V1.0-java.jar|9cf7b7f1784c3594e3329954f64b1b129c433e8d
+framework/com.quicinc.cne.api-V1.1-java.jar|6c8815af55cb424fe3936f37a72e2d5bdbfb3b53
+framework/com.quicinc.cne.constants-V1.0-java.jar|eb2f74d281079971d6cddffba67da0f1fae1ee06
+framework/com.quicinc.cne.constants-V2.0-java.jar|6af0a0cd6246ec202d39ec2add03189cd3fa8029
+framework/com.quicinc.cne.constants-V2.1-java.jar|f4b7ec116cd4edca3423f455fca2569ed0919b4b
+framework/com.quicinc.cne.jar|56cb2e1ecb464f29c715a0a5e0a7393560ea1c8c
+framework/com.quicinc.cne.server-V1.0-java.jar|a2d2f2826716e8a8000887fc3a0b0ae6d13f9263
+framework/com.quicinc.cne.server-V2.0-java.jar|6bba42f810057b8b52a73f55dbf7bf4de4dac249
+framework/com.quicinc.cne.server-V2.1-java.jar|a95528efeb0c14a0077c8b0b375e95ac433edc33
+framework/com.quicinc.cne.server-V2.2-java.jar|e1041e559afecd0d9371ba78ddb36ea1873f9f15
+framework/vendor.qti.data.factory-V1.0-java.jar|23a060c1197f21f4f3b0f77485d8ee387d740e5d
+framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
+-priv-app/CNEService/CNEService.apk|8e52b0f6e0aef5ea6f28590e78864b7476301c11
+
+# DPM - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+bin/dpmd|b4ab23a880c43a5e32c1b74c3743445d64c3cf25
+etc/dpm/dpm.conf|fec89edb6cff81424a6c3a730fed92efa3613f72
+etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
+etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
+etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
+framework/com.qti.dpmframework.jar|2a6ff555ebff148a508fc7ea2fbeaee4b9a2dff6
+framework/dpmapi.jar|89ddc5bf0c4c88a3f341169edc4d89f9e834337b
+framework/tcmclient.jar|91b415288494fa208b5f5ec9fafa33c47e569c96
+lib64/libdiag_system.so|9e6e39892961871e42e3b33c850f968b51c61d09
+lib64/com.qualcomm.qti.dpm.api@1.0.so|99df73ba93fe95e98cb64069592675e1751aaee2
+lib64/libdpmctmgr.so|20101d5929ba97f16083ad9c71933111cb9ae8ff
+lib64/libdpmfdmgr.so|45061fee7721b8f94aef431f589e4024d4eae374
+lib64/libdpmframework.so|623095565a453e10498a5a28ef689f52c85e8784
+lib64/libdpmtcm.so|1b43a23871a0a247e4adbe1e63c5e0864740938b
+lib/com.qualcomm.qti.dpm.api@1.0.so|5611079765fce66c5997eb61ae64ec2e7d7eadda
+lib/libdpmctmgr.so|39a22fed0691797322ad3361ab064cce944a1621
+lib/libdpmfdmgr.so|cbba45c4b84d0eea7b014fb7b9b861fc62607d9f
+lib/libdpmframework.so|b2af27bc930e61d06cbbb9c90d5f150354708630
+lib/libdpmtcm.so|326cc53ac27ef6598a61ca257ac080eaee6090a5
+-priv-app/dpmserviceapp/dpmserviceapp.apk|a642336052f3e5d70580700e2aebba230a5f663f
 
 # Fingerprint sensor 
 framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar
@@ -65,42 +70,45 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libOmxMux.so
 
-# QMI
-etc/permissions/qti_permissions.xml
-etc/permissions/qti_libpermissions.xml
+# QMI - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
+etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 
-# Radio
--app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
-etc/permissions/embms.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/telephonyservice.xml
-framework/embmslibrary.jar
-framework/qcrilhook.jar
-framework/qti-telephony-common.jar
-framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+# Radio - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+-app/datastatusnotification/datastatusnotification.apk|13c730382d65542bf001bf5920c42f39ffb8b6e6
+-app/embms/embms.apk|2959d855b55aad9deb4e47dfa74b6bd4e8393666
+-app/QtiTelephonyService/QtiTelephonyService.apk|f0badcba9c36089e001566616df1edec2c66ac68
+etc/permissions/embms.xml|5e1b492874c221a7e1188fc3a5369d32b3e67969
+etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
+etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
+framework/embmslibrary.jar|980832af89ed59120b7362ddb56d3120bb6b2239
+framework/qcrilhook.jar|bf69111fccb5b4deaa008b67bc135763978dcc12
+framework/qti-telephony-common.jar|6cc6ab4ab2cbd333a113ffe3add8d8793aec3c1d
+framework/QtiTelephonyServicelibrary.jar|fbbf626b1c74732d4a23a3354c384e34f0fe91ed
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|4b97f3535677468e0af70ccaedd5056ee4cf29c2
 
-# Radio - IMS
--priv-app/ims/ims.apk
--app/imssettings/imssettings.apk
-etc/permissions/com.qualcomm.qti.imscmservice.xml
-etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
-etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
-framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
-framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
-framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-framework/vendor.qti.ims.callinfo-V1.0-java.jar
-framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
-lib64/lib-imsvideocodec.so
-lib64/lib-imsvt.so
-lib64/lib-imsvtextutils.so
-lib64/lib-imsvtutils.so
-lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
-lib64/librcc.so
-lib64/vendor.qti.imsrtpservice@1.0.so
+# Radio - IMS - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+-priv-app/ims/ims.apk|a4698e4f68e9f0340bc52ef3b256908023140078
+-app/imssettings/imssettings.apk|571b139b84443180ffcdc2dbf2b6e820a1df8e0b
+etc/permissions/com.qualcomm.qti.imscmservice.xml|db25ef24f1937366d58a53b4f4b8923bc9e98d2d
+etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|8d25bd7b79baf266950eb484c1a28817f891aec2
+etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|998076243537f61f3683a3c083f7b27510617368
+framework/com.qualcomm.qti.imscmservice-V2.0-java.jar|1af1b6f7cbffb1208375ae879d5b5921f3804c20
+framework/com.qualcomm.qti.imscmservice-V2.1-java.jar|388d53457eb9e615b288daab54c9bc8319e30e11
+framework/com.qualcomm.qti.uceservice-V2.0-java.jar|e930e07abadfbf165d0f0ce08d708ef02cd1b061
+framework/vendor.qti.ims.callinfo-V1.0-java.jar|33438d3651fc96e0c03c4520f6f0f49fd4d05b43
+framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|1ab2f26840498b76b4eaa7b3c8eca66d330719e9
+lib64/lib-imsvideocodec.so|d54dbdbb1128d55445ac9a974a6edeb1d3b4be08
+lib64/lib-imsvt.so|9e04cabb24ed8d7f7262ff7762c0ebf6b975f908
+lib64/lib-imsvtextutils.so|41b1a05021e48f69aceabc3369c41df194a121ee
+lib64/lib-imsvtutils.so|1b9bff10cb9505596fa3310d047ee4599362c8cb
+lib64/libimscamera_jni.so|5e9c79e66ce1b4a69ba0415c629473bb8b9f5079
+lib64/libimsmedia_jni.so|7e2eae61574f870607255d30c000a05d24279618
+lib64/librcc.so|7e79a256e0dbb4156dd2306d4faa87d6abffb678
+lib64/vendor.qti.imsrtpservice@1.0.so|f46573535ab0dfe12b33de30414fa6b8846c7850
+
+# Soter - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
+-app/SoterService/SoterService.apk|e1897a6b3204f6991daada37bcce0c2b76ee33ef
 
 # WiFi Display
 bin/wfdservice
