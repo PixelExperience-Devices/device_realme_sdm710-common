@@ -69,4 +69,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # SSR
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.ssr.restart_level=ALL_ENABLE
+    persist.vendor.ssr.restart_level=ALL_ENABLE
