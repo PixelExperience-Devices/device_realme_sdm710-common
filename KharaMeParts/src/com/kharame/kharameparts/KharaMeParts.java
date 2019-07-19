@@ -79,10 +79,6 @@ public class KharaMeParts extends PreferenceFragment implements
                      }
                 });
 
-        mVibratorStrength = (VibratorStrengthPreference) findPreference(VibratorStrengthPreference.KEY_VIBSTRENGTH);
-        mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
-    }
-
 	mKcalPref = findPreference("kcal");
                 mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                      @Override
@@ -92,6 +88,10 @@ public class KharaMeParts extends PreferenceFragment implements
                          return true;
                      }
                 });
+
+        mVibratorStrength = (VibratorStrengthPreference) findPreference(VibratorStrengthPreference.KEY_VIBSTRENGTH);
+        mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
+    }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
