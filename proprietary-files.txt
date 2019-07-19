@@ -23,6 +23,14 @@ framework/vendor.qti.data.factory-V1.0-java.jar
 framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
 -priv-app/CNEService/CNEService.apk
 
+# FM
+lib64/fm_helium.so
+lib64/libfm-hci.so
+-lib64/vendor.qti.hardware.fm@1.0.so
+lib/fm_helium.so
+lib/libfm-hci.so
+-lib/vendor.qti.hardware.fm@1.0.so
+
 # Media
 lib64/libmmosal.so
 lib/extractors/libmmparser.so
