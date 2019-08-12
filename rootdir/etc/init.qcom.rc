@@ -1,5 +1,22 @@
 on init
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+    mount none /system/etc/placeholder /vendor/overlay/BluetoothResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CarrierConfigResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CellBroadcastReceiverResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/ChinaMobileFrameworksRes/ChinaMobileFrameworksRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CmccMmsRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CmccSettingsTheme/CmccSettingsRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CmccSystemUIRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CtFrameworksTheme/CtFrameworksRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CtNetworkSettingRes/CtNetworkSettingRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/CtSystemUITheme/CtSystemUIRes.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/DialerResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/FrameworksResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/MiuiBluetoothOverlay.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/OptInAppOverlay/OptInAppOverlay.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/SystemUIResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/TelecommResCommon.apk bind
+    mount none /system/etc/placeholder /vendor/overlay/TelephonyResCommon.apk bind
     mount none /system/lib64/hw/power.qcom.so /vendor/lib64/hw/power.qcom.so bind
     mount none /system/lib64/soundfx/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind
     mount none /system/lib/soundfx/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
