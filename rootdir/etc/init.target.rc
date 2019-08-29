@@ -1,4 +1,6 @@
 on boot
+    mount none /system/overlay/BluetoothResCommon.apk /vendor/overlay/BluetoothResCommon.apk bind
+
     # Touchscreen
     chown system system /proc/touchpanel/double_tap_enable
     chown 0660 /proc/touchpanel/double_tap_enable

@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     tinymix
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothResCommon
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
