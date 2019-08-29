@@ -1,0 +1,2 @@
+# Allow init to chown/chmod on pseudo files in /sys
+allow init sysfs_graphics:file { open read setattr };
