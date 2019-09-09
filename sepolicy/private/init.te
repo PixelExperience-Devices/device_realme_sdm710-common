@@ -2,4 +2,4 @@
 allow init sysfs_graphics:file { open read setattr };
 
 # Allow init to mount vendor configs
-allow init vendor_configs_file:file mounton;
+allow init { system_configs_file vendor_configs_file }:file mounton;

@@ -3,7 +3,7 @@
 /system/bin/hw/vendor\.lineage\.camera\.motor@1.0-service\.realme_sdm710 u:object_r:hal_lineage_camera_motor_realme_sdm710_exec:s0
 
 # Audio
-/system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+/system/etc/audio_policy_configuration.xml    u:object_r:system_configs_file:s0
 
 # Files in rootfs
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
