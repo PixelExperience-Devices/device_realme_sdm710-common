@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef VENDOR_LINEAGE_CAMERA_MOTOR_V1_0_H
-#define VENDOR_LINEAGE_CAMERA_MOTOR_V1_0_H
+#ifndef VENDOR_LINEAGE_CAMERA_MOTOR_V1_0_FINGERPRINTINSCREEN_H
+#define VENDOR_LINEAGE_CAMERA_MOTOR_V1_0_FINGERPRINTINSCREEN_H
 
 #include <vendor/lineage/camera/motor/1.0/ICameraMotor.h>
 
@@ -31,7 +31,7 @@ using ::android::hardware::Void;
 
 class CameraMotor : public ICameraMotor {
   public:
-    CameraMotor() = default;
+    CameraMotor();
 
     Return<void> onConnect(const hidl_string& cameraId) override;
     Return<void> onDisconnect(const hidl_string& cameraId) override;
@@ -44,4 +44,4 @@ class CameraMotor : public ICameraMotor {
 }  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_CAMERA_MOTOR_V1_0_H
+#endif  // VENDOR_LINEAGE_CAMERA_MOTOR_V1_0_FINGERPRINTINSCREEN_H

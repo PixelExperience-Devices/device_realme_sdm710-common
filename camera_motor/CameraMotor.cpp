@@ -19,7 +19,16 @@
 #include "CameraMotor.h"
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
+#include <fstream>
 
+#define CAMERA_MOTOR_ENABLE "/sys/bus/platform/devices/vendor:motor_pl/enable"
+#define CAMERA_MOTOR_DIRECTION "/sys/bus/platform/devices/vendor:motor_pl/direction"
+#define CAMERA_MOTOR_HALL_CALIBRATION "/sys/bus/platform/devices/vendor:motor_pl/hall_calibration"
+#define CAMERA_PERSIST_HALL_CALIBRATION "/mnt/vendor/persist/engineermode/hall_calibration"
+#define DIRECTION_DOWN "0"
+#define DIRECTION_UP "1"
+#define HALL_CALIBRATION_DEFAULT "170,170,480,0,0,480,500,0,0,500,1500"
+#define ENABLED "1"
 #define CAMERA_ID_FRONT "1"
 
 namespace vendor {
@@ -29,9 +38,36 @@ namespace motor {
 namespace V1_0 {
 namespace implementation {
 
+/*
+ * Write value to path and close file.
+ */
+template <typename T>
+static void set(const std::string& path, const T& value) {
+    std::ofstream file(path);
+    file << value;
+}
+
+template <typename T>
+static T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+    T result;
+
+    file >> result;
+    return file.fail() ? def : result;
+}
+
+CameraMotor::CameraMotor() {
+    // Load motor hall calibration data
+    set(CAMERA_MOTOR_HALL_CALIBRATION,
+            get<std::string>(CAMERA_PERSIST_HALL_CALIBRATION, HALL_CALIBRATION_DEFAULT));
+}
+
 Return<void> CameraMotor::onConnect(const hidl_string& cameraId) {
     if (cameraId == CAMERA_ID_FRONT) {
-        LOG(INFO) << "Camera is uprising.";
+        LOG(INFO) << "Popping out front camera";
+
+        set(CAMERA_MOTOR_DIRECTION, DIRECTION_UP);
+        set(CAMERA_MOTOR_ENABLE, ENABLED);
     }
 
     return Void();
@@ -39,7 +75,10 @@ Return<void> CameraMotor::onConnect(const hidl_string& cameraId) {
 
 Return<void> CameraMotor::onDisconnect(const hidl_string& cameraId) {
     if (cameraId == CAMERA_ID_FRONT) {
-        LOG(INFO) << "Camera is descending";
+        LOG(INFO) << "Retracting front camera";
+
+        set(CAMERA_MOTOR_DIRECTION, DIRECTION_DOWN);
+        set(CAMERA_MOTOR_ENABLE, ENABLED);
     }
 
     return Void();
