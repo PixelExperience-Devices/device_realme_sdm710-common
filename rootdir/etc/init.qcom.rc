@@ -1,7 +1,8 @@
 import /system/etc/init/init.safailnet.rc
 
-on init
+on post-fs
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
     mount none /dev/null /vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc bind
     mount none /system/lib64/hw/power.qcom.so /vendor/lib64/hw/power.qcom.so bind
     mount none /system/lib64/soundfx/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind
