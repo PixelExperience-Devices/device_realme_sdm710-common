@@ -1,0 +1,147 @@
+From 61e2fb2a3847a643a3ce7ea3f573ed54eb4f3cf3 Mon Sep 17 00:00:00 2001
+From: SamarV-121 <samarvispute121@gmail.com>
+Date: Tue, 10 Sep 2019 10:00:43 +0000
+Subject: [PATCH] services: core: android.hardware.biometrics.fingerprint >>
+ vendor.oppo.hardware.biometrics.fingerprint
+
+Change-Id: Ia4cca5e99ca4fca42d345db7b731d2263a16bbcb
+---
+ services/core/Android.bp                      |  2 +-
+ .../fingerprint/AuthenticationClient.java     |  2 +-
+ .../server/fingerprint/ClientMonitor.java     |  2 +-
+ .../server/fingerprint/EnrollClient.java      |  2 +-
+ .../server/fingerprint/EnumerateClient.java   |  2 +-
+ .../fingerprint/FingerprintService.java       | 32 +++++++++++++++++--
+ .../server/fingerprint/RemovalClient.java     |  2 +-
+ 7 files changed, 36 insertions(+), 8 deletions(-)
+
+diff --git a/services/core/Android.bp b/services/core/Android.bp
+index e9f79ebd..5492b7b7 100644
+--- a/services/core/Android.bp
++++ b/services/core/Android.bp
+@@ -38,7 +38,7 @@ java_library_static {
+         "android.hardware.health-V1.0-java",
+         "android.hardware.health-V2.0-java",
+         "android.hardware.weaver-V1.0-java",
+-        "android.hardware.biometrics.fingerprint-V2.1-java",
++        "vendor.oppo.hardware.biometrics.fingerprint-V2.1-java",
+         "android.hardware.oemlock-V1.0-java",
+         "android.hardware.tetheroffload.control-V1.0-java",
+         "android.hardware.vibrator-V1.0-java",
+diff --git a/services/core/java/com/android/server/fingerprint/AuthenticationClient.java b/services/core/java/com/android/server/fingerprint/AuthenticationClient.java
+index adcb21a4..61daa610 100644
+--- a/services/core/java/com/android/server/fingerprint/AuthenticationClient.java
++++ b/services/core/java/com/android/server/fingerprint/AuthenticationClient.java
+@@ -19,7 +19,7 @@ package com.android.server.fingerprint;
+ import android.content.Context;
+ import android.content.ComponentName;
+ import android.content.pm.PackageManager;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
+ import android.hardware.biometrics.BiometricPrompt;
+ import android.hardware.biometrics.IBiometricPromptReceiver;
+ import android.hardware.fingerprint.Fingerprint;
+diff --git a/services/core/java/com/android/server/fingerprint/ClientMonitor.java b/services/core/java/com/android/server/fingerprint/ClientMonitor.java
+index e14179d0..15c6be25 100644
+--- a/services/core/java/com/android/server/fingerprint/ClientMonitor.java
++++ b/services/core/java/com/android/server/fingerprint/ClientMonitor.java
+@@ -18,7 +18,7 @@ package com.android.server.fingerprint;
+ 
+ import android.Manifest;
+ import android.content.Context;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
+ import android.hardware.fingerprint.FingerprintManager;
+ import android.hardware.fingerprint.IFingerprintServiceReceiver;
+ import android.media.AudioAttributes;
+diff --git a/services/core/java/com/android/server/fingerprint/EnrollClient.java b/services/core/java/com/android/server/fingerprint/EnrollClient.java
+index 9944266c..87cef724 100644
+--- a/services/core/java/com/android/server/fingerprint/EnrollClient.java
++++ b/services/core/java/com/android/server/fingerprint/EnrollClient.java
+@@ -18,7 +18,7 @@ package com.android.server.fingerprint;
+ 
+ import android.content.Context;
+ import android.content.pm.PackageManager;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
+ import android.hardware.fingerprint.FingerprintManager;
+ import android.hardware.fingerprint.IFingerprintServiceReceiver;
+ import android.os.IBinder;
+diff --git a/services/core/java/com/android/server/fingerprint/EnumerateClient.java b/services/core/java/com/android/server/fingerprint/EnumerateClient.java
+index b6bbd1b7..c687c601 100644
+--- a/services/core/java/com/android/server/fingerprint/EnumerateClient.java
++++ b/services/core/java/com/android/server/fingerprint/EnumerateClient.java
+@@ -17,7 +17,7 @@
+ package com.android.server.fingerprint;
+ 
+ import android.content.Context;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
+ import android.hardware.fingerprint.FingerprintManager;
+ import android.hardware.fingerprint.IFingerprintServiceReceiver;
+ import android.os.IBinder;
+diff --git a/services/core/java/com/android/server/fingerprint/FingerprintService.java b/services/core/java/com/android/server/fingerprint/FingerprintService.java
+index 1fa4d34c..54e49002 100644
+--- a/services/core/java/com/android/server/fingerprint/FingerprintService.java
++++ b/services/core/java/com/android/server/fingerprint/FingerprintService.java
+@@ -39,8 +39,8 @@ import android.content.IntentFilter;
+ import android.content.pm.PackageManager;
+ import android.content.pm.UserInfo;
+ import android.hardware.biometrics.IBiometricPromptReceiver;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprintClientCallback;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprintClientCallback;
+ import android.hardware.fingerprint.Fingerprint;
+ import android.hardware.fingerprint.FingerprintManager;
+ import android.hardware.fingerprint.IFingerprintClientActiveCallback;
+@@ -1189,6 +1189,34 @@ public class FingerprintService extends SystemService implements IHwBinder.Death
+                 }
+             });
+         }
++
++        @Override
++        public void onTouchDown(final long deviceId) {
++        }
++
++        @Override
++        public void onTouchUp(final long deviceId) {
++        }
++
++        @Override
++        public void onMonitorEventTriggered(final int type, final String data) {
++        }
++
++        @Override
++        public void onImageInfoAcquired(final int type, final int quality, final int match_score) {
++        }
++
++        @Override
++        public void onSyncTemplates(final long deviceId, final ArrayList<Integer> fingerIds, final int groupId) {
++        }
++
++        @Override
++        public void onEngineeringInfoUpdated(final int lenth, final ArrayList<Integer> keys, final ArrayList<String> values) {
++        }
++
++        @Override
++        public void onFingerprintCmd(final int cmdId , final ArrayList<Byte> result, final int resultLen) {
++        }
+     };
+ 
+     private final class FingerprintServiceWrapper extends IFingerprintService.Stub {
+diff --git a/services/core/java/com/android/server/fingerprint/RemovalClient.java b/services/core/java/com/android/server/fingerprint/RemovalClient.java
+index ffc84888..8074140f 100644
+--- a/services/core/java/com/android/server/fingerprint/RemovalClient.java
++++ b/services/core/java/com/android/server/fingerprint/RemovalClient.java
+@@ -17,7 +17,7 @@
+ package com.android.server.fingerprint;
+ 
+ import android.content.Context;
+-import android.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
++import vendor.oppo.hardware.biometrics.fingerprint.V2_1.IBiometricsFingerprint;
+ import android.hardware.fingerprint.FingerprintManager;
+ import android.hardware.fingerprint.IFingerprintServiceReceiver;
+ import android.os.IBinder;
+-- 
+2.17.1
