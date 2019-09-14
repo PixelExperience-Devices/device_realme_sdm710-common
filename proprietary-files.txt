@@ -33,6 +33,14 @@ lib64/libdpmframework.so
 lib64/libdpmtcm.so
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Fingerprint sensor 
+framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar
+framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
+lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
+lib/vendor.qti.hardware.fingerprint@1.0.so
+lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 # Media
 lib64/libmmosal.so
 lib/extractors/libmmparser.so
