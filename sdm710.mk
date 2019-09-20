@@ -49,13 +49,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OppoDoze
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system
-
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common
@@ -71,11 +64,6 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
-
-# Seccomp policy
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    $(LOCAL_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -106,10 +94,6 @@ PRODUCT_BOOT_JARS += \
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# VNDK-SP
-PRODUCT_PACKAGES += \
-    vndk-sp
 
 # Trust HAL
 PRODUCT_PACKAGES += \

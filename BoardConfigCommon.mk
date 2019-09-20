@@ -15,8 +15,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a75
 
-TARGET_USES_64_BIT_BINDER := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm710
 TARGET_NO_BOOTLOADER := true
@@ -62,16 +60,10 @@ endif
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Graphics
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := (1 << 21) | (1 << 27)
 TARGET_USES_HWC2 := true
-OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
@@ -93,18 +85,16 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
-TARGET_USES_MKE2FS := true
-
-TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/recovery.fstab
 
+# Renderscript
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-TARGET_RIL_VARIANT := caf
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
@@ -113,4 +103,6 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 
 # Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+# Vendor
+TARGET_COPY_OUT_VENDOR := vendor
