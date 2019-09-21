@@ -72,19 +72,16 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5578424320
-
 BOARD_FLASH_BLOCK_SIZE := 262144
-
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+TARGET_USERIMAGES_USE_EXT4 := true
 
+# Root
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist \
     /vendor/bt_firmware:/bt_firmware \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware
-
-TARGET_USERIMAGES_USE_EXT4 := true
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
