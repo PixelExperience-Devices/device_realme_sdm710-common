@@ -61,9 +61,6 @@ endif
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Graphics
-TARGET_USES_HWC2 := true
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 
