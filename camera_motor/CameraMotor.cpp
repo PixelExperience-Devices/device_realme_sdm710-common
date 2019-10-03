@@ -31,6 +31,7 @@
 #define DIRECTION_DOWN "0"
 #define DIRECTION_UP "1"
 #define HALL_CALIBRATION_DEFAULT "170,170,480,0,0,480,500,0,0,500,1500"
+#define POSITION_MID "2"
 #define POSITION_DOWN "1"
 #define POSITION_UP "0"
 #define ENABLED "1"
@@ -92,7 +93,7 @@ CameraMotor::CameraMotor() {
 Return<void> CameraMotor::onConnect(const hidl_string& cameraId) {
     auto motorPosition = get<std::string>(CAMERA_MOTOR_POSITION, "");
 
-    if (cameraId == CAMERA_ID_FRONT && motorPosition == POSITION_DOWN) {
+    if (cameraId == CAMERA_ID_FRONT && (motorPosition == POSITION_DOWN || motorPosition == POSITION_MID)) {
         LOG(INFO) << "Popping out front camera";
 
         set(CAMERA_MOTOR_DIRECTION, DIRECTION_UP);
