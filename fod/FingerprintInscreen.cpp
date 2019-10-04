@@ -22,6 +22,11 @@
 #include <fstream>
 #include <cmath>
 
+#define FP_PRESS_PATH "/sys/kernel/oppo_display/notify_fppress"
+
+#define DIM_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
+#define DIM_AMOUNT_PATH "/sys/kernel/oppo_display/dim_alpha"
+
 namespace {
 
 template <typename T>
@@ -54,15 +59,15 @@ FingerprintInscreen::FingerprintInscreen() {
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    return FOD_POS_X;
+    return 442;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    return FOD_POS_Y;
+    return 1986;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    return FOD_SIZE;
+    return 196;
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
@@ -74,18 +79,22 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
+    set(FP_PRESS_PATH, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
+    set(FP_PRESS_PATH, 0);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    set(DIM_PATH, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    set(DIM_PATH, 0);
     return Void();
 }
 
@@ -104,7 +113,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 }
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
-    int dimAmount = 0;
+    int dimAmount = get(DIM_AMOUNT_PATH, 0);
     LOG(INFO) << "dimAmount = " << dimAmount;
 
     return dimAmount;
