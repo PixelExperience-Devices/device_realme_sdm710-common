@@ -1,7 +1,17 @@
 type hal_light_sdm710, coredomain, domain;
-hal_server_domain(hal_light_sdm710, hal_light)
+
+# Allow a base set of permissions required for a domain to offer a
+# HAL implementation of the specified type over HwBinder.
+typeattribute hal_light_sdm710 halserverdomain;
+typeattribute hal_light_sdm710 hal_light_server;
+
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_light_client, hal_light_server)
+binder_call(hal_light_server, hal_light_client)
+
+add_hwservice(hal_light_server, hal_light_hwservice)
+allow hal_light_client hal_light_hwservice:hwservice_manager find;
 
 type hal_light_sdm710_exec, exec_type, file_type;
 init_daemon_domain(hal_light_sdm710)
 
-allow hal_light_sdm710 sysfs_leds:file rw_file_perms;
