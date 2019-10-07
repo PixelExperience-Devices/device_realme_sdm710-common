@@ -18,9 +18,6 @@
 
 set -e
 
-DEVICE=sdm710-common
-VENDOR=realme
-
 INITIAL_COPYRIGHT_YEAR=2016
 
 # Load extract_utils and do some sanity checks
@@ -37,7 +34,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT"
 
 # Copyright headers and guards
 write_headers
