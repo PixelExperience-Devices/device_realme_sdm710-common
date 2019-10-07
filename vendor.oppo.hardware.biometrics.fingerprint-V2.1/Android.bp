@@ -1,6 +1,0 @@
-java_library {
-    name: "vendor.oppo.hardware.biometrics.fingerprint-V2.1-java",
-    srcs: ["src/vendor/oppo/hardware/biometrics/fingerprint/V2_1/*java"],
-    static_libs: ["android.hidl.base-V1.0-java"],
-    libs: ["android.hidl.base-V1.0-java"],
-}
