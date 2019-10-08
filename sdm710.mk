@@ -38,7 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.qcom.rc
 
 # Display
 PRODUCT_PACKAGES += \
