@@ -16,28 +16,6 @@ framework/vendor.qti.data.factory-V1.0-java.jar|23a060c1197f21f4f3b0f77485d8ee38
 framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
 -priv-app/CNEService/CNEService.apk|8e52b0f6e0aef5ea6f28590e78864b7476301c11
 
-# DPM - from Redmi K20 davinci-user 9 PKQ1.190302.001 V10.3.6.0.PFJCNXM release-keys
-bin/dpmd|b4ab23a880c43a5e32c1b74c3743445d64c3cf25
-etc/dpm/dpm.conf|fec89edb6cff81424a6c3a730fed92efa3613f72
-etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
-etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
-etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|2a6ff555ebff148a508fc7ea2fbeaee4b9a2dff6
-framework/dpmapi.jar|89ddc5bf0c4c88a3f341169edc4d89f9e834337b
-framework/tcmclient.jar|91b415288494fa208b5f5ec9fafa33c47e569c96
-lib64/libdiag_system.so|9e6e39892961871e42e3b33c850f968b51c61d09
-lib64/com.qualcomm.qti.dpm.api@1.0.so|99df73ba93fe95e98cb64069592675e1751aaee2
-lib64/libdpmctmgr.so|20101d5929ba97f16083ad9c71933111cb9ae8ff
-lib64/libdpmfdmgr.so|45061fee7721b8f94aef431f589e4024d4eae374
-lib64/libdpmframework.so|623095565a453e10498a5a28ef689f52c85e8784
-lib64/libdpmtcm.so|1b43a23871a0a247e4adbe1e63c5e0864740938b
-lib/com.qualcomm.qti.dpm.api@1.0.so|2f0691c71c5c8d2330f5db04582cf766c192d465
-lib/libdpmctmgr.so|995723ead7cf4519cbf0f6ce709f1815d28198ae
-lib/libdpmfdmgr.so|9e2dd9627116cc63262cb3752d0b034c97e5304d
-lib/libdpmframework.so|b457438cf92795a035af58ef3fe563f33d11a1ed
-lib/libdpmtcm.so|2321e7a3678c8a0224702d96a14bbfacfd0b6675
--priv-app/dpmserviceapp/dpmserviceapp.apk|a642336052f3e5d70580700e2aebba230a5f663f
-
 # Media
 lib64/libmmosal.so
 lib/extractors/libmmparser.so
