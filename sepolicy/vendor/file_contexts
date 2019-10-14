@@ -11,11 +11,6 @@
 # Oppo HIDL hals
 /(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.camera\.oppoAlgoProcessService@1\.0-service u:object_r:hal_camera_default_exec:s0
 
-# Rootfs files
-/bt_firmware(/.*)?                            u:object_r:bt_firmware_file:s0
-/firmware(/.*)?                               u:object_r:firmware_file:s0
-/persist(/.*)?                                u:object_r:persist_file:s0
-
 # Neural Networks Hal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti                                 u:object_r:hal_neuralnetworks_default_exec:s0
 
