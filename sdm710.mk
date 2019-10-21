@@ -87,7 +87,42 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc
+    init.class_late.sh \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.oppo.face.sh \
+    init.oppo.fingerprints.sh \
+    init.oppo.wifi.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.crashdata.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.can.sh \
+    init.qti.fm.sh \
+    init.qti.ims.sh \
+    init.qti.manifest_sku.sh \
+    init.qti.qseecomd.sh \
+    fstab.qcom \
+    init.msm.usb.configfs.rc \
+    init.oppo.debug.diag.rc \
+    init.oppo.reserve.rc \
+    init.oppo.sensor.rc \
+    init.oppo.vendor.fingerprint.rc \
+    init.oppo.vendor.motor.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.target.rc \
+    init.wlan.qcom.rc \
+    init.wlan.target.rc \
+    ueventd.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -132,10 +167,6 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# Placeholder
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/placeholder:system/etc/placeholder
 
 # Power
 PRODUCT_PACKAGES += \
