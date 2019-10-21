@@ -162,7 +162,8 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.realme_sdm710
+    android.hardware.light@2.0-service.realme_sdm710 \
+    lights.sdm710
 
 # Media
 PRODUCT_COPY_FILES += \
