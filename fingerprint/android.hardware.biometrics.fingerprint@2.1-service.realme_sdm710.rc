@@ -1,4 +1,4 @@
-service fps_hal.realme_sdm710 /system/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
+service vendor.fps_hal.realme_sdm710 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.
