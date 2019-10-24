@@ -1,3 +1,52 @@
+# ADSP
+vendor/bin/adsprpcd
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libmdsprpc.so
+
+# ADSP Modules
+vendor/lib/rfsa/adsp/libproxy_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libdepthmap_skel.so
+vendor/lib/rfsa/adsp/libVC1Dec.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libsnpe_dsp_skel.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
+vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
+vendor/lib/rfsa/adsp/remote_heap_config.so
+vendor/lib/rfsa/adsp/libarcsoft_hdr_hvx_skel.so
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+vendor/lib/rfsa/adsp/libsnpe_dsp_v65_skel.so
+vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so
+vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
+vendor/lib/rfsa/adsp/libVDHexagonBlurless_skel.so
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+vendor/lib/rfsa/adsp/libBeautyShot_skel.so
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libthread_blur_skel.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libarcsoft_llhdr_hvx_skel.so
+vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so
+vendor/lib64/rfsa/adsp/libdsp_streamer_skel.so
+vendor/lib/libarm_proxy_skel.so
+vendor/lib/libdepthmap.so
+vendor/lib/libsnpe_adsp.so
+vendor/lib/libsnpe_cdsp.so
+vendor/lib/libsnpe_cdsp_v65.so
+vendor/lib/libsnpeml.so
+vendor/lib64/libsysmon_cdsp_skel.so
+
 # Audio - from enchilada - PKQ1.180716.001
 vendor/lib64/soundfx/libvolumelistener.so:lib64/soundfx/libvolumelistener.so|2dffcd0bde20f5f1830918146c9f40c02bbbae9f
 vendor/lib/soundfx/libvolumelistener.so:lib/soundfx/libvolumelistener.so|117f8b7d834b4587dc8c8c5d15fada85b877ed26
@@ -5,6 +54,14 @@ vendor/lib/soundfx/libvolumelistener.so:lib/soundfx/libvolumelistener.so|117f8b7
 # Bluetooth (aptX) - from crosshatch - PD1A.180720.030
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
 lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+
+# CDSP
+vendor/bin/cdsprpcd
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libsdsprpc.so
 
 # CNE
 etc/permissions/cneapiclient.xml
