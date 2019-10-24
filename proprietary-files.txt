@@ -1,3 +1,46 @@
+# ACDB
+vendor/etc/acdbdata/18041/Hdmi_cal.acdb
+vendor/etc/acdbdata/18041/Speaker_cal.acdb
+vendor/etc/acdbdata/18041/Headset_cal.acdb
+vendor/etc/acdbdata/18041/General_cal.acdb
+vendor/etc/acdbdata/18041/Global_cal.acdb
+vendor/etc/acdbdata/18041/Bluetooth_cal.acdb
+vendor/etc/acdbdata/18041/Handset_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_Global_cal.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_General_cal.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_workspaceFile.qwsp
+vendor/etc/acdbdata/QRD/sdm670-skuw-snd-card/QRD_SKUW_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_General_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_General_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Global_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_Codec_cal.acdb
+vendor/etc/acdbdata/MTP/sdm670-tavil-snd-card/MTP_WCD9340_workspaceFile.qwsp
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
@@ -47,9 +90,60 @@ vendor/lib/libsnpe_cdsp_v65.so
 vendor/lib/libsnpeml.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
-# Audio - from enchilada - PKQ1.180716.001
-vendor/lib64/soundfx/libvolumelistener.so:lib64/soundfx/libvolumelistener.so|2dffcd0bde20f5f1830918146c9f40c02bbbae9f
-vendor/lib/soundfx/libvolumelistener.so:lib/soundfx/libvolumelistener.so|117f8b7d834b4587dc8c8c5d15fada85b877ed26
+# Audio Hal
+vendor/lib/hw/audio.primary.sdm710.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib64/hw/audio.primary.sdm710.so
+vendor/lib64/libtinycompress.so
+vendor/lib64/libtinycompress_vendor.so
+vendor/lib/libaudioEngineerTest.so
+vendor/lib64/libaudioEngineerTest.so
+
+# Audio
+vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdrc.so
+vendor/lib/libqtigef.so
+vendor/lib/libsurround_3mic_proc.so
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libqtigef.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libqcreverb.so
+vendor/lib64/soundfx/libqcvirt.so
+vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0.so
+
+# Audio amplifier firmware
+vendor/firmware/tfa98xx.cnt
 
 # Bluetooth (aptX) - from crosshatch - PD1A.180720.030
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
