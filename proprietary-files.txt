@@ -1295,6 +1295,12 @@ vendor/lib/hw/sensors.sdm710.so
 vendor/lib64/sensors.ap.so
 vendor/lib64/hw/sensors.sdm710.so
 
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/thermal-engine.conf
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
+
 # WiFi Display
 bin/wfdservice
 etc/init/wfdservice.rc
