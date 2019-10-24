@@ -473,6 +473,38 @@ vendor/lib64/vendor.qti.data.factory@1.1.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 
+# Display
+-lib/libsdm-disp-apis.so
+-lib64/libsdm-disp-apis.so
+vendor/lib/libdisplayqos.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsdmcore.so
+-vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+-vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+
+# Display postprocessing
+vendor/bin/mm-pp-dpps
+lib64/vendor.display.color@1.0.so
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libdisp-aba.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.color@1.1.so
+vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.postproc@1.0.so
+
 # DPM
 bin/dpmd
 etc/dpm/dpm.conf
@@ -567,10 +599,81 @@ vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
 
-# Display postprocessing
-lib64/vendor.display.color@1.0.so
-lib64/vendor.display.color@1.1.so
-lib64/vendor.display.color@1.2.so
+# Graphics
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/hw/vulkan.sdm710.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libCB.so
+vendor/lib/libgsl.so
+vendor/lib/libhdr_tm.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libOpenCL.so
+vendor/lib/libqseed3.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libQTapGLES.so
+vendor/lib64/hw/vulkan.sdm710.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libCB.so
+vendor/lib64/libgsl.so
+vendor/lib64/libhdr_tm.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/librs_adreno.so
+vendor/lib64/librs_adreno_sha1.so
+
+# Graphics firmware 
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.b01
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a615_zap.b00
+vendor/firmware/a630_sqe.fw
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a540_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a420_pm4.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a530_gpmu.fw2
 
 # IMS
 -app/uceShimService/uceShimService.apk
