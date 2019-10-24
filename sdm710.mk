@@ -243,6 +243,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
+# IPACM
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml \
+    libipanat \
+    liboffloadhal \
+    android.hardware.tetheroffload.control@1.0
+
+# IPv6
+PRODUCT_PACKAGES += \
+    ethertypes \
+    libebtc
+
 # IRQ
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
