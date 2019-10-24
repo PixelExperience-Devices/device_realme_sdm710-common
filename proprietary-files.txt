@@ -90,6 +90,18 @@ vendor/lib/libsnpe_cdsp_v65.so
 vendor/lib/libsnpeml.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
+# ANT+ (system)
+lib/com.qualcomm.qti.ant@1.0.so
+-lib/libantradio.so
+lib64/com.qualcomm.qti.ant@1.0.so
+-lib64/libantradio.so
+
+# ANT+ (vendor)
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib/com.qualcomm.qti.ant@1.0.so
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
+
 # Audio Hal
 vendor/lib/hw/audio.primary.sdm710.so
 vendor/lib/libtinycompress_vendor.so
