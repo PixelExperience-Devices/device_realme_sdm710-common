@@ -391,6 +391,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    libwpa_client \
+    libwifi-hal-qcom \
+    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
+    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
