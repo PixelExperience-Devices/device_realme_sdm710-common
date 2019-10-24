@@ -205,6 +205,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0-service \
     libgui_vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.clearkey
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
