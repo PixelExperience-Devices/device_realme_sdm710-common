@@ -1055,9 +1055,58 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
-# QMI
+# Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
+vendor/bin/irsc_util
+vendor/bin/pd-mapper
+vendor/lib/libdiag.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libminkdescriptor.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqdi.so
+vendor/lib/libqdp.so
+vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+vendor/lib64/libdiag.so
+vendor/lib64/libdiagjni.so
+vendor/lib64/libdsutils.so
+vendor/lib64/libidl.so
+vendor/lib64/libminkdescriptor.so
+vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqdi.so
+vendor/lib64/libqdp.so
+vendor/lib64/libqmi.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqmi_client_helper.so
+vendor/lib64/libqmi_client_qmux.so
+vendor/lib64/libqmi_common_so.so
+vendor/lib64/libqmi_csi.so
+vendor/lib64/libqmi_encdec.so
+vendor/lib64/libqmiservices.so
+
+# Qualcomm Trusted Execution Environment
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib/libGPQTEEC_vendor.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib64/libGPMTEEC_vendor.so
+vendor/lib/libQTEEConnector_vendor.so
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/libGPQTEEC_vendor.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/libqsee_keybox_ca.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RIL
 -app/QtiTelephonyService/QtiTelephonyService.apk
