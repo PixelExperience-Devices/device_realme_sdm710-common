@@ -187,8 +187,23 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.graphics.mapper@2.0-impl-qti-display \
+    gralloc.sdm710 \
+    hwcomposer.sdm710 \
+    libdisplayconfig \
+    libhwc2on1adapter \
+    libhwc2onfbadapter \
+    libqdMetaData.system \
+    libtinyxml \
     libvulkan \
-    vendor.display.config@1.0
+    memtrack.sdm710 \
+    vendor.display.config@1.7 \
+    vendor.qti.hardware.display.allocator@1.0-service \
+    libgui_vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
