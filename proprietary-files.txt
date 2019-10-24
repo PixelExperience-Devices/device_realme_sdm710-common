@@ -1306,6 +1306,12 @@ vendor/lib64/libthermalclient.so
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 
+# WiFi
+vendor/bin/cnss-daemon
+vendor/etc/wifi/fstman.ini
+vendor/etc/wifi/sar-vendor-cmd.xml
+vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
+
 # WiFi Display
 bin/wfdservice
 etc/init/wfdservice.rc
