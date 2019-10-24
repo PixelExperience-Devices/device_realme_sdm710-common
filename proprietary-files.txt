@@ -101,6 +101,17 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 
+# Alipay Firmware
+vendor/firmware/alipay.b07
+vendor/firmware/alipay.b01
+vendor/firmware/alipay.b06
+vendor/firmware/alipay.b00
+vendor/firmware/alipay.b02
+vendor/firmware/alipay.mdt
+vendor/firmware/alipay.b03
+vendor/firmware/alipay.b05
+vendor/firmware/alipay.b04
+
 # ANT+ (system)
 lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
@@ -487,9 +498,16 @@ vendor/lib64/vendor.qti.data.factory@1.1.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 
-# CVP
-vendor/lib/vendor.qti.hardware.cvp@1.0.so
-vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+# Crypto Engineering Firmware
+vendor/firmware/cryptoeng.b02
+vendor/firmware/cryptoeng.b07
+vendor/firmware/cryptoeng.b05
+vendor/firmware/cryptoeng.b01
+vendor/firmware/cryptoeng.b03
+vendor/firmware/cryptoeng.b00
+vendor/firmware/cryptoeng.mdt
+vendor/firmware/cryptoeng.b06
+vendor/firmware/cryptoeng.b04
 
 # Display
 -lib/libsdm-disp-apis.so
@@ -643,6 +661,30 @@ vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
+
+# Face Recognition Firmware
+vendor/firmware/facereg.mdt
+vendor/firmware/facereg.b05
+vendor/firmware/facereg.b07
+vendor/firmware/facereg.b02
+vendor/firmware/facereg.b00
+vendor/firmware/facereg.b06
+vendor/firmware/facereg.b01
+vendor/firmware/facereg.b04
+vendor/firmware/facereg.b03
+
+# Fast Charge Firmware
+vendor/firmware/fastchg/18085/oppo_vooc_fw_n76e.bin
+vendor/firmware/fastchg/18085/oppo_vooc_fw.bin
+vendor/firmware/fastchg/18181/oppo_vooc_fw.bin
+vendor/firmware/fastchg/18081/oppo_vooc_fw_n76e.bin
+vendor/firmware/fastchg/18081/oppo_vooc_fw.bin
+vendor/firmware/fastchg/18381/oppo_vooc_fw_n76e.bin
+vendor/firmware/fastchg/18381/oppo_vooc_fw.bin
+vendor/firmware/fastchg/18041/oppo_vooc_fw_n76e.bin
+vendor/firmware/fastchg/18041/oppo_vooc_fw.bin
+vendor/firmware/fastchg/18097/oppo_vooc_fw_n76e.bin
+vendor/firmware/fastchg/18097/oppo_vooc_fw.bin
 
 # Fingerprint
 lib/android.frameworks.fingerprintservice@1.0.so
@@ -865,6 +907,15 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
+# IPA Firmware
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
@@ -1002,6 +1053,19 @@ vendor/lib64/libvoh264enc.so
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc
 vendor/lib64/libhexagon_nn_stub.so
+
+# Oppo Voice Model Firmware
+vendor/firmware/audience/ia6xx/ia6xx-vs-hw.bin
+vendor/firmware/audience/ia6xx/ia6xx-bargein-hw.bin
+vendor/firmware/audience/ia6xx/ia6xx-vs-uart.bin
+vendor/firmware/audience/ia6xx/ia6xx-bargein-uart.bin
+vendor/firmware/audience/cvqmodels/oemkw_XiaoDu_XiaoDu.bin
+vendor/firmware/audience/cvqmodels/refModel/ref_BaiDuYiXia3.model
+vendor/firmware/audience/cvqmodels/refModel/ref_BaiDuYiXia2.model
+vendor/firmware/audience/cvqmodels/refModel/ref_BaiDuYiXia1.model
+vendor/firmware/audience/cvqmodels/refModel/ref_BaiDuYiXia4.model
+vendor/firmware/audience/cvqmodels/oemkw_Hello_VoiceQ.bin
+vendor/firmware/audience/cvqmodels/oemkw_Baidu_YiXia.bin
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -1367,11 +1431,33 @@ vendor/lib64/libthermalclient.so
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 
+# Touchscreen firmware
+vendor/firmware/tp/18085/LIMIT_S3706_SAMSUNG.img
+vendor/firmware/tp/18085/FW_S3706_SAMSUNG.img
+vendor/firmware/tp/18081/FW_S3706_SAMSUNG_FAE.img
+vendor/firmware/tp/18081/LIMIT_S3706_SAMSUNG.img
+vendor/firmware/tp/18081/FW_S3706_SAMSUNG.img
+vendor/firmware/tp/18383/FW_S3706_SAMSUNG_FAE.img
+vendor/firmware/tp/18383/LIMIT_S3706_SAMSUNG.img
+vendor/firmware/tp/18383/FW_S3706_SAMSUNG.img
+vendor/firmware/tp/18041/FW_S3706_SAMSUNG_FAE.img
+vendor/firmware/tp/18041/LIMIT_S3706_SAMSUNG.img
+vendor/firmware/tp/18041/FW_S3706_SAMSUNG.img
+vendor/firmware/tp/18097/FW_S3706_SAMSUNG_FAE.img
+vendor/firmware/tp/18097/LIMIT_S3706_SAMSUNG.img
+vendor/firmware/tp/18097/FW_S3706_SAMSUNG.img
+
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
+# UFS Firmware
+vendor/firmware/ufs/SKhynix-H9HQ53ACPMMDAR.bin
+vendor/firmware/ufs/MICRON-128GB-UFS-MT.bin
+vendor/firmware/ufs/SKhynix-H9HQ53AECMMDAR.bin
+vendor/firmware/ufs/move_target_ufs_fw_to_opporeserve1.sh
 
 # WiFi
 vendor/bin/cnss-daemon
