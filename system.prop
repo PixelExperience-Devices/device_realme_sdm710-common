@@ -36,6 +36,7 @@ ro.use_data_netmgrd=true
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
+persist.hwc.enable_vds=1
 persist.demo.hdmirotationlock=false
 sdm.debug.disable_dest_scalar=1
 sdm.debug.disable_inline_rotator=1
