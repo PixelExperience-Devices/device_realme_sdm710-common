@@ -71,3 +71,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.ssr.enable_ramdumps=0 \
     persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# WFD
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.hwc.enable_vds=1
