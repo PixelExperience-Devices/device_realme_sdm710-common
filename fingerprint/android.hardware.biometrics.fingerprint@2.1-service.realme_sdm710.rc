@@ -5,4 +5,3 @@ service fps_hal.realme_sdm710 /system/bin/hw/android.hardware.biometrics.fingerp
     class late_start
     user system
     group system input uhid
-    writepid /dev/cpuset/system-background/tasks
