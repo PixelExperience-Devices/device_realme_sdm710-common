@@ -60,6 +60,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477
 
+# Network manager
+ro.telephony.iwlan_operation_mode=legacy
+
 # Perf
 iop.enable_prefetch_ofr=1
 iop.enable_uxe=0
