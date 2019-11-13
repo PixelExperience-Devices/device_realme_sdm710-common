@@ -1,5 +1,6 @@
 on init
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+    mount none /dev/null /vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc bind
 
 on boot
     mount none /system/overlay/BluetoothResCommon.apk /vendor/overlay/BluetoothResCommon.apk bind
@@ -22,6 +23,11 @@ service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.s
     class main
     user root
     oneshot
+
+service fps_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
+    class late_start
+    user system
+    group system input
 
 on post-fs-data
     mkdir /data/gf_data 0700 system system
