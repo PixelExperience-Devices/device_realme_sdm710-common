@@ -18,7 +18,6 @@ service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.s
     class main
     user root
     oneshot
-    seclabel u:r:rutilsdaemon:s0
 
 on post-fs-data
     mkdir /data/gf_data 0700 system system
