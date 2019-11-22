@@ -22,3 +22,6 @@ type proc_flash, fs_type, proc_type;
 
 # kcal
 type sysfs_kcal, fs_type, sysfs_type;
+
+# FPS
+type sysfs_fps, sysfs_type, fs_type;
