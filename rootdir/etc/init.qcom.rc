@@ -8,6 +8,10 @@ on boot
     chown system system /proc/touchpanel/double_tap_enable
     chown 0660 /proc/touchpanel/double_tap_enable
 
+    # Update touchscreen firmware
+    chown system system /proc/touchpanel/tp_fw_update
+    write /proc/touchpanel/tp_fw_update 1
+
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
 
