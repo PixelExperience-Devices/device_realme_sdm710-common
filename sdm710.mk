@@ -57,12 +57,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
 # Doze
-PRODUCT_PACKAGES += \
-    OppoDoze
+# PRODUCT_PACKAGES += \
+#     OppoDoze
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common \
     ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
