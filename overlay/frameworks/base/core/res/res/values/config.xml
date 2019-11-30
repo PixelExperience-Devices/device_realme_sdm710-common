@@ -312,12 +312,11 @@
         <item>"/system/framework/services.jar"</item>
         <item>"/system/framework/arm64/boot.oat"</item>
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
-        <item>"/system/framework/boot-core-libart.vdex"</item>
-        <item>"/system/priv-app/SystemUI/oat/arm64/SystemUI.vdex"</item>
-        <item>"/system/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
         <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
+        <item>"/product/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/product/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
@@ -330,7 +329,7 @@
         <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-        <item>"/system/priv-app/SystemUIGoogle/SystemUI.apk"</item>
+        <item>"/system/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 	
@@ -405,4 +404,3 @@
     <dimen name="status_bar_height_portrait">88.0px</dimen>
     <dimen name="status_bar_height_landscape">28.0dp</dimen>
 </resources>
-
