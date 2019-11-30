@@ -19,9 +19,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+# ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-endif
+# endif
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -115,5 +115,5 @@ PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
 
 # WiFi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+# PRODUCT_BOOT_JARS += \
+#     WfdCommon
