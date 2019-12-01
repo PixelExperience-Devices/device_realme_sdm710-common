@@ -21,6 +21,7 @@ on boot
 
     # FP
     chown system system /dev/goodix_fp
+    chown system system /dev/esfp0
 
 service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
     class main
@@ -53,3 +54,4 @@ on post-fs-data
     chown system system /sys/kernel/oppo_display/hbm
     mkdir /data/vendor/silead 0770 system system
     mkdir /mnt/vendor/persist/fingerprint/silead 0770 system system
+    mkdir /data/vendor/egis   0770 system system
