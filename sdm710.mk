@@ -104,5 +104,8 @@ PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
 
 # WiFi Display
-# PRODUCT_BOOT_JARS += \
-#     WfdCommon
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
