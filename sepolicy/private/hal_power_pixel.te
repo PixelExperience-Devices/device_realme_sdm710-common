@@ -3,3 +3,48 @@ hal_server_domain(hal_power_pixel, hal_power)
 
 type hal_power_pixel_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_power_pixel)
+
+allow hal_power_pixel debugfs_wlan:dir r_dir_perms;
+allow hal_power_pixel debugfs_wlan:file r_file_perms;
+
+allow hal_power_pixel system_file:file r_file_perms;
+
+allow hal_power_pixel sysfs_graphics:dir search;
+allow hal_power_pixel sysfs_graphics:file r_file_perms;
+
+allow hal_power_pixel sysfs_rpm:file r_file_perms;
+allow hal_power_pixel sysfs_system_sleep_stats:file r_file_perms;
+allow hal_power_pixel sysfs_power_stats:file r_file_perms;
+
+# To do powerhint on nodes defined in powerhint.json
+allow hal_power_pixel sysfs_devfreq:dir search;
+allow hal_power_pixel sysfs_devfreq:{ file lnk_file } rw_file_perms;
+allow hal_power_pixel sysfs_scsi_devices:dir search;
+allow hal_power_pixel sysfs_scsi_devices:{ file lnk_file } rw_file_perms;
+allow hal_power_pixel sysfs_kgsl:dir search;
+allow hal_power_pixel sysfs_kgsl:{ file lnk_file } rw_file_perms;
+allow hal_power_pixel sysfs_msm_subsys:dir search;
+allow hal_power_pixel sysfs_msm_subsys:file rw_file_perms;
+allow hal_power_pixel sysfs_devices_system_cpu:file rw_file_perms;
+allow hal_power_pixel device_latency:chr_file rw_file_perms;
+allow hal_power_pixel proc_sysctl_schedboost:file rw_file_perms;
+allow hal_power_pixel debugfs_sched_features:dir search;
+allow hal_power_pixel debugfs_sched_features:file rw_file_perms;
+allow hal_power_pixel input_device:dir search;
+allow hal_power_pixel input_device:chr_file rw_file_perms;
+
+allow hal_power_pixel hal_power_hwservice:hwservice_manager add;
+allow hal_power_pixel hidl_base_hwservice:hwservice_manager add;
+binder_call(hal_power_pixel, hwservicemanager)
+binder_call(hal_power_pixel, hal_audio)
+
+# Allow set display low power mode
+type mm-pp-daemon, domain;
+unix_socket_connect(hal_power_pixel, pps, mm-pp-daemon)
+allow hal_power_pixel pps_socket:sock_file write;
+
+# To get hwservicemanager state
+get_prop(hal_power_pixel, hwservicemanager_prop)
+
+# To get/set powerhal state property
+set_prop(hal_power_pixel, vendor_power_prop)
