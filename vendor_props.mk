@@ -9,6 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     audio.deep_buffer.media=true \
     audio.offload.video=true \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     persist.vendor.audio.fluence.audiorec=true \
     persist.vendor.audio.fluence.speaker=true \
     persist.vendor.audio.fluence.tmic.enabled=false \
