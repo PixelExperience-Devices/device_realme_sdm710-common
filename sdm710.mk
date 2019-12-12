@@ -25,8 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    tinymix
+    audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
@@ -35,23 +34,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BluetoothResCommon
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc
 
-# Display
-PRODUCT_PACKAGES += \
-    libvulkan \
-    vendor.display.config@1.0
-
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710 \
-    vendor.oppo.hardware.biometrics.fingerprint@2.1
+    android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
@@ -109,10 +98,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# TextClassifier
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
 
 # Trust HAL
 PRODUCT_PACKAGES += \

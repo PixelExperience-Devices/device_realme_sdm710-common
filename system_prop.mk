@@ -9,10 +9,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.config.vc_call_vol_steps=7 \
    ro.config.media_vol_steps=25
 
-# Camera
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-   persist.camera.HAL3.enabled=1
-
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
