@@ -19,5 +19,5 @@
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 
     <!-- Whether to post reset runnable for all clients -->
-    <bool name="config_postResetRunnableForAllClients">true</bool>
+    <bool name="config_fingerprintPostResetRunnableForAllClients">true</bool>
 </resources>
