@@ -446,9 +446,13 @@
          specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
 
+    <!-- The list of components which should be automatically disabled for a specific package. --> 
+    <string-array name="config_disabledComponents" translatable="false">
+	<item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
+    </string-array>
+
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
-	
 </resources>
