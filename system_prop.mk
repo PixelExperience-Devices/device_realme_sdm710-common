@@ -45,7 +45,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # RIL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.telephony.default_network=9,0
+    ro.telephony.default_network=22,18
 
 # UI
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
