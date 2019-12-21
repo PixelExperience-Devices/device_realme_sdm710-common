@@ -31,6 +31,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BluetoothResCommon
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc
