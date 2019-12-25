@@ -48,14 +48,6 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# Dex
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= false
-    WITH_DEXPREOPT := true
-  endif
-endif
-
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
