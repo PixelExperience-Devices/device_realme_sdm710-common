@@ -58,10 +58,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
-# Doze
-PRODUCT_PACKAGES += \
-    OppoDoze
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
