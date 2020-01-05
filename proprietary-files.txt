@@ -90,16 +90,14 @@ vendor/lib/libsnpe_cdsp_v65.so
 vendor/lib/libsnpeml.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
-# Alarm
-framework/vendor.qti.hardware.alarm-V1.0-java.jar
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib/vendor.qti.hardware.alarm@1.0.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
+# Alarm - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|af790539b68b3a2b4e908dae76d53d63a41df960
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|ace444a46744cc1f99b579ff57503d3be6d33e1b
+vendor/bin/power_off_alarm|7dfd842f50fb9cab2d0ae90996c6df6e3674915f
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|4e66cbe25c3b31662b986ee3b58160f526f04e07
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|af14bdb67a6ea27662a607fff62bd06b20cf8607
 
 # Alipay Firmware
 vendor/firmware/alipay.b07
@@ -112,17 +110,15 @@ vendor/firmware/alipay.b03
 vendor/firmware/alipay.b05
 vendor/firmware/alipay.b04
 
-# ANT+ (system)
-lib/com.qualcomm.qti.ant@1.0.so
--lib/libantradio.so
-lib64/com.qualcomm.qti.ant@1.0.so
--lib64/libantradio.so
-
-# ANT+ (vendor)
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
+# ANT+ - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+-lib/libantradio.so|26556e21001f5d7aa551566209a4e30caed13906
+-lib64/libantradio.so|cc8adb37d332fa5ab74889529c81a90cbef091e2
+product/lib/com.qualcomm.qti.ant@1.0.so|d62a952e299eff4b77a58508338d5ffb5665f056
+product/lib64/com.qualcomm.qti.ant@1.0.so|964da29cf0f2bfb78cc2a5ce34426954c3bf249c
+vendor/lib/com.qualcomm.qti.ant@1.0.so|631c8ec2aff8895f16c5698ae52fd2103795dfda
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|e8a371a61ab7b41bb7f96e35de20f79c5122b758
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|89ddc7c4fca432fa03fc8a222da079853d2ea3b2
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|4c8d6971513503e0ca97b440c04f93b23680546c
 
 # Audio Hal
 vendor/lib/hw/audio.primary.sdm710.so
@@ -179,17 +175,28 @@ vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 # Audio amplifier firmware
 vendor/firmware/tfa98xx.cnt
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-vendor/lib/libbt-hidlclient.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-vendor/lib64/libbt-hidlclient.so
+# Bluetooth - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|534fb85481d21ea403149d62deababe0c5e52605
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|eed5d5188e82fbb430debc61ae7e91b0b16e655e
+vendor/lib64/libbtnv.so|eba20ea0533976aa1d5ea04c68ecddc9cf63dfa0
+vendor/lib64/libbt-hidlclient.so|1321b5a8c10a6b4bbaefc763e6a2eb574f04c6a3
+vendor/lib64/hw/audio.bluetooth_qti.default.so|368f04fecf93b1eb62136b73b856d3225ea63d4c
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|8e5e3cdaf990a5bd942bc4c8a17ca11983b7b020
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|55238eec5e680449aa1497955e31945aaf45f817
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|8aa6208d215c6420dca028698eae0a5cab8e0688
+vendor/lib64/libbluetooth_audio_session_qti.so|1dd80f78ff363d13ee25027e60b06e100e013b94
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|fa6528bb8559bd8364e3f24ab7db8062015ff5d7
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|8c60b11ae1f03a21e7618808bfd946edb37b349f
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|99fefd5c868355ac6ab412156a3817e886e58976
+vendor/lib/hw/audio.bluetooth_qti.default.so|18cac8f5c716bc2292fc94c9829a74deb68e5d45
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|6fc20f0989818eb27226a830563253b05f610ffb
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|5da50b52c616e38c1209f5df28aa8c1c0be1c549
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|ee7bd9eafb209b06d2103f9498c4de38595de0dd
+vendor/lib/libbluetooth_audio_session_qti.so|76666f41d773e848177f3952e90d45d019f5eb56
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|1a1374a4a7bf64cac89520f6c4540240b1f4037b
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|5792daa7c26810bf61006c6d15cbe949bf6d4a79
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|47a838ee1f5729a0244b4d6d3dcaa82e46249c16
 
 # Bluetooth (aptX) - from crosshatch - PD1A.180720.030
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
@@ -509,19 +516,15 @@ vendor/firmware/cryptoeng.mdt
 vendor/firmware/cryptoeng.b06
 vendor/firmware/cryptoeng.b04
 
-# Display
--lib/libsdm-disp-apis.so
--lib64/libsdm-disp-apis.so
-vendor/lib/libdisplayqos.so
-vendor/lib/libsdedrm.so
-vendor/lib/libsdmcore.so
--vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdmcore.so
--vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
+# Display - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/lib/libdisplayqos.so|cf1e9eaafec38a2dba24b51ad9f12a129ecea60c
+vendor/lib/libsdedrm.so|6fe09f656810dfc313d5028ea8d2039d27ca8bee
+-vendor/lib/libsdm-disp-vndapis.so|7c30422da7d653537b51db309f9aa1d1ed100d12
+vendor/lib/libsdmextension.so|55fe4d025316af7958d4d9ebcae2f19afaba6b52
+vendor/lib64/libdisplayqos.so|150f8425a211682d081b67d112bfb4f01433ea9a
+vendor/lib64/libsdedrm.so|1ace45e626ec39636cdc1ed419c9233aef6338c9
+-vendor/lib64/libsdm-disp-vndapis.so|44665c56bb9e89cc55b641e00fced92ddfc96712
+vendor/lib64/libsdmextension.so|a3b4fed84b9766c750e1378b737a93985402b696
 
 # Display calibration data
 vendor/etc/qdcm_calib_data_oppo18041samsung_ams653tk01_1080_2340_cmd_mode_dsi_panel.xml
@@ -529,23 +532,22 @@ vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.x
 vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
 vendor/etc/OPPO_OLED_AD_calib.cfg
 
-# Display postprocessing
-vendor/bin/mm-pp-dpps
-lib64/vendor.display.color@1.0.so
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/libdisp-aba.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Display postprocessing - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/mm-pp-dpps|b1da9a2929cf98369292cbe969259a786c694425
+vendor/bin/hw/vendor.display.color@1.0-service|de01dab653fee79fdec873069eb55bb54bb9fdfd
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/libdisp-aba.so|b7320570e368dece3d9ae0d9026bc91b7bd998fa
+vendor/lib/libmm-hdcpmgr.so|73259643bc489887a2dcb07ae0a62fd2c96d060d
+vendor/lib/vendor.display.color@1.0.so|34be175dfc831a04eb328a25b65364e9f7351f96
+vendor/lib/vendor.display.color@1.1.so|a25ad4229691e53081cdb0977f7cd690ecd836ac
+vendor/lib/vendor.display.color@1.2.so|3638d33f99e9a70b1ba04c4fbb7a49c88032ae10
+vendor/lib/vendor.display.postproc@1.0.so|0af2397d51f24e009a8d0681b150ec847a555ef8
+vendor/lib64/libdisp-aba.so|0e8f8f43317aed02ef6267cfeca59c2fbc1e06f5
+vendor/lib64/libmm-hdcpmgr.so|a27e1e68f6bae380024c2331044a79b5d4e26af8
+vendor/lib64/vendor.display.color@1.0.so|c1350275f730b65dfc0d5132a480dcbf8f428acf
+vendor/lib64/vendor.display.color@1.1.so|50090e00cbfd26961d5081af2a50447ef2ad5564
+vendor/lib64/vendor.display.color@1.2.so|23708e3707dfc6366880ce5cab7b490cbb21d3f9
+vendor/lib64/vendor.display.postproc@1.0.so|ee8a17c19291672bc6d23415be1b356a5b53a60c
 
 # DPM
 bin/dpmd
@@ -652,15 +654,13 @@ vendor/firmware/egista.b06
 vendor/firmware/egista.b04
 vendor/firmware/egista.b07
 
-# ESE-Powermanager
-lib/vendor.qti.esepowermanager@1.0.so
-lib64/vendor.qti.esepowermanager@1.0.so
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
-vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
+# ESE-Powermanager - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|ad84b94fbbbfbfb45b29842b854eec62e5c8af21
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|812ed808b964489e0e2a157ef04de354a5b49e4e
+vendor/lib/vendor.qti.esepowermanager@1.0.so|c58cd1e7d2c8588bc46e06c388904b049423a73c
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|d7756e0b3eb97db47675ba937214b735b9cfde21
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|4e6185c300acabe4dbe397a77e09ced413a58afb
 
 # Face Recognition Firmware
 vendor/firmware/facereg.mdt
@@ -732,11 +732,17 @@ vendor/lib64/libsl_fp_prepro.so
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+# FM - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+-product/lib/vendor.qti.hardware.fm@1.0.so|ce4624bef4783644f4726aa96bd93e660192f7c8
+-product/lib64/vendor.qti.hardware.fm@1.0.so|83c099ceb60c24302bf7f667cdbd15b4ee1911c1
+lib/fm_helium.so|2f1b6d913e162030a23ed854ad4cc6405a3332ce
+lib/libfm-hci.so|d92eb5da4217279c0eb2731ad45bdb3f72db7145
+lib64/fm_helium.so|81d133dbd74194243cdff442cf3a10f06dbd7b8f
+lib64/libfm-hci.so|20b3be5d0afa646b55ed3bc0122dbc86cf8a159c
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|013d1d81b13533841e227e85cc45c2afd8af6e36
+vendor/lib/vendor.qti.hardware.fm@1.0.so|fe98e7a653abe2c17ab75b9b8774d5a4ae19102e
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|4daefcda006d4f6705deff5c6eff222b580ff30a
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|51e2009e10ba869ab529d95ce024b0fab260de8b
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -756,117 +762,103 @@ vendor/firmware/goodixfp.b01
 vendor/firmware/goodixfp.b06
 
 # GPS
-etc/permissions/izat.xt.srv.xml
-framework/izat.xt.srv.jar
-lib64/liblocationservice_jni.so
-lib64/libxt_native.so
-lib64/vendor.qti.gnss@1.0.so
-lib64/vendor.qti.gnss@1.1.so
-lib64/vendor.qti.gnss@1.2.so
-lib64/vendor.qti.gnss@2.0.so
-lib64/vendor.qti.gnss@2.1.so
-vendor/bin/garden_app
-vendor/bin/loc_launcher
-vendor/bin/mlid
-vendor/bin/slim_daemon
-vendor/bin/xtra-daemon
-vendor/lib/libgnss.so
-vendor/lib/libgnsspps.so
-vendor/lib/libgps.utils.so
-vendor/lib/libloc_core.so
-vendor/lib/liblocation_api.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libflp.so
-vendor/lib64/libgarden.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libgeofence.so
-vendor/lib64/libgnss.so
-vendor/lib64/libgnsspps.so
-vendor/lib64/libgps.utils.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_core.so
-vendor/lib64/liblocation_api.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/libcert_parse.wpa_s.so
-vendor/lib64/libalarmservice_jni.so
-vendor/lib64/libDRPlugin.so
-vendor/lib64/lib_drplugin_server.so
-vendor/lib64/libdrplugin_client.so
-vendor/lib64/libevent_observer.so
-vendor/lib64/libnanopb.so
-vendor/lib64/libnativehelpers.so
-vendor/lib64/liblistenjni.so
-vendor/lib64/libloc_ds_api.so
-vendor/lib64/libloc_externalDr.so
-vendor/lib64/libloc_externalDrcore.so
-vendor/lib64/libquipc_os_api.so
-vendor/lib64/libulp2.so
-vendor/lib64/libwapi_cert.so
-vendor/bin/hw/vendor.qti.gnss@1.2-service
-vendor/etc/init/vendor.qti.gnss@1.2-service.rc
-vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so
-vendor/lib64/hw/vendor.qti.gnss@1.2-impl.so
-vendor/lib/hw/vendor.qti.gnss@1.2-impl.so
+# GPS - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/hw/android.hardware.gnss@2.0-service-qti|e3b3aaa651d685fb74c94f6a74d667f181b0058a
+vendor/bin/garden_app|1bd58d6b8425ae3fb1f0c0e7c68235b357075fca
+vendor/bin/loc_launcher|33dd6209d65c765bd3f0dcfebf3e1d95e70c2c22
+vendor/bin/lowi-server|b824012420e67fb976d8c43d91baea4da39038e3
+vendor/bin/slim_daemon|b62adab3bb526626e2dc0fb65cc634ee9fe5e9b3
+vendor/bin/xtra-daemon|cc48aca2b9a32a047e524c29869249ddb28ae711
+vendor/bin/xtwifi-client|3939b5608cc1f48d6d3768fd74e5c17e055835c0
+vendor/bin/xtwifi-inet-agent|07c323ee3bb81a5dbb88af56d8578f97a5c0eee5
+vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
+vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc|488262f63723c789ea9aaed1d63ce32ff8075a15
+vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
+vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml|8d7eafd68db9bbe7ec7a5c4d547f026869766081
+vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml|9b2f6691d6c224bcb9ab9a0d57adfb9e52f1b53e
+vendor/lib/vendor.qti.gnss@1.0.so|56d88fc82eaaadd12ffb5a616e869a0c1493355f
+vendor/lib/vendor.qti.gnss@1.1.so|25352785ed1047d351a3b8597842f0c726a40adf
+vendor/lib/vendor.qti.gnss@1.2.so|a53ac571e7c6038445c51a8b782f5a4890e308cc
+vendor/lib/vendor.qti.gnss@2.0.so|d20a9b1084b27b91863a521d93f0f3128d50c4f5
+vendor/lib/vendor.qti.gnss@2.1.so|9e23256c404090a960561ce9224211a92be21718
+vendor/lib/vendor.qti.gnss@3.0-service.so|a3d2b3f50c6b000ad6887c14d28738ad90f53c75
+vendor/lib/vendor.qti.gnss@3.0.so|77e5c08d127083fef0492657c6cec2527ead572c
+vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so|ccc1900ec89f4f556279fa316b44089077332c71
+vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|01545ad7e4f88df40682382d376eb1620333c512
+vendor/lib64/libbatching.so|8c138fb0cc932a357956b4d7d89cf675f506bf26
+vendor/lib64/libdataitems.so|2e3dfa71e17a66fe30672f4eed8f66d122c9fd89
+vendor/lib64/libgdtap.so|31a21ff8c69ed4a666709b6f77b7c1d90e37bc36
+vendor/lib64/libgeofencing.so|f3ec21312fa5bf49bbaa8c530fe94610b2e03d41
+vendor/lib64/libgnsspps.so|d339caab109975c528b91ffdade041a210e32ff0
+vendor/lib64/libgnss.so|1d3353c7aa8421eae2d5580c6b6b10361f948407
+vendor/lib64/libgps.utils.so|749ec49097a18c6cb1b7c251c680d83fb4ca4ca0
+vendor/lib64/libizat_client_api.so|9344ef056bea674f0c873416ecb531d35f2030ac
+vendor/lib64/libizat_core.so|32c007959d8253f23d71cc650e3f7db812bb1554
+vendor/lib64/liblbs_core.so|7b0d435913b520c223d4dc7baa94d4bce7cc3024
+vendor/lib64/libloc_api_v02.so|042bb2c55fc57e947257cb89acec229cd80ea9af
+vendor/lib64/liblocation_api.so|fed3d1b32aab1f41289e5bf3aa5c28f77c6e302b
+vendor/lib64/liblocationservice_glue.so|ddec1effad536486d73ba19ca36c0bec1caeb031
+vendor/lib64/liblocationservice.so|2d662fda6609d66544d48185479731098f446dcc
+vendor/lib64/libloc_core.so|69371d6367b3354aa36029cc5884aacc79524a0e
+vendor/lib64/liblowi_client.so|8e9399005587be1da7d5a44bee417cb5a80998e1
+vendor/lib64/liblowi_wifihal.so|7874f1f383e6b4cec2aa3df716528d4b28062b1c
+vendor/lib64/libqdma_file_agent.so|b21d71e0942768635e691a13068dcfa409d0359d
+vendor/lib64/libslimclient.so|d7957c38d61dfdb918852bfc8295de4d391292f7
+vendor/lib64/libxtadapter.so|e7e49970e254046fa98c31f7c13b56a828a3afdc
+vendor/lib64/vendor.qti.gnss@1.0.so|0d6188de2f711493c000ade24513d43216f93f8e
+vendor/lib64/vendor.qti.gnss@1.1.so|fd78f5bdf57ec9abceeb06f3de56e2e9a85bee2a
+vendor/lib64/vendor.qti.gnss@1.2.so|a83cccf50510161e0e762a011801a5092fed4865
+vendor/lib64/vendor.qti.gnss@2.0.so|a3512123a91a28b0d3b390b8c3cefa1d7a8a54a0
+vendor/lib64/vendor.qti.gnss@2.1.so|fa145bea66de29bcd93f4da28943dfa288335f76
+vendor/lib64/vendor.qti.gnss@3.0-service.so|592b30d57dee4b5acd2b55ad5d1a6964662dd6c5
+vendor/lib64/vendor.qti.gnss@3.0.so|728a662489358ac47589e69b909cd9de438591a0
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/hw/vulkan.sdm710.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libhdr_tm.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libqseed3.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-diag.so
-vendor/lib/libtinyxml2_1.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/hw/vulkan.sdm710.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libgsl.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libtinyxml2_1.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
+# Graphics - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/lib/egl/eglSubDriverAndroid.so|b7669ce41dcdf5738caef00ff21deec2375b2f1d
+vendor/lib/egl/libEGL_adreno.so|c749acf17f7c3bb94d8c2e36bceaa2a3114f8e4e
+vendor/lib/egl/libGLESv1_CM_adreno.so|959e1bcfe43f8926cd89e3e4978b499e314a9182
+vendor/lib/egl/libGLESv2_adreno.so|c4f792c8080ccf96b4946e39e29ff4b490b4f4a9
+vendor/lib/egl/libq3dtools_adreno.so|61f3c4c0acefa9787b40c8fdc9924e7d9a9fa482
+vendor/lib/egl/libq3dtools_esx.so|9e78e97436edcac57f60113898e04477f27fd263
+vendor/lib/egl/libQTapGLES.so|70985a5abbfd70ef8944347b6e65d07489a928b2
+vendor/lib/hw/vulkan.sdm710.so|da9fbff4251900ac24ca7e133ec2238f54efdfd7
+vendor/lib/libadreno_utils.so|d3a70fe9176d054792c2a3ae1ab958de2d9ddf14
+vendor/lib/libC2D2.so|5ff62cec73a0bddf876bf780dc744318359e0cc5
+vendor/lib/libc2d30_bltlib.so|5a27c8901cc97440d6f7a8c9c8cf608964cc5d6c
+vendor/lib/libCB.so|0188358afb50663b38506440c10ff9c8493ea100
+vendor/lib/libgsl.so|bd1277227774740063dbb12f5c93dbe659607c76
+vendor/lib/libhdr_tm.so|2618431054b1df628f0203f4014d8285cc6db024
+vendor/lib/libllvm-glnext.so|11e4e0f8f288176e7dd7868a3e135139686510bd
+vendor/lib/libllvm-qcom.so|65059c32126cdb0065e42a58c67b878db655c059
+vendor/lib/libOpenCL.so|34297b757c38d45d435086c60f1fcd707b537d68
+vendor/lib/libqseed3.so|10614273abe5656c3bfe4a7598546671e3e404e0
+vendor/lib/libsdm-color.so|732e2fc856ad91bc1f6e8dc5b1b73d874b118ba2
+vendor/lib/libsdm-diag.so|e483fd24559dde1bd1c10c5a76dc2024f63fe796
+vendor/lib/libtinyxml2_1.so|8f4bfaed0898db82c1af60732b22005048d75935
+vendor/lib64/egl/eglSubDriverAndroid.so|a6ff40df2b10b078b18f2487ba0fa3f642f93170
+vendor/lib64/egl/libEGL_adreno.so|d909102303c57cf0ebe22873064a674e7aa67238
+vendor/lib64/egl/libGLESv1_CM_adreno.so|ad4712cd782cff36e980ea09fcc430cf296aecd0
+vendor/lib64/egl/libGLESv2_adreno.so|9c82ac9daa6c6ff559f91176b0e628db213da953
+vendor/lib64/egl/libq3dtools_adreno.so|4b388cf05766d2499a3205f3d5afec4b269b41b7
+vendor/lib64/egl/libq3dtools_esx.so|93d1b81b7436390496e9743595530f6a39369088
+vendor/lib64/egl/libQTapGLES.so|3eaaabb9b41f8120f0af8baf6d0ba358ee109d82
+vendor/lib64/hw/vulkan.sdm710.so|6df9df52bee5210b9499f1c6387d03646e770d5e
+vendor/lib64/libadreno_utils.so|b866190d29e2e1a2bb6103f57f94b4fc1c838956
+vendor/lib64/libC2D2.so|49ca41a73792e5cdb99624e284da104f30f2e238
+vendor/lib64/libc2d30_bltlib.so|0d3b426b5f552f6eadc6d34ea32a290c8c3abf03
+vendor/lib64/libCB.so|11bc461e70a5bb046c1012c3391d9f9e654d95b7
+vendor/lib64/libgsl.so|52f09852b4f84cbd9d322340c35a423b8b201284
+vendor/lib64/libhdr_tm.so|3b05a903e2123affd21cf6fac8896b6bc02ba9d5
+vendor/lib64/libllvm-glnext.so|b4b7f750ee8e5e547ece2b4c4a8f87b2d9421434
+vendor/lib64/libllvm-qcom.so|1b49558302445de3abe8e8200c25333511a7a84a
+vendor/lib64/libOpenCL.so|c6f3dd2f32b1eaf7ddccf890e4f28a76e653a6f5
+vendor/lib64/libqseed3.so|4efeb38c17d3e677c0648a701c29c359a0a8c283
+vendor/lib64/libsdm-color.so|95966298c80b4890e0556ea9b9f999707576e7f0
+vendor/lib64/libsdm-diag.so|b72a36d58b324821b51fb6d3b4242550e09192f3
+vendor/lib64/libtinyxml2_1.so|062b2b75679c838c3fba6fcf63ee2be956ffeaba
+vendor/lib64/libRSDriver_adreno.so|ae123c86c212e6d42ade91958d3e8a4c2db7666f
+vendor/lib64/librs_adreno.so|58f8c599039a5435ce641cf82929f1166d436615
+vendor/lib64/librs_adreno_sha1.so|6064ad855d36d69ff231aa71241075e3389e1036
 
 # Graphics firmware 
 vendor/firmware/a615_zap.elf
@@ -897,16 +889,6 @@ vendor/firmware/a225_pm4.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/a530_gpmu.fw2
 
-# IO Prefetcher
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
@@ -932,122 +914,118 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 
-# Latency
-framework/vendor.qti.hardware.data.latency-V1.0-java.jar
-framework/vendor.qti.latency-V2.0-java.jar
-lib/vendor.qti.hardware.data.latency@1.0.so
-lib/vendor.qti.latency@2.0.so
-lib64/vendor.qti.hardware.data.latency@1.0.so
-lib64/vendor.qti.latency@2.0.so
-vendor/lib/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib/vendor.qti.latency@2.0.so
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib64/vendor.qti.latency@2.0.so
+# Latency - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
+product/framework/vendor.qti.latency-V2.0-java.jar|d345e24271b83faecdb1abe1361db812fae0646f
+product/lib/vendor.qti.latency@2.0.so|466f2dd3e69b81a6f058bafa1ef8c340cd9c2b98
+product/lib64/vendor.qti.latency@2.0.so|c23e71ee4a755944393a2e4e2787fe3d02cefc8f
+product/lib64/vendor.qti.hardware.data.latency@1.0.so|9d6ca29a9a9ae10b923a8b76758b54cf3e237642
+product/lib/vendor.qti.hardware.data.latency@1.0.so|98e42d70368ae1f3345a9c6e1689ec743e03832e
+vendor/lib/vendor.qti.hardware.data.latency@1.0.so|70b5f26dfb7e6b29a091473812292e1715d06467
+vendor/lib/vendor.qti.latency@2.0.so|8fd4728c89a0700c85e2eb4ed15ee3608ddb148a
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|10d24f1e86e4ac55fd2acb0fbb68f9585cfef1f3
+vendor/lib64/vendor.qti.latency@2.0.so|39c9f71ff80942bc2a6c6984fada97dfed6286a4
 
-# Listen
-vendor/lib/hw/sound_trigger.primary.sdm710.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libmulawdec.so
-vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.sdm710.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-vendor/lib64/liblistensoundmodel2.so
-vendor/lib64/libmulawdec.so
+# Listen - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/lib/hw/sound_trigger.primary.sdm710.so|dbb9a91a6d0cc7d9c464ab38cfc09518ec46e2ec
+vendor/lib/libadpcmdec.so|0814f09dc41317a5b63064acccdf94f22ce55000
+vendor/lib/libcapiv2svacnn.so|4809641628c8372e382ffa7fa3e79ebdb2bfd40e
+vendor/lib/libcapiv2vop.so|c71c693035d63abdc0ba9d489c3d381897a401f8
+vendor/lib/libgcs-calwrapper.so|cf952009e8ca79c939c526ce50c13f58545bea9d
+vendor/lib/libgcs-ipc.so|5cb7b46e45975147e8a1fa590e1045c043457423
+vendor/lib/libgcs-osal.so|534918053aab6c6b04ea99fc40219fc276ee81f2
+vendor/lib/libgcs.so|d1810f491b524b3e93a279a13f35b9d64dd44642
+vendor/lib/liblistensoundmodel2.so|41303027ac7bac4bf7759df05f59481c577c9308
+vendor/lib/libmulawdec.so|e96b3dd6faeb3c104de6ac629a3c51364048a848
+vendor/lib/libsmwrapper.so|6064d4fb548da1698d310d5e71e2419425b43444
+vendor/lib64/hw/sound_trigger.primary.sdm710.so|83b1007d6c38476186b0d37769fb6a3c02c92934
+vendor/lib64/libcapiv2svacnn.so|bdf9d1c07925832d9f6c87a9e5216ab1797dfef6
+vendor/lib64/libcapiv2vop.so|03160a5821bbd1d5022129d23fee6ff24b91c094
+vendor/lib64/libgcs-calwrapper.so|aaa0fc594fd8fadd01b1c8f1bf995309b2eb0b76
+vendor/lib64/libgcs-ipc.so|0a547b8d7fa2d1c3b6e9800e352547044d8fe3db
+vendor/lib64/libgcs-osal.so|c1bfe5e694541e9f6ec700e04df33550b5948d05
+vendor/lib64/libgcs.so|db46e72b8e94c8d05fdc7a6c97fbfabf83e4e8ac
+vendor/lib64/liblistensoundmodel2.so|77bc963e0d930c2e7909c56b6a4534d0b8abac2c
+vendor/lib64/libmulawdec.so|e9c4538a519b47af966c51284db83c26e8d83e15
 
-# Media
-lib/extractors/libmmparser.so
-lib/libFileMux.so
-lib/libmmosal.so
-lib/libmmparser_lite.so
-lib/libOmxMux.so
-lib/vendor.qti.hardware.vpp@1.1.so
-lib64/libmmosal.so
-lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/bin/vppservice
-vendor/etc/system_properties.xml
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal_proprietary.so
-vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvpptestutils.so
-vendor/lib/libvqzip.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vndk/libstagefright_foundation.so
-vendor/lib/vndk/libstagefright_omx.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmmosal_proprietary.so
-vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVpp.so
-vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/libvpptestutils.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/libavcodec_vendor.so
-vendor/lib64/libavformat_vendor.so
-vendor/lib64/libavutil_vendor.so
-vendor/lib64/libffmpeg_omx.so
-vendor/lib64/libffmpeg_utils_vendor.so
-vendor/lib64/libstagefright_soft_voh264enc.so
-vendor/lib64/libvoh264enc.so
+# Media - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+lib/libFileMux.so|dafde1683285c6b9f0c7179f7d7719658bea8060
+lib/libmmosal.so|335e8ac36b68b88129ea35fbdff0cf6ae6335937
+lib/libmmparser_lite.so|6c7ca134db30b5be84a1f38eea06d8d1e9267bce
+lib/libOmxMux.so|c70f14687364584886e35e64ea9b5515955bf17f
+product/lib/vendor.qti.hardware.vpp@1.1.so|824a945cc3d5da9249c79c5285b7cf6f749381b4
+lib64/libmmosal.so|d2f962d4a995e796fc2dda57139d741663b1efba
+product/lib64/vendor.qti.hardware.vpp@1.1.so|dfa692923c68105296c350db8ac556119d87a88a
+vendor/bin/vppservice|fadd3babc6376d0f66b7778d8ccd48c44d439d00
+vendor/etc/system_properties.xml|402d4fd0ed7fc1bc7ba3ef7d866eb10288646a13
+vendor/lib/libAlacSwDec.so|9275befb81b9e19742adb86c820696cfc2575ef7
+vendor/lib/libApeSwDec.so|0364256befc49c87652d5d5562ab9e77ca794ba4
+vendor/lib/libdsd2pcm.so|0488e2eb6bbb32f44d7b92e66284db8cad653459
+vendor/lib/libFlacSwDec.so|dde3936e2e54913b098e10e0b4c10f68000a429d
+vendor/lib/libI420colorconvert.so|497b6a08a85d9ecb407436c5fea5bd9c06e78b82
+vendor/lib/libmm-color-convertor.so|a3ed60688689d96bf1af01f75e93be9a54b13788
+vendor/lib/libmmosal_proprietary.so|eaf98e732dd9e8db4bd6f15c2fd16856a3cb67bd
+vendor/lib/libMpeg4SwEncoder.so|041d28982c0d239b44a237e6cab077283e242985
+vendor/lib/libOmxAacDec.so|857c25d6b6c975dca4f7e9bc599c752cf5c7589c
+vendor/lib/libOmxAlacDec.so|70d4105f82e52229d510b3b383dd55eb2f2386a0
+vendor/lib/libOmxAlacDecSw.so|f2a9b9c2224970868777abe0cb3632994c2b7251
+vendor/lib/libOmxAmrDec.so|35abdf0c149b590754b8a163b746985f31b95288
+vendor/lib/libOmxAmrwbplusDec.so|a9dd7e2d5bbf3db757c32a516be828f65fea0ad1
+vendor/lib/libOmxApeDec.so|0f5ce98802e0124401bc8bce7e2afd46c7b3cdc9
+vendor/lib/libOmxApeDecSw.so|33a5828bc062b2100eab86d2f629097734032f27
+vendor/lib/libOmxDsdDec.so|6f7a69bd2098d6b6e43e746787b6d3a6dd86a484
+vendor/lib/libOmxEvrcDec.so|a27fe585ca3017a489ee7672339ae6230718cf38
+vendor/lib/libOmxG711Dec.so|788a6359a970ee42e6f0cf7a3360db8ba636a8ef
+vendor/lib/libOmxQcelp13Dec.so|edf98e7e29cfaa62bc3a361a2667c0117f5f37ce
+vendor/lib/libOmxSwVdec.so|1ccb97ca5e2ab4a5a92279d43ab32c6c9a5b935c
+vendor/lib/libOmxSwVencMpeg4.so|26392f7181f72b21487d10f8bf2fe59720352838
+vendor/lib/libOmxVideoDSMode.so|6b5d4e8ae108cff5161879f6e88940d2823e2648
+vendor/lib/libOmxVpp.so|09483e96c8d0291284ade6177301d29602d7e74f
+vendor/lib/libOmxWmaDec.so|b9917a296871370e65f9403e6b4917af62efa577
+vendor/lib/libstagefright_soft_qtiflacdec.so|9a51e5915bdee3aee006891cb3ae4ddd433c7aa4
+vendor/lib/libvppclient.so|fc876b034dbaa3fe487ad2b8ff3674c0baa4efb6
+vendor/lib/libvpphvx.so|bd54e9303c394476d0dd7dda4c98d22e84b11da4
+vendor/lib/libvpplibrary.so|4694d42256a486e762dc9a854fd8e6d35c5db043
+vendor/lib/libvpptestutils.so|7a07667c142d942485cf48c601f67cbba431bbf7
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|0e56d081306854f6cdded22a382e8b4ec83bfe64
+vendor/lib64/libAlacSwDec.so|78e5860a1806e60fdd80f4af05d186f9aae44546
+vendor/lib64/libApeSwDec.so|0ac6e26ea1cd893af7a2556ee8e8964bc511ad7d
+vendor/lib64/libFlacSwDec.so|38a7b3598c428bc2a6a4363deda1e3224fd06f72
+vendor/lib64/libI420colorconvert.so|07c9a6f355ea1a62351fe722fc132ee42712a9ac
+vendor/lib64/libmm-color-convertor.so|d2dcf9c2aa7a6806a81a3ded36b72ccde24df515
+vendor/lib64/libmmosal_proprietary.so|9b4be7c730660d40e6f0e7eae52affa12e2c2439
+vendor/lib64/libMpeg4SwEncoder.so|80f6564cacf3411911b8b834e833a10313a922a2
+vendor/lib64/libOmxAacDec.so|4b5f0bd2206552faa73cffd9e765de0430f4e3c7
+vendor/lib64/libOmxAlacDec.so|a78d7902226496a8278c412da245cd9e318dc53d
+vendor/lib64/libOmxAlacDecSw.so|a1b856557b545190c843c9879ea4b7c38ea2c5f5
+vendor/lib64/libOmxAmrDec.so|799f386e6504ff3565a60afaa700a881da7d119d
+vendor/lib64/libOmxAmrwbplusDec.so|17cb2567a9f3f1e563c5cd918c99d688bcfa729f
+vendor/lib64/libOmxApeDec.so|4b42891ba3d448db33abc58a9a262bb08908d3d2
+vendor/lib64/libOmxApeDecSw.so|0501d754ba8eb69d62eabd64e2c15f8c7159dbd5
+vendor/lib64/libOmxEvrcDec.so|097665c6eadb5fa583468f5e1616c342ab186e9c
+vendor/lib64/libOmxG711Dec.so|10b1df57edca738f47de0e48f4a0933052ceffa2
+vendor/lib64/libOmxQcelp13Dec.so|c469124194a2d2e6fbbca5304b9d013b833d4e12
+vendor/lib64/libOmxSwVdec.so|c041ea09cf20e62ccef944df8e33a704feaea871
+vendor/lib64/libOmxSwVencMpeg4.so|654b5072cbb31733fe441f36f79761c63e0e1722
+vendor/lib64/libOmxVpp.so|086c7b8b6657c78eba5ecfb870a8bdd2102b87bc
+vendor/lib64/libOmxWmaDec.so|cc91de9740c646dfb212c4b6c8af30a51d6675d4
+vendor/lib64/libstagefright_soft_qtiflacdec.so|f3d09182a3dd05e44912b5c50b1a345d723d8a3f
+vendor/lib64/libvppclient.so|e14ea920bd2d436410a41ba717197262c4ad87bb
+vendor/lib64/libvpphvx.so|3f92603b486edbd489ee8040897e751a96af83f4
+vendor/lib64/libvpplibrary.so|4c9974eb244c43518465fff7a4bb6c064a339767
+vendor/lib64/libvpptestutils.so|01e4fffd18684c08963313d439b9166b5b309aa7
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e6fc7cae3215ca39745b5e85d937a7fafca9ed5f
+
+# Media Configstore - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|7ed46c4c8d0200ede4db5fabeb8aca402318f013
+vendor/etc/configstore/vpp.configstore.xml|d5095f33c326017a21fff186d19a2ce146b85d94
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|e30051bc2da78e74bd74cd664306e5b20e299720
+vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|3b6750475997b68317d59244b366677537b2b3d8
+-vendor/lib/libplatformconfig.so|bd3652d82ecafae6203d9f41bde6860190c45d0b
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|1649be928c3d7b7bd0237b5cbf8dca7f19627aab
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|96280f92fe1c84179a3a0a52585d18904fdaab7c
+-vendor/lib64/libplatformconfig.so|aaf8d8e9c6ae76676d3232599afd1b17e764ae0b
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-qti
@@ -1130,41 +1108,56 @@ vendor/firmware/audience/cvqmodels/refModel/ref_BaiDuYiXia4.model
 vendor/firmware/audience/cvqmodels/oemkw_Hello_VoiceQ.bin
 vendor/firmware/audience/cvqmodels/oemkw_Baidu_YiXia.bin
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
-vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
+# Perf - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+product/lib/vendor.qti.hardware.perf@2.0.so|266e111e402d29f3713c656df3dc6678cd1c5d7d
+product/lib64/vendor.qti.hardware.perf@2.0.so|d4569c43c32a2ec851e45b6084fc7e08dd89f0ca
+lib/libqti_performance.so|5060214a293a6949c92acaf19d6e1adef12dba10
+lib/libqti-perfd-client_system.so|cd36868f3f9eed8dca5a661f7ebdff8ccfc4b401
+lib64/libqti_performance.so|5f719089c377f77a62ca40647450b36c2b710773
+lib64/libqti-perfd-client_system.so|cc52dfe74158017838ca1e4881bb0c3628423ec9
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|ec54271b7fe6e60c297bcb668a3466cd8a666bb4
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|0101a3294311c2988060a00f7b25d8abf2f428f9
+vendor/etc/perf/commonresourceconfigs.xml|9e277f76243eb5ad16d3e55843aadf68a54e7aaa
+vendor/etc/perf/perfconfigstore.xml|440eeac31d2c8ff3309de65c01505310276b5e47
+vendor/etc/perf/perfboostsconfig.xml|04c53be260bb060fa886a21e7e8111f3916efa1a
+vendor/etc/perf/targetconfig.xml|788ced0689fe95a42e881ea86f3aefc0b4b64042
+vendor/etc/perf/targetresourceconfigs.xml|dea9afb72aef1aa48884bf70749f3d0b33d7ecb7
+vendor/lib/libperfconfig.so|aafdb4401a85f4d7b391fad621843debae580a35
+vendor/lib/libperfgluelayer.so|0090fb4efe03bab1773ee174b29fb5e8d6bd6a7c
+vendor/lib/libqti-perfd-client.so|7caa9783eb30a34eecac770505bbf86ee1e9bb62
+vendor/lib/libqti-perfd.so|b558ab16217bee6b5bc4c6500f51ecefd19277c9
+vendor/lib/libqti-util.so|9532fb89585d38709160e3b7c28769eb209a997c
+vendor/lib/libqti-utils.so|d545c4b61690b0920b1fc7849b2ab393785857ed
+vendor/lib/vendor.qti.hardware.perf@2.0.so|dc085d75c5be72e5e5e36dec420d6353574973dc
+vendor/lib64/libperfconfig.so|39df6be26d7fb9420bcb4f8be43277ee8c8f0fba
+vendor/lib64/libperfgluelayer.so|33659b1cfe28126df3580ae504b3eb4f17fde8ac
+vendor/lib64/libqti-perfd-client.so|b343197f7fb2b41048e4be4e8c75d13e276b8cfb
+vendor/lib64/libqti-perfd.so|4ee49fe245f9eb73cd20fe63c930dca453bc36ff
+vendor/lib64/libqti-util.so|04be2c51cddf63689db1dfa490a697379ecb825e
+vendor/lib64/libqti-utils.so|c6c96af1b3d15b32206882ae44a3d02d88e5202c
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|5f9077ec1314e2d1bd03eda4d31f76c7f1ce7e1b
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Perf - IOP - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/lib/vendor.qti.hardware.iop@1.0.so|84c6e46f5f6644518ff20d406a97401f5d179ee5
+vendor/lib/vendor.qti.hardware.iop@2.0.so|11cfc3b61853ca647878da82d7f131b5f0b87267
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|c0e92630e7dc339e2c3772a6229181fc7980a294
+vendor/lib/libqti-iopd-client.so|6fbc7c917d44e8ec40f0b46a255aafa9f11103f5
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|00fd7f75435e5436e4998d5d81c068f7d6e3c18b
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|3a2ea07bbc1ef859c1c959245dbfe0227b6d1803
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|e35e6391bc6293033ee2712d0f3302a084e74eee
+vendor/lib64/libqti-iopd-client.so|5ff9cc9294eb7347ce15d8b4af26d5628ec330d0
 
-# Qualcomm Display Utils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+# Peripheral manager - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/pm-proxy|81cd613123ed524d517375377f0eeea6e1463fc3
+vendor/bin/pm-service|e71c162bd09e5823cb89446df70f14116a7df5ad
+vendor/lib/libperipheral_client.so|d4e89606c8d180368f294ab37f39ca996de3d8aa
+vendor/lib64/libperipheral_client.so|d87217ba55d7fc1496445f8814100cf31f9cab68
+
+# Qualcomm Display Utils - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|34ee510604b6d8b47cc492f8be2ed9a06563b64a
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|5ab6c87792eb610e35ae575ced7b67f33d5bba7e
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|695c43548e9bf1719bbd460f80db1cacc5abe405
 
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
@@ -1489,10 +1482,10 @@ vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib64/libtime_genoff.so
+# Time services - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+-vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
+vendor/bin/time_daemon|0431ad6f6f7bc3aa72a9798aa55a9d0b496ea06f
+vendor/lib64/libtime_genoff.so|746db5267fde236de820fa7d887386f65aea7a8a
 
 # Touchscreen firmware
 vendor/firmware/tp/18085/LIMIT_S3706_SAMSUNG.img
@@ -1510,11 +1503,11 @@ vendor/firmware/tp/18097/FW_S3706_SAMSUNG_FAE.img
 vendor/firmware/tp/18097/LIMIT_S3706_SAMSUNG.img
 vendor/firmware/tp/18097/FW_S3706_SAMSUNG.img
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# Trusted User Interface - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|f14d7f1497aad5917acf4dad78ece07e4919f930
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|3f5ad85323db888067e8f98eafce5f43f558fcbc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|c6772b82c02af368d9b52f4c84b98f1e5a9f7123
 
 # UFS Firmware
 vendor/firmware/ufs/SKhynix-H9HQ53ACPMMDAR.bin
@@ -1528,44 +1521,83 @@ vendor/etc/wifi/fstman.ini
 vendor/etc/wifi/sar-vendor-cmd.xml
 vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 
-# WiFi Display
-bin/wfdservice
-etc/init/wfdservice.rc
-etc/wfdconfig.xml
-etc/wfdconfigsink.xml
--framework/WfdCommon.jar
-lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-lib/libwfdaac.so
-lib/libwfdavenhancements.so
-lib/libwfdclient.so
-lib/libwfdcodecv4l2.so
-lib/libwfdcommonutils.so
-lib/libwfdconfigutils.so
-lib/libwfdmminterface.so
-lib/libwfdmmsink.so
-lib/libwfdmmsrc.so
-lib/libwfdnative.so
-lib/libwfdrtsp.so
-lib/libwfdservice.so
-lib/libwfdsm.so
-lib/libwfduibcinterface.so
-lib/libwfduibcsink.so
-lib/libwfduibcsinkinterface.so
-lib/libwfduibcsrc.so
-lib/libwfduibcsrcinterface.so
-lib64/libwfdclient.so
-lib64/libwfdnative.so
--priv-app/WfdService/WfdService.apk
-vendor/bin/wifidisplayhalservice
-vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
-vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-vendor/lib/libwfdcommonutils_proprietary.so
-vendor/lib/libwfdhaldsmanager.so
-vendor/lib/libwfdhdcpcp.so
-vendor/lib/libwfdmmservice_proprietary.so
-vendor/lib/libwfdmodulehdcpsession.so
-vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-
+# WiFi Display - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+bin/wfdservice|5250dbf3b66a1116f03516a3bbe1f1eabbfcc173
+etc/init/wfdservice.rc|117d11af28ceda7ecf6009d7dc10ffc6bda25fa5
+etc/wfdconfigsink.xml|75c1e192ccc6248a860958026950c6bc4f052ef7
+-framework/WfdCommon.jar|00e8b3cd1303785928d3146f4ddbfa7dc84e16dc
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so|7387190f13baf148543c307480df99a076618c84
+lib/libmmrtpdecoder.so|1ba71d840bf2bff1864ee4f6332e3eacda44e255
+lib/libmmrtpencoder.so|416f9ff26b2f928a447fa15cc5bef92ceedaa56c
+lib/libwfdaac.so|4bd42277295aba6ad209f47c49ca28debb62eaca
+lib/libwfdavenhancements.so|d606af6e3ca25a50e29221ff469311b38f0e34b7
+lib/libwfdclient.so|ab60fba6a71bef30909ea4fe3e8e2f73cb052db8
+lib/libwfdcommonutils.so|4ed897b02e9cb2804929141985ccf45b18f5a1e8
+lib/libwfdconfigutils.so|6224a2bfc71555aa65c113a800428bd5dc082423
+lib/libwfdmminterface.so|31e751dd8d118e7e55ffe0b111283dd81e2ae102
+lib/libwfdmmsink.so|5473b7d3363563512fc82d96555f39cb63e04643
+lib/libwfdmmsrc_system.so|402c922a7a0f3d9c60c70d8109c2d9d18cc411d6
+lib/libwfdrtsp.so|27711cd0a109a359fbada1d54a3ead986ebd263e
+lib/libwfdservice.so|caed2a7cb280f526790d8bf1b120ceaf005db8f2
+lib/libwfdsinksm.so|2916af1ebeb20040ca4597befc8f7d5f01d5f576
+lib/libwfdsm.so|0ae234f4f2e546487bd5905a5a290fa673fabdef
+lib/libwfduibcinterface.so|00e90fc4a785f08c4842983eb069994229e6f065
+lib/libwfduibcsinkinterface.so|f60b4287038486cc0c7c92f3b818473a3414914f
+lib/libwfduibcsink.so|157f1805bd25abc19da72ae4e39ec8441bb02f0e
+lib/libwfduibcsrcinterface.so|dfbdeb4662e96f664d6dcfd4d66b92979d0ea7c3
+lib/libwfduibcsrc.so|54cb902462c0e469941b03e1ff666057b06d2a12
+lib64/libwfdclient.so|db656ded49672966da8858590f6f75342bfaf584
+lib64/libwfdcommonutils.so|1cb41cb8f8b6e63674e62e0b635ac1b57e5e11df
+lib64/libwfdconfigutils.so|c07b3da1ed2f805f262dfaf6c739d4860b3733cd
+lib64/libwfdmminterface.so|b3aeba0a73985a4231ed31d9d9cdab3c98785cc4
+lib64/libwfdmmsink.so|b114ce4ff651743de76a40376b47a4a8aa2b727d
+lib64/libwfdnative.so|9e6af92f176b365b961b70fa83c6e5f22a8785cf
+lib64/libwfdrtsp.so|f41666447a0ffc31085488fa5211368497ea4e25
+lib64/libwfdsinksm.so|35a5f347ffdbe9a9b5edf405d3f0061e20e1f085
+lib64/libwfdsm.so|2716411131dfa08fbbd4623c86cd2980d48942f2
+lib64/libwfds.so|64e128c733c640c0fabf3196d360c10880c11d4a
+lib64/libwfduibcinterface.so|073315b9d15ca4d70a91304cf01f272d5977d1c6
+lib64/libwfduibcsinkinterface.so|19251d6b8eebc4ff75298332e65a9854e6996ffb
+lib64/libwfduibcsink.so|dc4a0d2157a993a19b01faf225f85c2daa8f6cee
+lib64/libwfduibcsrcinterface.so|71c29aab1b917b1094e2dbb927fdd4688cec260b
+lib64/libwfduibcsrc.so|49deec3741046c52756095bc550a7c3c4ddbc55c
+-priv-app/WfdService/WfdService.apk|5c45ed954729fa9f80318b017f8a0aad2281eb1a
+product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|e4d08ca23dc0ff355ece2c4349d57340590fb45d
+product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|ce7e9ee647f2bd3e0710ceb76208a7b54f45c51f
+vendor/bin/wfdhdcphalservice|a721ef21e35da22d4a223f6ab36954772f99e218
+vendor/bin/wfdvndservice|31001691ffd3ed572d39cf366949f566a1066a83
+vendor/bin/wifidisplayhalservice|8a4ed93c9164f978c67f4cca5213e8486a2c3e0d
+vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc|c266f08783a17f6583e3f22c85e55b0c200442ea
+vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|ca2f5157de56d0917243522f609022b3faad3ddc
+vendor/etc/init/wfdvndservice.rc|42e28fb8e0bf00620d7b9939b5bd3164ca671033
+vendor/etc/wfdconfig.xml|73c61ab7260b3979b4440623e407fc73c26c44fe
+vendor/lib/libmmrtpdecoder_proprietary.so|2656a281def0f889be90235820637980722ed6bc
+vendor/lib/libmmrtpencoder_proprietary.so|abc7b726af69b98f7c379b47965163c0c0690318
+vendor/lib/libwfdaac_vendor.so|00972d358ca0b9db2dd060f6e6e6d66ed0116e9c
+vendor/lib/libwfdcodecv4l2_proprietary.so|d4f7ac3ba14cdc25d7a4d54bcd6c32a07ca4c017
+vendor/lib/libwfdcommonutils_proprietary.so|8ab35a260c0bbde5baf9ab320ae35da0f07792e9
+vendor/lib/libwfdconfigutils_proprietary.so|30bd780a7ee73da69299afe70ce16d6771d4361f
+vendor/lib/libwfdhdcpcp.so|eb277ac1384cccca4cb282b4d9f6bf0e901b310c
+vendor/lib/libwfdhdcpservice_proprietary.so|eed5e01dc9b9d6b0422884dc110ba25d3cd4647a
+vendor/lib/libwfdmminterface_proprietary.so|44e7657034852bd0957d5069e6f105a80916b107
+vendor/lib/libwfdmmservice_proprietary.so|a0b608f6855cd41553b1b71582fb7128b4a2a7cb
+vendor/lib/libwfdmmsrc_proprietary.so|acefd7de547531185c27a5e718662e21cbd3e2c7
+vendor/lib/libwfdmodulehdcpsession.so|d5aa297d47930db18a7eda5d2fa1eaef5b707eab
+vendor/lib/libwfdrtsp_proprietary.so|83d0e3a89579f39903fa8ee6ab6140b0dba0b4ab
+vendor/lib/libwfdsessionmodule.so|c6ace35c2ad866b4f79eeef8eca984543bf309cf
+vendor/lib/libwfdsm_proprietary.so|081de59664adcd7448924107654943c5f9a9c2e3
+vendor/lib/libwfdsourcesession_proprietary.so|2adef91905482bf4f2369cbbdbab5ccb285c4c61
+vendor/lib/libwfdsourcesm_proprietary.so|fc9f1e89a59f353db9907bcc00f2bd98329e1be4
+vendor/lib/libwfduibcinterface_proprietary.so|b37c43b3bc2d6aa7ecf1a36a8b153b3ce36c88ff
+vendor/lib/libwfduibcsinkinterface_proprietary.so|a0888e2b57b9ada754b068a66b3405356fc3dc47
+vendor/lib/libwfduibcsink_proprietary.so|7b4f39dcb532be79bd4d9ee4649986b94a9234b5
+vendor/lib/libwfduibcsrcinterface_proprietary.so|844f28f33ba8ed6dd20cea02f42bbd14904c413d
+vendor/lib/libwfduibcsrc_proprietary.so|611c75b85b8e0f9080a45fa316e4cee2bc6670d6
+vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|1d5c27ed724134b92c6396b230701bb8a02a6eb8
+vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|25d6c0511bf25434eeb6c3411c5c67a4bd37187d
+vendor/lib64/libwfdhdcpcp.so|59c1bb06ccc40f4ae388b657e513fd9d946b4d9c
+vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|ac231691f4942281bf7e77d963981f43b851ad64
+vendor/lib/libmmparser_lite_proprietary.so
+vendor/lib64/libmmparser_lite_proprietary.so
+vendor/lib/libFileMux_proprietary.so
+vendor/lib/libOmxMux_proprietary.so
