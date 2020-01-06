@@ -1109,6 +1109,9 @@ vendor/firmware/audience/cvqmodels/oemkw_Hello_VoiceQ.bin
 vendor/firmware/audience/cvqmodels/oemkw_Baidu_YiXia.bin
 
 # Perf - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
+-app/workloadclassifier/workloadclassifier.apk
+-framework/QPerformance.jar
+-framework/UxPerformance.jar
 product/lib/vendor.qti.hardware.perf@2.0.so|266e111e402d29f3713c656df3dc6678cd1c5d7d
 product/lib64/vendor.qti.hardware.perf@2.0.so|d4569c43c32a2ec851e45b6084fc7e08dd89f0ca
 lib/libqti_performance.so|5060214a293a6949c92acaf19d6e1adef12dba10
@@ -1476,7 +1479,7 @@ vendor/lib64/libscvePanorama.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
-# Thermal
+# Thermal - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
