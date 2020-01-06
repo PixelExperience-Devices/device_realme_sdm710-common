@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothResCommon
+    BluetoothResCommon \
+    libldacBT_dec
 
 # Camera
 PRODUCT_PACKAGES += \
