@@ -1587,8 +1587,3 @@ on property:ro.vendor.oppo.product.device=*
 on boot
     chown system system /dev/goodix_fp
 #endif
-
-service debug_logcat /system/bin/logcat -f /data/logcat.txt -v threadtime
-    class main
-    user root
-    group system
