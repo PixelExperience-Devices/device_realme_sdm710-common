@@ -16,5 +16,5 @@
 */
 -->
 <resources>
-    <dimen name="rounded_corner_content_padding">48px</dimen>
+    <dimen name="rounded_corner_content_padding">36px</dimen>
 </resources>
