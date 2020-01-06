@@ -172,6 +172,46 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId, 
     return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->authenticate(operationId, gid));
 }
 
+Return<RequestStatus> BiometricsFingerprint::cleanUp() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->cleanUp());
+}
+
+Return<RequestStatus> BiometricsFingerprint::pauseEnroll() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->pauseEnroll());
+}
+
+Return<RequestStatus> BiometricsFingerprint::continueEnroll() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->continueEnroll());
+}
+
+Return<RequestStatus> BiometricsFingerprint::setTouchEventListener() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->setTouchEventListener());
+}
+
+Return<RequestStatus> BiometricsFingerprint::dynamicallyConfigLog(uint32_t on) {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->dynamicallyConfigLog(on));
+}
+
+Return<RequestStatus> BiometricsFingerprint::pauseIdentify() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->pauseIdentify());
+}
+
+Return<RequestStatus> BiometricsFingerprint::continueIdentify() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->continueIdentify());
+}
+
+Return<RequestStatus> BiometricsFingerprint::getAlikeyStatus() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->getAlikeyStatus());
+}
+
+Return<RequestStatus> BiometricsFingerprint::getEnrollmentTotalTimes() {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->getEnrollmentTotalTimes());
+}
+
+Return<RequestStatus> BiometricsFingerprint::getEngineeringInfo(uint32_t type) {
+    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->getEngineeringInfo(type));
+}
+
 } // namespace implementation
 }  // namespace V2_1
 }  // namespace fingerprint
