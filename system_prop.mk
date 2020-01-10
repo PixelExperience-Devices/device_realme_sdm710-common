@@ -9,6 +9,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.config.vc_call_vol_steps=7 \
    ro.config.media_vol_steps=25
 
+# Bluetooth
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+   vendor.bluetooth.soc=cherokee
+
 # Camera
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    persist.camera.HAL3.enabled=1
