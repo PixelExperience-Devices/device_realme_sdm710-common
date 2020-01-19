@@ -933,6 +933,8 @@ lib/libFileMux.so|dafde1683285c6b9f0c7179f7d7719658bea8060
 lib/libmmosal.so|335e8ac36b68b88129ea35fbdff0cf6ae6335937
 lib/libmmparser_lite.so|6c7ca134db30b5be84a1f38eea06d8d1e9267bce
 lib/libOmxMux.so|c70f14687364584886e35e64ea9b5515955bf17f
+lib64/libmmparser_lite.so
+lib64/libFileMux.so
 product/lib/vendor.qti.hardware.vpp@1.1.so|824a945cc3d5da9249c79c5285b7cf6f749381b4
 lib64/libmmosal.so|d2f962d4a995e796fc2dda57139d741663b1efba
 product/lib64/vendor.qti.hardware.vpp@1.1.so|dfa692923c68105296c350db8ac556119d87a88a
