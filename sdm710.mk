@@ -120,6 +120,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
 
+# WiFi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/WCNSS_qcom_cfg.ini
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
