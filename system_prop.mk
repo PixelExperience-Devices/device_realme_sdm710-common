@@ -17,10 +17,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    persist.camera.HAL3.enabled=1
 
-# CNE
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.vendor.cne.feature=1
-
 # Data Modules
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.data.mode=concurrent \
