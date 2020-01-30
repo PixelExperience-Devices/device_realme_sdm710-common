@@ -152,7 +152,15 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId()  {
 }
 
 Return<RequestStatus> BiometricsFingerprint::cancel()  {
-    return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->cancel());
+    RequestStatus ret = OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->cancel());
+    if (ret == RequestStatus::SYS_OK) {
+        const uint64_t devId = mOppoBiometricsFingerprint->setNotify(mOppoClientCallback);
+        vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintError err = vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintError::ERROR_CANCELED;
+        if (!mOppoClientCallback->onError(devId, err, 0).isOk()) {
+            ALOGE("failed to invoke fingerprint onError callback");
+        }
+    }
+    return ret;
 }
 
 Return<RequestStatus> BiometricsFingerprint::enumerate()  {
