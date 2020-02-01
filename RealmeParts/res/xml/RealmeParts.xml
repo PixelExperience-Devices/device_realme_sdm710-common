@@ -21,4 +21,11 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/vibrator_intensity_control">
+
+        <org.aospextended.device.vibration.VibratorStrengthPreference
+	    android:key="vib_strength"
+            android:icon="@drawable/ic_vibrate" />
+    </PreferenceCategory>
 </PreferenceScreen>

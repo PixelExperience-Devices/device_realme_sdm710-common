@@ -119,6 +119,8 @@ on boot
     #endif /*VENDOR_EDIT*/
     write /dev/cpuset/system-background/cpus 0-7
 
+    chown system system /sys/class/leds/vibrator/vmax_mv
+
 # Add a cpuset for the camera daemon
 # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon

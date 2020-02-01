@@ -30,6 +30,7 @@ import androidx.preference.PreferenceManager;
 import org.aospextended.device.gestures.TouchGestures;
 import org.aospextended.device.util.Utils;
 import org.aospextended.device.doze.DozeUtils;
+import org.aospextended.device.vibration.VibratorStrengthPreference;
 
 public class BootReceiver extends BroadcastReceiver {
 
@@ -44,6 +45,7 @@ public class BootReceiver extends BroadcastReceiver {
                 TouchGestures.PREF_DT2W_ENABLE, true));
         }
         DozeUtils.checkDozeService(context);
+        VibratorStrengthPreference.restore(context);
     }
 
     private void enableComponent(Context context, String component) {

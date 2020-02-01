@@ -168,4 +168,7 @@
     <string name="touchscreen_gesture_haptic_feedback">Haptic feedback</string>
     <string name="touchscreen_gesture_haptic_feedback_summary">Vibrate when a Touchscreen gesture is detected</string>
 
+    <!-- Vibration Slider -->
+    <string name="vibrator_intensity_control">Vibration control</string>
+
 </resources>
