@@ -33,6 +33,9 @@ TARGET_KERNEL_ARCH := arm64
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/arm64-gcc/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
 
+# Enable stats logging in LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 

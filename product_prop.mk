@@ -46,6 +46,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.latch_unsignaled=1
 
+# LMKD
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.low_ram=false \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.kill_timeout_ms=100 \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.log_stats=true
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     media.settings.xml=/system/etc/media_profiles_vendor.xml
