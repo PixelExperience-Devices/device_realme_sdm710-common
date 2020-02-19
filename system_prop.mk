@@ -1,3 +1,4 @@
+  
 # Assertive display
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.vendor.display.ad=1 \
@@ -26,13 +27,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.early_phase_offset_ns=5000000	
-
-# IMS
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
+    debug.sf.early_phase_offset_ns=5000000
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
