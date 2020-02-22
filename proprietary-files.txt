@@ -1091,6 +1091,8 @@ vendor/firmware/ufs/SKhynix-H9HQ53ACPMMDAR.bin
 vendor/firmware/ufs/MICRON-128GB-UFS-MT.bin
 vendor/firmware/ufs/SKhynix-H9HQ53AECMMDAR.bin
 vendor/firmware/ufs/move_target_ufs_fw_to_opporeserve1.sh
+vendor/firmware/ufs/SAMSUNG-KM5V7001DM-B621.bin
+vendor/firmware/ufs/SAMSUNG-KM8V7001JM-B810.bin
 
 # WiFi
 vendor/bin/cnss-daemon
