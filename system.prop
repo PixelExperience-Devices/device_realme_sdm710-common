@@ -43,6 +43,7 @@ sdm.debug.prefersplit=1
 
 # Media
 audio.offload.video=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
