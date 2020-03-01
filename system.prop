@@ -1,6 +1,7 @@
 # Bluetooth
 ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 
 # Camera
 ro.camera.hfr.enable=1
@@ -61,6 +62,7 @@ ro.vendor.qti.core_ctl_max_cpu=4
 persist.data.iwlan.enable=true
 persist.rcs.supported=0
 persist.vendor.ims.disableUserAgent=0
+persist.dbg.ims_volte_enable=1
 
 # RIL
 DEVICE_PROVISIONED=1
@@ -74,6 +76,7 @@ persist.vendor.radio.rat_on=combine
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # SSR
 persist.vendor.ssr.enable_ramdumps=0

@@ -45,7 +45,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Dalvik
@@ -85,7 +84,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1 \
-    persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
     vendor.gralloc.disable_ubwc=0
@@ -126,6 +124,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1 \
-    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-
+    persist.vendor.radio.sib16_support=1
