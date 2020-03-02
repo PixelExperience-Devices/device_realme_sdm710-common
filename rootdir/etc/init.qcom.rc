@@ -10,8 +10,6 @@ on post-fs
     mount none /fstab.qcom /vendor/etc/fstab.qcom bind
 	
 on boot
-    mount none /system/overlay/BluetoothResCommon.apk /vendor/overlay/BluetoothResCommon.apk bind
-
     # Touchscreen
     chown system system /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_area

@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothResCommon \
     libldacBT_dec
 
 # Camera
