@@ -65,14 +65,6 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so|89ddc7c4fca432fa03fc8a222da079853d2ea3b
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|4c8d6971513503e0ca97b440c04f93b23680546c
 
 # Audio
-vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/lib/vendor.dolby.hardware.dms@1.0.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
-vendor/lib/libdapparamstorage.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
@@ -85,8 +77,6 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdlbdsservice.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -1106,8 +1096,6 @@ etc/init/wfdservice.rc|117d11af28ceda7ecf6009d7dc10ffc6bda25fa5
 etc/wfdconfigsink.xml|75c1e192ccc6248a860958026950c6bc4f052ef7
 -framework/WfdCommon.jar|00e8b3cd1303785928d3146f4ddbfa7dc84e16dc
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|7387190f13baf148543c307480df99a076618c84
-lib/libmmrtpdecoder.so|68c4ee99e6b205bce1ea0304c1f8c947a9a73374
-lib/libmmrtpencoder.so|5e7b46895a3dc3a4ba4dc9d159631e306e6214a7
 lib/libwfdaac.so|4bd42277295aba6ad209f47c49ca28debb62eaca
 lib/libwfdavenhancements.so|d606af6e3ca25a50e29221ff469311b38f0e34b7
 lib/libwfdclient.so|ab60fba6a71bef30909ea4fe3e8e2f73cb052db8
