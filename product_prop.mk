@@ -1,3 +1,12 @@
+# Adb
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+# /vendor/default.prop is force-setting ro.adb.secure=1
+# Get rid of that by overriding it on eng builds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0
+endif
+
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
    ro.config.vc_call_vol_steps=7 \
