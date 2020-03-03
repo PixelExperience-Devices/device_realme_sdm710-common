@@ -4,7 +4,6 @@ on post-fs
     mount none /system/etc/WCNSS_qcom_cfg.ini /vendor/etc/wifi/WCNSS_qcom_cfg.ini bind
     mount none /system/lib64/soundfx/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind
     mount none /system/lib/soundfx/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
-    mount none /fstab.qcom /vendor/etc/fstab.qcom bind
 	
 on boot
     # Touchscreen

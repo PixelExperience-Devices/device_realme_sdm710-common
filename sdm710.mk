@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    fstab.qcom \
     init.safailnet.rc
 
 # Dex preopt
