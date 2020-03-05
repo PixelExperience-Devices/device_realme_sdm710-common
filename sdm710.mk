@@ -88,7 +88,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # System properties
--include $(LOCAL_PATH)/system_prop.mk
+-include $(LOCAL_PATH)/product_prop.mk
 
 # Sensors
 PRODUCT_COPY_FILES += \
