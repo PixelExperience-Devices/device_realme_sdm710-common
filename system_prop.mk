@@ -11,10 +11,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.data.mode=concurrent
 
-# FM
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.vendor.fm.use_audio_session=true
-
 # Graphics
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
