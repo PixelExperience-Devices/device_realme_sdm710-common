@@ -7,6 +7,7 @@
 BOARD_VENDOR := realme
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 COMMON_PATH := device/realme/sdm710-common
 
