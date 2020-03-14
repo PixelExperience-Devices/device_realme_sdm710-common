@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.safailnet.rc
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    RealmeParts
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
