@@ -20,6 +20,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.data.mode=concurrent
 
+# FM
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.fm.use_audio_session=true
+
 # Fwk detect
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.qti.va_aosp.support=1
