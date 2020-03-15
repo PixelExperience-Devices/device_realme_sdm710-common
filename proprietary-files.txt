@@ -2,6 +2,26 @@
 vendor/lib64/soundfx/libvolumelistener.so:lib64/soundfx/libvolumelistener.so|2dffcd0bde20f5f1830918146c9f40c02bbbae9f
 vendor/lib/soundfx/libvolumelistener.so:lib/soundfx/libvolumelistener.so|117f8b7d834b4587dc8c8c5d15fada85b877ed26
 
+# DPM
+framework/tcmclient.jar
+product/bin/dpmd
+product/etc/dpm/dpm.conf
+product/etc/init/dpmd.rc
+product/etc/permissions/com.qti.dpmframework.xml
+product/etc/permissions/dpmapi.xml
+product/framework/com.qti.dpmframework.jar
+product/framework/dpmapi.jar
+product/lib/com.qualcomm.qti.dpm.api@1.0.so
+product/lib/libdpmctmgr.so
+product/lib/libdpmfdmgr.so
+product/lib/libdpmframework.so
+product/lib/libdpmtcm.so
+product/lib64/com.qualcomm.qti.dpm.api@1.0.so
+product/lib64/libdpmctmgr.so
+product/lib64/libdpmfdmgr.so
+product/lib64/libdpmframework.so
+product/lib64/libdpmtcm.so
+
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
