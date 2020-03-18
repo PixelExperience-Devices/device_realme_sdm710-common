@@ -1,0 +1,5 @@
+allow init proc_touchpanel:dir search;
+allow init proc_touchpanel:file { write setattr open};
+
+# Allow init to mount vendor configs
+allow init vendor_configs_file:dir mounton;

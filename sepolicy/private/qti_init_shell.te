@@ -1,0 +1,4 @@
+type qti_init_shell, domain;
+
+allow qti_init_shell sysfs_io_sched_tuneable:file w_file_perms;
+dontaudit qti_init_shell self:capability { dac_override dac_read_search };

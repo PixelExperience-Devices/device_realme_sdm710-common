@@ -86,13 +86,13 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 # Sepolicy
 # PRIVATE_EXCLUDE_BUILD_TEST := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-# BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-#     device/qcom/sepolicy/generic/private \
-#     device/qcom/sepolicy/qva/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/qcom/sepolicy/generic/private \
+    device/qcom/sepolicy/qva/private
 
-# BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-#     device/qcom/sepolicy/generic/public \
-#     device/qcom/sepolicy/qva/public
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/qcom/sepolicy/generic/public \
+    device/qcom/sepolicy/qva/public
 
 # Treble
 BOARD_VNDK_VERSION := current

@@ -1,0 +1,6 @@
+type hal_fingerprint_sdm710, coredomain, domain;
+hal_client_domain(hal_fingerprint_sdm710, hal_fingerprint)
+hal_server_domain(hal_fingerprint_sdm710, hal_fingerprint)
+
+type hal_fingerprint_sdm710_exec, vendor_file_type, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_sdm710)
