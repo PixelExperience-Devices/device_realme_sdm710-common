@@ -81,3 +81,6 @@ on post-fs-data
     mkdir /data/vendor/silead 0770 system system
     mkdir /mnt/vendor/persist/fingerprint/silead 0770 system system
     mkdir /data/vendor/egis   0770 system system
+
+service face_hal /system/bin/true
+    disabled
