@@ -16,6 +16,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
    vendor.bluetooth.soc=cherokee
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+   persist.camera.HAL3.enabled=1
+
 # Data Modules
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.data.mode=concurrent
