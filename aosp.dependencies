@@ -14,5 +14,11 @@
     "repository": "kernel_realme_sdm710",
     "target_path": "kernel/realme/sdm710",
     "branch": "ten"
+  },
+  {
+    "repository": "arter97/arm64-gcc",
+    "target_path": "prebuilts/arm64-gcc",
+    "branch": "master",
+    "remote": "github"
   }
 ]
