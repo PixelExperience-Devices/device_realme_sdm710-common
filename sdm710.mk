@@ -106,6 +106,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.qcom:64
 
+# QTI Performance
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
