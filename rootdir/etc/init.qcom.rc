@@ -84,3 +84,6 @@ on post-fs-data
 
 service face_hal /system/bin/true
     disabled
+
+service vendor.power-hal-1-0 /system/bin/true
+    disabled

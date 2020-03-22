@@ -104,7 +104,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power@1.2-service-qti
 
 # QTI Performance
 PRODUCT_BOOT_JARS += \

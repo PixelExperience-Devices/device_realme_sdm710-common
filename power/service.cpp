@@ -1,4 +1,6 @@
-/* Copyright (c) 2016, The Linux Foundation. All rights reserved.
+/*
+ * Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2017-2019 The LineageOS Project
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -24,25 +26,63 @@
  * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
  * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
  */
 
-#ifndef __POWERHINTPARSER__
-#define __POWERHINTPARSER__
+#define LOG_TAG "android.hardware.power@1.2-service-qti"
 
-#define POWERHINT_XML "/vendor/etc/powerhint.xml"
-#define MAX_HINT 6
-#define MAX_PARAM 30
+// #define LOG_NDEBUG 0
 
-typedef struct perflock_param_t {
-    int type;
-    int numParams;
-    int paramList[MAX_PARAM];  // static limit on number of hints - 15
-} perflock_param_t;
+#include <hardware/power.h>
+#include <hidl/HidlTransportSupport.h>
+#ifdef ARCH_ARM_32
+#include <hwbinder/ProcessState.h>
+#endif
+#include <log/log.h>
+#include "Power.h"
 
-static perflock_param_t powerhint[MAX_HINT];
+using android::OK;
+using android::sp;
+using android::status_t;
 
-int parsePowerhintXML();
-int* getPowerhint(int, int*);
+// libhwbinder:
+using android::hardware::configureRpcThreadpool;
+using android::hardware::joinRpcThreadpool;
 
-#endif /* __POWERHINTPARSER__ */
+// Generated HIDL files
+using android::hardware::power::V1_2::implementation::Power;
+
+int main() {
+#ifdef ARCH_ARM_32
+    android::hardware::ProcessState::initWithMmapSize((size_t)16384);
+#endif
+
+    status_t status;
+    android::sp<Power> service = nullptr;
+
+    ALOGI("Power HAL Service 1.2 is starting.");
+
+    service = new Power();
+    if (service == nullptr) {
+        ALOGE("Can not create an instance of Power HAL interface.");
+
+        goto shutdown;
+    }
+
+    configureRpcThreadpool(1, true /*callerWillJoin*/);
+
+    status = service->registerAsSystemService();
+    if (status != OK) {
+        ALOGE("Could not register service for Power HAL(%d).", status);
+        goto shutdown;
+    }
+
+    ALOGI("Power Service is ready");
+    joinRpcThreadpool();
+    // Should not pass this line
+
+shutdown:
+    // In normal operation, we don't expect the thread pool to exit
+
+    ALOGE("Power Service is shutting down");
+    return 1;
+}
