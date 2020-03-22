@@ -22,9 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-# ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-# endif
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 
 # Audio
 PRODUCT_PACKAGES += \
