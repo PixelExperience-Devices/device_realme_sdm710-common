@@ -59,6 +59,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+TARGET_USES_INTERACTION_BOOST := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
