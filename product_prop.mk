@@ -57,7 +57,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.radio.redir_party_num=1 \
     persist.vendor.radio.relay_oprt_change=0 \
     persist.vendor.radio.poweron_opt=0
-
-# UI
-PRODUCT_PRODUCT_PROPERTIES += \
-    sys.use_fifo_ui=1
