@@ -377,10 +377,12 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext
+    telephony-ext \
+    qcrilhook
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    telephony-ext \
+    qcrilhook
 
 # TextClassifier
 PRODUCT_PACKAGES += \
