@@ -38,8 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc \
-    init.safailnet.rc
+    init.qcom.rc
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
