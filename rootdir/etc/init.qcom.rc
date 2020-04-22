@@ -1413,3 +1413,7 @@ service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     socket ims_datad stream 0660 system radio
     group radio wifi inet vendor_qti_diag log
     disabled
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,7
+    setprop dalvik.vm.dex2oat-threads 6
