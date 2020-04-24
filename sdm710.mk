@@ -86,9 +86,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm710
@@ -100,10 +97,6 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 # Power
 PRODUCT_PACKAGES += \
@@ -123,11 +116,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # System properties
 -include $(LOCAL_PATH)/product_prop.mk
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
 
 # Telephony
 PRODUCT_PACKAGES += \
