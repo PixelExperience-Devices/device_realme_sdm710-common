@@ -20,11 +20,13 @@ import re
 def FullOTA_InstallEnd(info):
   input_zip = info.input_zip
   OTA_InstallEnd(info, input_zip)
+  PatchVendor(info)
   return
 
 def IncrementalOTA_InstallEnd(info):
   input_zip = info.target_zip
   OTA_InstallEnd(info, input_zip)
+  PatchVendor(info)
   return
 
 def AddImage(info, input_zip, basename, dest):
@@ -36,4 +38,10 @@ def AddImage(info, input_zip, basename, dest):
 def OTA_InstallEnd(info, input_zip):
   info.script.Print("Patching firmware images...")
   AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  return
+
+def PatchVendor(info):
+  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/vendor", "/vendor");')
+  info.script.AppendExtra('delete_recursive("/vendor/overlay/");')
+  info.script.AppendExtra('unmount("/vendor");')
   return
