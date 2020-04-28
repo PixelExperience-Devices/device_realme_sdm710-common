@@ -138,6 +138,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.at_library=libqti-at.so \
+    ro.vendor.perf.scroll_opt=true \
     persist.vendor.qti.games.gt.prof=1
 
 # Qualcomm System Daemon
