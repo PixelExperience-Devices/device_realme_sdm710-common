@@ -14,6 +14,9 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                             u:object_r:persist_camera_file:s0
 
+# Kcal
+/sys/module/msm_drm/parameters(/.*)?					u:object_r:sysfs_kcal:s0
+
 # Sensors
 /persist/sensors(/.*)?          u:object_r:sensors_persist_file:s0
 
