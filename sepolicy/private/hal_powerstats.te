@@ -1,0 +1,19 @@
+type hal_powerstats, domain;
+type hal_powerstats_exec, exec_type, file_type;
+init_daemon_domain(hal_powerstats)
+
+allow hal_powerstats sysfs_rpm:file r_file_perms;
+allow hal_powerstats sysfs_system_sleep_stats:file r_file_perms;
+allow hal_powerstats sysfs_power_stats:file r_file_perms;
+
+allow hal_powerstats default_android_service:service_manager add;
+allow hal_powerstats hal_power_stats_hwservice:hwservice_manager add;
+allow hal_powerstats hidl_base_hwservice:hwservice_manager add;
+get_prop(hal_powerstats, hwservicemanager_prop)
+
+binder_call(hal_powerstats, servicemanager)
+binder_call(hal_powerstats, hwservicemanager)
+binder_call(hal_powerstats, system_server)
+allow hal_powerstats binder_device:chr_file rw_file_perms;
+
+allow servicemanager hal_powerstats:binder call;
