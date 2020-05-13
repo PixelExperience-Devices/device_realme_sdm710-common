@@ -1,0 +1,5 @@
+type hal_power_pixel, coredomain, domain;
+hal_server_domain(hal_power_pixel, hal_power)
+
+type hal_power_pixel_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_power_pixel)
