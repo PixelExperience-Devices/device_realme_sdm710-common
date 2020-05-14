@@ -1,4 +1,4 @@
-<manifest version="1.0" type="device">
+<manifest version="1.0" type="framework">
      <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
