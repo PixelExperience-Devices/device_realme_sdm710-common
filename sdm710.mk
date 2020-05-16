@@ -100,14 +100,16 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.realme-libperfmgr
+    android.hardware.power@1.3-service.realme-libperfmgr \
+    android.hardware.power.stats@1.0-service.realme
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:system/etc/powerhint.json
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/pixel
 
 # System properties
 -include $(LOCAL_PATH)/product_prop.mk
