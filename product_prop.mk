@@ -66,6 +66,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,20 \
     persist.radio.add_power_save=1 \
+    persist.vendor.radio.atfwd.start=false \
     persist.vendor.radio.lte_vrte_ltd=1 \
     persist.vendor.radio.cs_srv_type=1 \
     persist.vendor.radio.rat_on=combine \
