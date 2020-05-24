@@ -1,5 +1,5 @@
 type hal_powerstats, domain;
-type hal_powerstats_exec, exec_type, file_type;
+type hal_powerstats_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_powerstats)
 
 allow hal_powerstats sysfs_rpm:file r_file_perms;
