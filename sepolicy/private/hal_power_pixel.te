@@ -42,11 +42,6 @@ allow hal_power_pixel hidl_base_hwservice:hwservice_manager add;
 binder_call(hal_power_pixel, hwservicemanager)
 binder_call(hal_power_pixel, hal_audio)
 
-# Allow set display low power mode
-type mm-pp-daemon, domain;
-unix_socket_connect(hal_power_pixel, pps, mm-pp-daemon)
-allow hal_power_pixel pps_socket:sock_file write;
-
 # To get hwservicemanager state
 get_prop(hal_power_pixel, hwservicemanager_prop)
 
