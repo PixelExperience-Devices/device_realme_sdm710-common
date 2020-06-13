@@ -99,3 +99,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # WFD
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.hwc.enable_vds=1
+
+# Zygote
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
