@@ -1,8 +1,10 @@
+# All unpinned blobs below are extracted from RMX1851EX_11.C.06
+
 # Audio - from enchilada - QKQ1.190716.003
 vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|5ea2812a582c76f7db3a7e5e4fb4cc33bbca3d9b
 vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|776906b3f70c7764245e8b394fd23333aa811bfd
 
-# Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
+# Bluetooth (aptX) - from crosshatch - QP1A.190711.020
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
@@ -60,20 +62,15 @@ lib64/fm_helium.so
 lib64/libfm-hci.so
 -product/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Media
-lib/libFileMux.so
-lib/libmmosal.so
-lib/libmmparser_lite.so
-lib/libOmxMux.so
-lib64/libmmosal.so
-
 # Power-off alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
 # QMI
-etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
 etc/sysconfig/qti_whitelist.xml
+
+# QMI - https://github.com/TheMuppets/proprietary_vendor_oneplus/commit/9458deeb47dba2262389ff76a5634ad4e95ea3c4
+etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a 
 
 # Radio
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -89,6 +86,8 @@ product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/embmslibrary.jar
 product/framework/qcrilhook.jar
+
+# CarrierSettings - from coral - R-RPP4.200409.0
 product/etc/CarrierSettings/airtel_in.pb|ba76d9ecfd74d9e19432adae9b5422ed7f84b747
 product/etc/CarrierSettings/att5g_us.pb|bb3047e16ef7e5e10df2e558eccd22b4c7e218a8
 product/etc/CarrierSettings/att_us.pb|3783859071b6c2fadb68bb5e7761a994ad24a1df
@@ -187,6 +186,8 @@ product/lib64/lib-imsvt.so
 product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
+
+# Radio - IMS - from davinci - QKQ1.190825.002 - https://gist.github.com/BoredOutOfMyGit/616950625c0f49f8b9ab9a9d237430f5
 -product/priv-app/ims/ims.apk|70d0bdc659e3e85d4e817d9c6f293225cbcab820
 
 # WiFi Display
@@ -194,12 +195,13 @@ bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfigsink.xml
 -framework/WfdCommon.jar
+lib/libFileMux.so
+lib/libOmxMux.so
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-lib/libdisplayconfig.so
+lib/libmmosal.so
+lib/libmmparser_lite.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
-lib/libqdMetaData.so
-lib/libqdMetaData.system.so
 lib/libwfdaac.so
 lib/libwfdavenhancements.so
 lib/libwfdclient.so
@@ -218,12 +220,10 @@ lib/libwfduibcsinkinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
 lib64/libFileMux.so
-lib64/libdisplayconfig.so
+lib64/libmmosal.so
 lib64/libmmparser_lite.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
-lib64/libqdMetaData.so
-lib64/libqdMetaData.system.so
 lib64/libwfdclient.so
 lib64/libwfdcommonutils.so
 lib64/libwfdconfigutils.so
