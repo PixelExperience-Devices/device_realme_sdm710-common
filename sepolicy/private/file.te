@@ -3,17 +3,8 @@ type bt_firmware_file, file_type;
 type firmware_file, file_type;
 type persist_file, file_type;
 type proc_touchpanel, fs_type, proc_type;
-type sysfs_msm_subsys, sysfs_type, fs_type;
-type sysfs_system_sleep_stats, sysfs_type, fs_type;
-type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_devfreq, sysfs_type, fs_type;
-type sysfs_kgsl, sysfs_type, fs_type;
-type sysfs_scsi_devices, sysfs_type, fs_type;
-type sysfs_power_stats, sysfs_type, fs_type;
-type debugfs_wlan, debugfs_type, fs_type;
-type debugfs_sched_features, debugfs_type, fs_type;
-type proc_sysctl_schedboost, proc_type, fs_type;
 type pps_socket, file_type;
 type display_data_file, data_file_type, core_data_file_type, file_type;
 
