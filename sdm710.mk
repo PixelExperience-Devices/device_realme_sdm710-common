@@ -98,7 +98,11 @@ ifeq ($(findstring Plus, $(CUSTOM_VERSION)),)
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-sdm
 endif
-    
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service-sdm710
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
