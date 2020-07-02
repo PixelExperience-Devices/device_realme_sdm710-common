@@ -179,7 +179,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     gralloc.sdm710 \
-    hwcomposer.sdm710 \
     libdisplayconfig \
     libhwc2on1adapter \
     libhwc2onfbadapter \
