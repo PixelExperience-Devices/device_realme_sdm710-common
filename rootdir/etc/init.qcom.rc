@@ -85,6 +85,12 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fingerprint/silead 0770 system system
     mkdir /data/vendor/egis   0770 system system
 
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics input
+    seclabel u:r:charger:s0
+
 service face_hal /system/bin/true
     disabled
 
