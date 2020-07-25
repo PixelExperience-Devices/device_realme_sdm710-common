@@ -43,6 +43,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.pstimeout.secs=3 \
     vendor.voice.path.for.pcm.voip=true
 
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.ab-ota=speed-profile \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-filter=speed \
+    ro.vendor.qti.am.reschedule_service=true \
+    ro.sys.fw.dex2oat_thread_count=8 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-threads=4
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
