@@ -1,4 +1,4 @@
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := hardware/custom/interfaces/usb/1.0-basic
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := android.hardware.usb@1.0-service.realme_sdm710
