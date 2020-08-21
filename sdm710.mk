@@ -379,6 +379,10 @@ PRODUCT_BOOT_JARS += \
     telephony-ext \
     qcrilhook
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
