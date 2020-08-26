@@ -351,12 +351,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0-service \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.0-impl
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
