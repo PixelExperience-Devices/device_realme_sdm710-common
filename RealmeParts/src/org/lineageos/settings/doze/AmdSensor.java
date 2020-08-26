@@ -29,26 +29,22 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class TiltSensor implements SensorEventListener {
+public class AmdSensor implements SensorEventListener {
 
-    private static final boolean DEBUG = false;
-    private static final String TAG = "TiltSensor";
+    private static final boolean DEBUG = true;
+    private static final String TAG = "AmdSensor";
 
-    private static final String TILT_SENSOR = "android.sensor.tilt_detector";
-
-    private static final int MIN_PULSE_INTERVAL_MS = 2500;
+    private static final String AMD_SENSOR = "qti.sensor.amd";
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
     private Context mContext;
     private ExecutorService mExecutorService;
 
-    private long mEntryTimestamp;
-
-    public TiltSensor(Context context) {
+    public AmdSensor(Context context) {
         mContext = context;
         mSensorManager = mContext.getSystemService(SensorManager.class);
-        mSensor = DozeUtils.getSensor(mSensorManager, TILT_SENSOR);
+        mSensor = DozeUtils.getSensor(mSensorManager, AMD_SENSOR);
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
@@ -60,14 +56,7 @@ public class TiltSensor implements SensorEventListener {
     public void onSensorChanged(SensorEvent event) {
         if (DEBUG) Log.d(TAG, "Got sensor event: " + event.values[0]);
 
-        long delta = SystemClock.elapsedRealtime() - mEntryTimestamp;
-        if (delta < MIN_PULSE_INTERVAL_MS) {
-            return;
-        }
-
-        mEntryTimestamp = SystemClock.elapsedRealtime();
-
-        if (event.values[0] == 0) {
+        if (event.values[0] == 2.0f) {
             DozeUtils.launchDozePulse(mContext);
         }
     }
@@ -82,7 +71,6 @@ public class TiltSensor implements SensorEventListener {
         submit(() -> {
             mSensorManager.registerListener(this, mSensor,
                     SensorManager.SENSOR_DELAY_NORMAL);
-            mEntryTimestamp = SystemClock.elapsedRealtime();
         });
     }
 
