@@ -775,7 +775,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
 -product/framework/qcrilhook.jar
-product/framework/qti-telephony-common.jar
+product/framework/qti-telephony-common.jar|52bbb1988e8f4e18b5b38cebfd2464932e7e86b9
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
@@ -920,7 +920,7 @@ product/lib/vendor.qti.ims.callinfo@1.0.so
 product/lib/vendor.qti.ims.rcsconfig@1.0.so
 product/lib/vendor.qti.imsrtpservice@2.0.so
 product/lib/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk
+-product/priv-app/ims/ims.apk|35bdad3411774dded520258823d985e59affd914
 product/lib/libdiag_system.so
 product/lib64/libdiag_system.so
 vendor/bin/ims_rtp_daemon
