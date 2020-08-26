@@ -58,6 +58,11 @@ on post-fs-data
   mkdir /mnt/vendor/opporeserve/media/Camera
   chown system system /mnt/vendor/opporeserve/media/Camera
   chmod 0771 /mnt/vendor/opporeserve/media/Camera
+
+  mkdir /mnt/vendor/opporeserve/media/ColorOS/HeytapID
+  chown system system /mnt/vendor/opporeserve/media/ColorOS/HeytapID
+  chmod 0771 /mnt/vendor/opporeserve/media/ColorOS/HeytapID
+
   restorecon_recursive /mnt/vendor/opporeserve
 
 ##ifdef VENDOR_EDIT
