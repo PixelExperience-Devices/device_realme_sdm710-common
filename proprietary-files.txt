@@ -213,15 +213,15 @@ vendor/firmware/cryptoeng.mdt
 vendor/firmware/cryptoeng.b06
 vendor/firmware/cryptoeng.b04
 
-# Display - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
-vendor/lib/libdisplayqos.so|cf1e9eaafec38a2dba24b51ad9f12a129ecea60c
-vendor/lib/libsdedrm.so|6fe09f656810dfc313d5028ea8d2039d27ca8bee
--vendor/lib/libsdm-disp-vndapis.so|7c30422da7d653537b51db309f9aa1d1ed100d12
-vendor/lib/libsdmextension.so|55fe4d025316af7958d4d9ebcae2f19afaba6b52
-vendor/lib64/libdisplayqos.so|150f8425a211682d081b67d112bfb4f01433ea9a
-vendor/lib64/libsdedrm.so|1ace45e626ec39636cdc1ed419c9233aef6338c9
--vendor/lib64/libsdm-disp-vndapis.so|44665c56bb9e89cc55b641e00fced92ddfc96712
-vendor/lib64/libsdmextension.so|a3b4fed84b9766c750e1378b737a93985402b696
+# Display
+vendor/lib/libdisplayqos.so
+vendor/lib/libsdedrm.so
+-vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libsdedrm.so
+-vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
 
 # Display calibration data
 vendor/etc/OPPO_OLED_AD_calib.cfg
@@ -440,52 +440,52 @@ vendor/lib64/vendor.qti.gnss@2.1.so|fa145bea66de29bcd93f4da28943dfa288335f76
 vendor/lib64/vendor.qti.gnss@3.0-service.so|592b30d57dee4b5acd2b55ad5d1a6964662dd6c5
 vendor/lib64/vendor.qti.gnss@3.0.so|728a662489358ac47589e69b909cd9de438591a0
 
-# Graphics - from Nokia/Phoenix_00WW/PNX_sprout:10/QKQ1.190725.002/00WW_4_15B:user/release-keys
-vendor/lib/egl/eglSubDriverAndroid.so|b7669ce41dcdf5738caef00ff21deec2375b2f1d
-vendor/lib/egl/libEGL_adreno.so|c749acf17f7c3bb94d8c2e36bceaa2a3114f8e4e
-vendor/lib/egl/libGLESv1_CM_adreno.so|959e1bcfe43f8926cd89e3e4978b499e314a9182
-vendor/lib/egl/libGLESv2_adreno.so|c4f792c8080ccf96b4946e39e29ff4b490b4f4a9
-vendor/lib/egl/libq3dtools_adreno.so|61f3c4c0acefa9787b40c8fdc9924e7d9a9fa482
-vendor/lib/egl/libq3dtools_esx.so|9e78e97436edcac57f60113898e04477f27fd263
-vendor/lib/egl/libQTapGLES.so|70985a5abbfd70ef8944347b6e65d07489a928b2
-vendor/lib/hw/vulkan.sdm710.so|da9fbff4251900ac24ca7e133ec2238f54efdfd7
-vendor/lib/libadreno_utils.so|d3a70fe9176d054792c2a3ae1ab958de2d9ddf14
-vendor/lib/libC2D2.so|5ff62cec73a0bddf876bf780dc744318359e0cc5
-vendor/lib/libc2d30_bltlib.so|5a27c8901cc97440d6f7a8c9c8cf608964cc5d6c
-vendor/lib/libCB.so|0188358afb50663b38506440c10ff9c8493ea100
-vendor/lib/libgsl.so|bd1277227774740063dbb12f5c93dbe659607c76
-vendor/lib/libhdr_tm.so|2618431054b1df628f0203f4014d8285cc6db024
-vendor/lib/libllvm-glnext.so|11e4e0f8f288176e7dd7868a3e135139686510bd
-vendor/lib/libllvm-qcom.so|65059c32126cdb0065e42a58c67b878db655c059
-vendor/lib/libOpenCL.so|34297b757c38d45d435086c60f1fcd707b537d68
-vendor/lib/libqseed3.so|10614273abe5656c3bfe4a7598546671e3e404e0
-vendor/lib/libsdm-color.so|732e2fc856ad91bc1f6e8dc5b1b73d874b118ba2
-vendor/lib/libsdm-diag.so|e483fd24559dde1bd1c10c5a76dc2024f63fe796
-vendor/lib/libtinyxml2_1.so|8f4bfaed0898db82c1af60732b22005048d75935
-vendor/lib64/egl/eglSubDriverAndroid.so|a6ff40df2b10b078b18f2487ba0fa3f642f93170
-vendor/lib64/egl/libEGL_adreno.so|d909102303c57cf0ebe22873064a674e7aa67238
-vendor/lib64/egl/libGLESv1_CM_adreno.so|ad4712cd782cff36e980ea09fcc430cf296aecd0
-vendor/lib64/egl/libGLESv2_adreno.so|9c82ac9daa6c6ff559f91176b0e628db213da953
-vendor/lib64/egl/libq3dtools_adreno.so|4b388cf05766d2499a3205f3d5afec4b269b41b7
-vendor/lib64/egl/libq3dtools_esx.so|93d1b81b7436390496e9743595530f6a39369088
-vendor/lib64/egl/libQTapGLES.so|3eaaabb9b41f8120f0af8baf6d0ba358ee109d82
-vendor/lib64/hw/vulkan.sdm710.so|6df9df52bee5210b9499f1c6387d03646e770d5e
-vendor/lib64/libadreno_utils.so|b866190d29e2e1a2bb6103f57f94b4fc1c838956
-vendor/lib64/libC2D2.so|49ca41a73792e5cdb99624e284da104f30f2e238
-vendor/lib64/libc2d30_bltlib.so|0d3b426b5f552f6eadc6d34ea32a290c8c3abf03
-vendor/lib64/libCB.so|11bc461e70a5bb046c1012c3391d9f9e654d95b7
-vendor/lib64/libgsl.so|52f09852b4f84cbd9d322340c35a423b8b201284
-vendor/lib64/libhdr_tm.so|3b05a903e2123affd21cf6fac8896b6bc02ba9d5
-vendor/lib64/libllvm-glnext.so|b4b7f750ee8e5e547ece2b4c4a8f87b2d9421434
-vendor/lib64/libllvm-qcom.so|1b49558302445de3abe8e8200c25333511a7a84a
-vendor/lib64/libOpenCL.so|c6f3dd2f32b1eaf7ddccf890e4f28a76e653a6f5
-vendor/lib64/libqseed3.so|4efeb38c17d3e677c0648a701c29c359a0a8c283
-vendor/lib64/libsdm-color.so|95966298c80b4890e0556ea9b9f999707576e7f0
-vendor/lib64/libsdm-diag.so|b72a36d58b324821b51fb6d3b4242550e09192f3
-vendor/lib64/libtinyxml2_1.so|062b2b75679c838c3fba6fcf63ee2be956ffeaba
-vendor/lib64/libRSDriver_adreno.so|ae123c86c212e6d42ade91958d3e8a4c2db7666f
-vendor/lib64/librs_adreno.so|58f8c599039a5435ce641cf82929f1166d436615
-vendor/lib64/librs_adreno_sha1.so|6064ad855d36d69ff231aa71241075e3389e1036
+# Graphics
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/hw/vulkan.sdm710.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libCB.so
+vendor/lib/libgsl.so
+vendor/lib/libhdr_tm.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libOpenCL.so
+vendor/lib/libqseed3.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libQTapGLES.so
+vendor/lib64/hw/vulkan.sdm710.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libCB.so
+vendor/lib64/libgsl.so
+vendor/lib64/libhdr_tm.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/librs_adreno.so
+vendor/lib64/librs_adreno_sha1.so
 
 # Graphics firmware 
 vendor/firmware/a615_zap.elf
