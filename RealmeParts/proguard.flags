@@ -1,8 +1,5 @@
--keepclasseswithmembers class * {
-    public <init>(android.content.Context, android.util.AttributeSet);
-}
+-keep public class org.aospextended.device.KeyHandler
 
--keep class ** extends android.support.v14.preference.PreferenceFragment
--keep class org.lineageos.settings.doze.* {
-  *;
+-keepclassmembers public class org.aospextended.device.KeyHandler {
+    *;
 }

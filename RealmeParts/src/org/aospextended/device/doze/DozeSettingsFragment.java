@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package org.aospextended.device.doze;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -39,7 +39,9 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
-import org.lineageos.settings.R;
+
+import org.aospextended.device.R;
+import org.aospextended.device.util.Utils;
 
 public class DozeSettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener,
         CompoundButton.OnCheckedChangeListener {
@@ -57,12 +59,12 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.doze_settings);
+        addPreferencesFromResource(R.xml.doze_panel);
         final ActionBar actionBar = getActivity().getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        SharedPreferences prefs = getActivity().getSharedPreferences("doze_settings",
-                Activity.MODE_PRIVATE);
+        SharedPreferences prefs = Utils.getSharedPreferences(getActivity());
+
         if (savedInstanceState == null && !prefs.getBoolean("first_help_shown", false)) {
             showHelp();
         }
@@ -174,7 +176,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         return false;
     }
 
-    private static class HelpDialogFragment extends DialogFragment {
+    public static class HelpDialogFragment extends DialogFragment {
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             return new AlertDialog.Builder(getActivity())
@@ -186,7 +188,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
         @Override
         public void onCancel(DialogInterface dialog) {
-            getActivity().getSharedPreferences("doze_settings", Activity.MODE_PRIVATE)
+            Utils.getSharedPreferences(getActivity())
                     .edit()
                     .putBoolean("first_help_shown", true)
                     .commit();

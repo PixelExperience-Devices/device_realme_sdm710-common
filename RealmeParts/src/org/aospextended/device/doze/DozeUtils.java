@@ -15,18 +15,19 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package org.aospextended.device.doze;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.display.AmbientDisplayConfiguration;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 import androidx.preference.PreferenceManager;
+
+import android.hardware.display.AmbientDisplayConfiguration;
 
 import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
 import static android.provider.Settings.Secure.DOZE_ENABLED;
