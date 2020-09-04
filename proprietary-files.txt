@@ -358,11 +358,6 @@ vendor/firmware/facereg.b01
 vendor/firmware/facereg.b04
 vendor/firmware/facereg.b03
 
-# Fast Charge Firmware
-vendor/firmware/fastchg/18041/oppo_vooc_fw_n76e.bin
-vendor/firmware/fastchg/18041/oppo_vooc_fw.bin
-vendor/firmware/fastchg/18097/oppo_vooc_fw.bin
-
 # Fingerprint
 lib/android.frameworks.fingerprintservice@1.0.so
 lib64/android.frameworks.fingerprintservice@1.0.so
