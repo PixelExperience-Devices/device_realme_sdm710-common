@@ -276,6 +276,9 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
+on boot
+    write /proc/touchpanel/tp_fw_update 1
+
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
