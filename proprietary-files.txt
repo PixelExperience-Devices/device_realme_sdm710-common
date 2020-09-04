@@ -1084,22 +1084,6 @@ vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 vendor/etc/init/init.time_daemon.rc
 
-# Touchscreen firmware
-vendor/firmware/tp/18085/LIMIT_S3706_SAMSUNG.img
-vendor/firmware/tp/18085/FW_S3706_SAMSUNG.img
-vendor/firmware/tp/18081/FW_S3706_SAMSUNG_FAE.img
-vendor/firmware/tp/18081/LIMIT_S3706_SAMSUNG.img
-vendor/firmware/tp/18081/FW_S3706_SAMSUNG.img
-vendor/firmware/tp/18383/FW_S3706_SAMSUNG_FAE.img
-vendor/firmware/tp/18383/LIMIT_S3706_SAMSUNG.img
-vendor/firmware/tp/18383/FW_S3706_SAMSUNG.img
-vendor/firmware/tp/18041/FW_S3706_SAMSUNG_FAE.img
-vendor/firmware/tp/18041/LIMIT_S3706_SAMSUNG.img
-vendor/firmware/tp/18041/FW_S3706_SAMSUNG.img
-vendor/firmware/tp/18097/FW_S3706_SAMSUNG_FAE.img
-vendor/firmware/tp/18097/LIMIT_S3706_SAMSUNG.img
-vendor/firmware/tp/18097/FW_S3706_SAMSUNG.img
-
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
