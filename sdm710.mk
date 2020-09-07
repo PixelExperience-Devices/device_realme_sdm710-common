@@ -174,6 +174,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     gralloc.sdm710 \
     libdisplayconfig \
+    libdisplayconfig.vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libqdMetaData.system \
@@ -297,7 +298,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
-    libvndfwk_detect_jni.qti
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # QNS
 PRODUCT_PACKAGES += \

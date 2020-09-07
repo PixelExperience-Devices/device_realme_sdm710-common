@@ -174,7 +174,6 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 # Treble
-BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
 
 # WiFi
