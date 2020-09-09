@@ -6,10 +6,10 @@
     "remote": "pixel-gitlab"
   },
   {
-    "repository" : "pixelexperience-devices/vendor_realme_sdm710-common",
+    "repository" : "vendor_realme_sdm710-common",
     "target_path": "vendor/realme/sdm710-common",
     "branch": "ten",
-    "remote": "bitbucket"
+    "remote": "pixel-devices-blobs"
   },
   {
     "repository": "kernel_realme_sdm710",
