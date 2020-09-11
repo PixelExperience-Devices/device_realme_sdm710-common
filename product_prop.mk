@@ -1,6 +1,6 @@
 # Pixel identification
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/flame/flame:10/QQ3A.200805.001/6578210:user/release-keys
+    ro.build.fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
 
 # Adb
 ifeq ($(TARGET_BUILD_VARIANT),eng)
