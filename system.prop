@@ -3,6 +3,9 @@ audio.offload.min.duration.secs=30
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=11
 
+# BPF
+ro.kernel.ebpf.supported=true
+
 # Bluetooth
 ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
