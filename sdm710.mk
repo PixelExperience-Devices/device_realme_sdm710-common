@@ -250,7 +250,8 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal \
-    android.hardware.tetheroffload.control@1.0
+    android.hardware.tetheroffload.control@1.0 \
+    android.hardware.tetheroffload.config@1.0
 
 # IPC router config
 PRODUCT_COPY_FILES += \
