@@ -87,7 +87,6 @@ persist.vendor.radio.rat_on=combine
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # SSR
