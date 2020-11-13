@@ -1,7 +1,13 @@
+# Audio
+audio.offload.min.duration.secs=30
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=11
+
 # Bluetooth
 ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
+vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 
 # Camera
 ro.camera.hfr.enable=1
