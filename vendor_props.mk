@@ -92,7 +92,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
-    vendor.gralloc.disable_ubwc=0
+    vendor.gralloc.disable_ubwc=0 \
+    ro.hardware.vulkan=adreno \
+    ro.hardware.egl=adreno
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.use_phase_offsets_as_durations=1 \
