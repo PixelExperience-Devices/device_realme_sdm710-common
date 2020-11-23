@@ -34,8 +34,7 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 
-# Alarm
-product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+# Alarm from LA.UM.9.8.r1-02700-SDM710.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
@@ -54,15 +53,14 @@ vendor/firmware/alipay.b03
 vendor/firmware/alipay.b05
 vendor/firmware/alipay.b04
 
-# ANT+
--lib/libantradio.so
--lib64/libantradio.so
-product/lib/com.qualcomm.qti.ant@1.0.so
-product/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
+# ANT+ - from LA.UM.9.8.r1-02700-SDM710.0
+system_ext/lib/com.qualcomm.qti.ant@1.0.so
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib/com.dsi.ant@1.0.so
+vendor/lib64/com.dsi.ant@1.0.so
+vendor/lib/hw/com.dsi.ant@1.0-impl.so
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
 vendor/lib/soundfx/libasphere.so
@@ -97,27 +95,32 @@ vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libqtigef.so
 
-# Bluetooth - LA.UM.9.8.r1-02700-SDM710.0
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/btaudio_offload_if.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
 
-# Bluetooth (aptX) - from crosshatch - PD1A.180720.030
-lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
-lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+# Bluetooth (aptX) - from sunfish-user 11 RP1A.200720.011 6746289 release-keys
+system_ext/lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+system_ext/lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -384,13 +387,13 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM
--product/lib/vendor.qti.hardware.fm@1.0.so
--product/lib64/vendor.qti.hardware.fm@1.0.so
-lib/fm_helium.so
-lib/libfm-hci.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
+# FM - from LA.UM.9.8.r1-02700-SDM710.0
+-system_ext/lib/vendor.qti.hardware.fm@1.0.so
+-system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+system_ext/lib/fm_helium.so
+system_ext/lib/libfm-hci.so
+system_ext/lib64/fm_helium.so
+system_ext/lib64/libfm-hci.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
@@ -402,8 +405,9 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GPS
-vendor/bin/hw/android.hardware.gnss@2.0-service-qti
+# GPS - from LA.UM.9.8.r1-02700-SDM710.0
+vendor/etc/gnss_antenna_info.conf
+vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -412,19 +416,20 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/cacert_location.pem
-vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/xtra_root_cert.pem
--vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
--vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/lib/vendor.qti.gnss@1.0.so
 vendor/lib/vendor.qti.gnss@1.1.so
 vendor/lib/vendor.qti.gnss@1.2.so
 vendor/lib/vendor.qti.gnss@2.0.so
 vendor/lib/vendor.qti.gnss@2.1.so
-vendor/lib/vendor.qti.gnss@3.0-service.so
 vendor/lib/vendor.qti.gnss@3.0.so
-vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so
-vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
+vendor/lib/vendor.qti.gnss@4.0-service.so
+vendor/lib/vendor.qti.gnss@4.0.so
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libbatching.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgdtap.so
@@ -450,8 +455,21 @@ vendor/lib64/vendor.qti.gnss@1.1.so
 vendor/lib64/vendor.qti.gnss@1.2.so
 vendor/lib64/vendor.qti.gnss@2.0.so
 vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0-service.so
 vendor/lib64/vendor.qti.gnss@3.0.so
+vendor/lib64/vendor.qti.gnss@4.0-service.so
+vendor/lib64/vendor.qti.gnss@4.0.so
+vendor/lib/libcdfw_remote_api.so
+vendor/lib64/libcdfw_remote_api.so
+vendor/lib/libcdfw.so
+vendor/lib64/libcdfw.so
+vendor/lib/libqcc_file_agent.so
+vendor/lib64/libqcc_file_agent.so
+vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 
 # Graphics (Adreno) from LA.UM.9.8.r1-02700-SDM710.0
 vendor/lib64/libC2D2.so
@@ -557,19 +575,19 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 
-# Latency
-product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
-product/framework/vendor.qti.latency-V2.0-java.jar
-product/lib/vendor.qti.latency@2.0.so
-product/lib64/vendor.qti.latency@2.0.so
-product/lib64/vendor.qti.hardware.data.latency@1.0.so
-product/lib/vendor.qti.hardware.data.latency@1.0.so
+# Latency - from LA.UM.9.8.r1-02700-SDM710.0
+system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
+system_ext/framework/vendor.qti.latency-V2.0-java.jar
+system_ext/lib/vendor.qti.latency@2.0.so
+system_ext/lib64/vendor.qti.latency@2.0.so
+system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so
+system_ext/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
-# Listen
+# Listen - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/lib/hw/sound_trigger.primary.sdm710.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
@@ -622,6 +640,8 @@ vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/libmmosal.so
+vendor/lib64/libmmosal.so
 
 # Media - codecs from LA.UM.9.8.r1-02700-SDM710.0
 vendor/lib64/libAlacSwDec.so
@@ -771,15 +791,7 @@ system_ext/lib64/vendor.qti.hardware.perf@2.1.so
 system_ext/lib64/vendor.qti.hardware.perf@2.2.so
 system_ext/lib64/vendor.qti.qspmhal@1.0.so
 
-# Power-off alarm from LA.UM.9.8.r1-02700-SDM710.0
--product/app/PowerOffAlarm/PowerOffAlarm.apk
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-
-# Qualcomm Display Utils
+# Qualcomm Display Utils - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
@@ -1116,7 +1128,7 @@ vendor/lib/libscveObjectSegmentation_stub.so
 vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 
-# Thermal
+# Thermal - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
