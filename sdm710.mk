@@ -376,8 +376,7 @@ PRODUCT_PACKAGES += \
     qcrilhook
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    qcrilhook
+    telephony-ext
 
 # Tethering
 PRODUCT_PACKAGES += \
