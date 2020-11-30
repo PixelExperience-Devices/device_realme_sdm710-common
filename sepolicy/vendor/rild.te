@@ -1,3 +1,7 @@
+allow rild hal_oppo_hwservice:hwservice_manager find;
+
 get_prop(rild, oppo_debug_prop);
 
 r_dir_file(rild, proc_devinfo);
+
+set_prop(rild, oppo_debug_prop);

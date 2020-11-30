@@ -12,3 +12,6 @@ type persist_camera_file, file_type;
 
 # Devinfo
 type proc_devinfo, fs_type, proc_type;
+
+# Vibarator
+type vibrator_sysfs, fs_type, sysfs_type;

@@ -1,3 +1,4 @@
 allow adsprpcd sensors_persist_file:file create_file_perms;
 
 r_dir_file(adsprpcd, proc_oppoversion);
+r_dir_file(adsprpcd, sysfs_oppo_display);
