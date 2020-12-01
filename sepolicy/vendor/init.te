@@ -1,2 +1,0 @@
-allow init hwservicemanager:binder { call transfer };
-allow init vendor_file:file { execute };
