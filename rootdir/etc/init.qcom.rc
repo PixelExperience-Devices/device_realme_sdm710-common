@@ -217,9 +217,6 @@ on boot
 
     setprop ro.telephony.call_ring.multiple false
 
-    #enable camera read sensors data
-    setprop persist.camera.gyro.disable 0
-
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
@@ -545,104 +542,6 @@ service wifiserver /vendor/bin/init.oppo.wifi.sh
     user root
     oneshot
 #endif
-
-#ifdef VENDOR_EDIT
-#Min.Yi@EXP.CN.WiFi.Hardware.1178256, 2017/12/28
-#Add for receive command from the PC tools
-service wifi_diag_stop /vendor/bin/wifistopftmtest
-    class late_start
-    user root
-    seclabel u:r:rutilsdaemon:s0
-    group root
-    disabled
-    oneshot
-
-service wifitestdiag /vendor/bin/wifi_diag
-    class late_start
-    user root
-    seclabel u:r:rutilsdaemon:s0
-    group root
-    disabled
-    oneshot
-
-on property:oppo.wifi.ftmstoptest=1
-     start wifi_diag_stop
-
-on property:oppo.wifi.ftmstoptest=0
-     stop wifi_diag_stop
-
-on property:sys.usb.config=diag,adb && property:sys.usb.configfs=1
-    start wifitestdiag
-#endif /* VENDOR_EDIT */
-#ifdef VENDOR_EDIT
-#Min.Yi@PSW.CN.WiFi.Hardware.1075545, 2017/11/02
-#Add for : Wifi ftm from the engineer app
-service wifi_ftm /system/bin/wififtmtest
-    class late_start
-    user root
-    seclabel u:r:rutilsdaemon:s0
-    group root
-    disabled
-    oneshot
-
-on property:oppo.wifi.ftmtest=1
-     start wifi_ftm
-
-on property:oppo.wifi.ftmtest=0
-     stop wifi_ftm
-#endif /* VENDOR_EDIT */
-
-#ifdef VENDOR_EDIT
-#Qiulei@Connectivity.WiFi.Hardware.1075545, 2016/07/23
-#Add for : Wifi ftm
-service wififtm /system/vendor/bin/wififtm
-    class late_start
-    user root
-    group root
-    disabled
-    oneshot
-
-on property:oppo.wifi.ftm=1
-     start wififtm
-
-on property:oppo.wifi.ftm=0
-     stop wififtm
-#endif /* VENDOR_EDIT */
-
-#ifdef VENDOR_EDIT
-#Qiulei@PSW.CN.WiFi.Hardware.1075545, 2016/07/23
-#Add for : Wifi HW ftm
-service wifihwftm /system/bin/wifihwftm
-    class late_start
-    user root
-    seclabel u:r:rutilsdaemon:s0
-    group root
-    disabled
-    oneshot
-
-on property:oppo.wifi.hwtest=1
-     start wifihwftm
-
-on property:oppo.wifi.hwtest=0
-     stop wifihwftm
-
-on property:vendor.wifi.hwtest=1
-     start wifihwftm
-
-on property:vendor.wifi.hwtest=0
-     stop wifihwftm
-#endif /* VENDOR_EDIT */
-
-#ifdef VENDOR_EDIT
-#Qiulei@PSW.CN.WiFi.Hardware.1769918, 2019/01/02
-#Add for : Wifi BDF version
-service WifibdfVersion /vendor/bin/vendor.autochmod.sh "WifibdfVersion"
-    class late_start
-    user root
-    seclabel u:r:rutilsdaemon:s0
-    group root
-    oneshot
-#endif /* VENDOR_EDIT */
 
 #Lei.Zhang@PSW.CN.WiFi.Basic., 2018/12/24
 #Add for wifi sar setting on Android P

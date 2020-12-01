@@ -47,6 +47,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.gyro.disable=0
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.dex2oat64.enabled=true \
