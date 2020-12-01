@@ -14,8 +14,8 @@ oppo.optical.                           u:object_r:oppo_fingerprint_prop:s0
 vendor.fingerprint.optical.             u:object_r:oppo_fingerprint_prop:s0
 oppo.fingerprint.                       u:object_r:oppo_fingerprint_prop:s0
 
-# Radio props
-gsm.operator.numeric              u:object_r:radio_prop:s0
+# GSM prop
+gsm.operator.numeric                    u:object_r:radio_prop:s0
 
 # Camera
 oppo.camera.                            u:object_r:vendor_camera_prop:s0
@@ -46,7 +46,7 @@ sys.oppo.network.rffeature              u:object_r:oppo_debug_prop:s0
 oppo.eng.factory.no                     u:object_r:oppo_debug_prop:s0
 oppo.device.imeicache                   u:object_r:oppo_debug_prop:s0
 ro.build.version.ota                    u:object_r:oppo_debug_prop:s0
-persist.oppo.network.operator           u:object_r:oppo_debug_prop:s0
+persist.oppo.                           u:object_r:oppo_debug_prop:s0
 
 # Oppo wlan prop
 persist.oppo.wlan.                      u:object_r:oppo_wlan_prop:s0

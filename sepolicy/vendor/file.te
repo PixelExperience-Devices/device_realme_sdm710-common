@@ -15,3 +15,6 @@ type proc_devinfo, fs_type, proc_type;
 
 # Vibarator
 type vibrator_sysfs, fs_type, sysfs_type;
+
+# Flash
+type proc_flash, fs_type, proc_type;
