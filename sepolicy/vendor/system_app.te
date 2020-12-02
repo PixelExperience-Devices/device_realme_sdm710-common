@@ -1,4 +1,5 @@
-allow system_app vibrator_sysfs:file rw_file_perms;
+#allow system_app vibrator_sysfs:file rw_file_perms;
+allow system_app proc_touchpanel:file rw_file_perms;
 
 r_dir_file(system_app, proc_touchpanel);
-r_dir_file(system_app, vibrator_sysfs);
+#r_dir_file(system_app, vibrator_sysfs);
