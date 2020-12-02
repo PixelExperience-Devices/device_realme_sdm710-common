@@ -456,6 +456,7 @@ vendor/lib64/liblocation_api.so|fe3a227e511bfd52a6c52efae64ac32cfc492669
 vendor/lib64/liblocationservice_glue.so|d08f9e61fc5f731b224692f434cf43a4aa2b6eb8
 vendor/lib64/liblocationservice.so|58d16c5b145399cd3069ba7d556e3688f8f43d66
 vendor/lib64/libloc_core.so|107da3079c22d9505d3737033bab1e22c3005f53
+vendor/lib64/libloc_socket.so|ec77c6a51bf7dbf179ef6232913c311c4b2a95e1
 vendor/lib64/liblowi_client.so|fd5cb6bb1c4eaacf3ef8a93e083d37d117137096
 vendor/lib64/liblowi_wifihal.so|db68a6c99c2fb8315d5f7a6954cdcb894a7de8ad
 vendor/lib64/libqdma_file_agent.so|f86c29c4a23558be984248b512ccf4b1de672946
@@ -758,8 +759,6 @@ vendor/lib/libqti-util.so|e0e2823d1f2414b171ed72245a147fef2b6a4e69
 vendor/lib/vendor.qti.hardware.perf@2.0.so|81feb5db9c39a87394c9452909539de7cf9de0bd
 vendor/lib/vendor.qti.hardware.perf@2.1.so|c7c7088be2ad6c8050798c981b0abf3e3264b924
 vendor/lib/vendor.qti.hardware.perf@2.2.so|6452c97202a60759849cd19fb870a470f164ddbf
--system_ext/app/PerformanceMode/PerformanceMode.apk|f25d794aa6eab104a3b8f09f66f620b58d839616
--system_ext/app/workloadclassifier/workloadclassifier.apk|326e3167592943a0f5a1edc3053cf0adbbc100a2
 -framework/QPerformance.jar|b7ab031100af40016c4d67cab090b85880c20462
 -framework/UxPerformance.jar|eda6666ae69077ca49a8f5480343d559f048e916
 system_ext/bin/perfservice|f52d0e9e286d75bf180b9c7e2913d1b012a42b29
