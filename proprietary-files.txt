@@ -347,6 +347,11 @@ vendor/lib/libssd.so|020e0fa5d6ecf28125911d3bad4519556d2d9b31
 vendor/lib/libStDrvInt.so|daea5be20f666076d0f82262a9a8b46e4cc51158
 vendor/lib/libtzdrmgenprov.so|801f47e12d529189b2d30dd4f373ba267b250859
 
+# DRM (widevine)
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib64/libwvhidl.so
+
 # DRM firmware
 vendor/firmware/cppf.mdt
 vendor/firmware/cppf.b05
