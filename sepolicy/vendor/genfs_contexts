@@ -19,3 +19,6 @@ genfscon proc /qcom_flash1        u:object_r:proc_flash:s0
 
 # FPS Info
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps        u:object_r:sysfs_graphics:s0
+
+# VOOC
+genfscon sysfs /class/power_supply/battery/voocchg_ing u:object_r:sysfs_battery_supply:s0
