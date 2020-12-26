@@ -16,8 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
@@ -399,14 +398,6 @@ PRODUCT_PACKAGES += \
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.realme_sdm710
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \

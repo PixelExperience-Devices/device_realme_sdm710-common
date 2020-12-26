@@ -1,4 +1,0 @@
-service touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.realme_sdm710
-    class hal
-    user system
-    group system
