@@ -54,6 +54,8 @@ vendor/firmware/alipay.b05
 vendor/firmware/alipay.b04
 
 # ANT+ - from LA.UM.9.8.r1-02700-SDM710.0
+-lib/libantradio.so
+-lib64/libantradio.so
 system_ext/lib/com.qualcomm.qti.ant@1.0.so|1e95af51d5142a745c90c240a8b2f5b329d7bdd5
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|3ce00a72441fc4704f742396f48d6aaaf1b871dd
 vendor/lib/com.dsi.ant@1.0.so|9f8f2268e760c0c5e67b8a52c7b25b6a1364dc45
