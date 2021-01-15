@@ -13,6 +13,7 @@ $(call inherit-product-if-exists, vendor/realme/sdm710-common/sdm710-common-vend
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay
 
 # Vendor properties
