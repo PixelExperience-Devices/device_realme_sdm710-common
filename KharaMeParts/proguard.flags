@@ -1,0 +1,5 @@
+-keep public class com.kharame.kharameparts.KeyHandler
+
+-keepclassmembers public class com.kharame.kharameparts.KeyHandler {
+    *;
+}

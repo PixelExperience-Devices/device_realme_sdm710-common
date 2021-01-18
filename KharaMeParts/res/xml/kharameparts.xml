@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/gestures">
+
+        <PreferenceScreen
+                android:key="screen_gestures"
+                android:icon="@drawable/ic_gestures"
+                android:fragment="com.kharame.kharameparts.settings.ScreenOffGestureSettings"
+                android:summary="@string/gestures_dashboard_summary"
+                android:title="@string/screen_off_gestures" />
+
+    </PreferenceCategory>
+	
+	
+    <PreferenceCategory
+            android:title="@string/ambient_display_title">
+
+        <PreferenceScreen
+                android:key="doze"
+                android:icon="@drawable/ic_doze"
+                android:fragment="com.kharame.kharameparts.doze.DozeSettingsActivity"
+                android:summary="@string/ambient_display_gestures_summary"
+                android:title="@string/ambient_display_gestures_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/vibrator_intensity_control">
+
+        <com.kharame.kharameparts.vibration.VibratorStrengthPreference
+	    android:key="vib_strength"
+            android:icon="@drawable/ic_vibrate" />
+    </PreferenceCategory>
+</PreferenceScreen>

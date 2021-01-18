@@ -215,7 +215,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    RealmeParts
+    KharaMeParts
 
 # Fingerprint
 PRODUCT_PACKAGES += \
