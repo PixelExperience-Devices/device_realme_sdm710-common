@@ -8,3 +8,6 @@ type oppo_wlan_prop, property_type;
 
 # Camera
 type vendor_camera_prop, property_type;
+
+# Thermal
+type vendor_thermal_prop, property_type;

@@ -31,3 +31,6 @@
 
 # sysfs uio
 /sys/devices(/platform)?/soc/[a-f0-9]+.qcom,oembackup_sharedmem/uio/uio[0-9]+(/.*)?         u:object_r:sysfs_uio_file:s0
+
+# Thermal
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti                u:object_r:hal_thermal_default_exec:s0
