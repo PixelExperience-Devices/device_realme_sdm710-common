@@ -408,4 +408,7 @@
     <!-- Whether device has VOOC charging support -->
     <bool name="config_hasVoocCharger">true</bool>
 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
 </resources>

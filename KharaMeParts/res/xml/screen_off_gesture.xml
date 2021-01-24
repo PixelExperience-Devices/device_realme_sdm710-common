@@ -18,22 +18,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
         <PreferenceCategory
-            android:key="dt2w"
-            android:title="@string/dt2w_title" >
-
-        <SwitchPreference
-            android:key="enable_dt2w"
-            android:title="@string/enable_dt2w_title"
-            android:persistent="false"
-            android:summary="@string/enable_dt2w_summary" />
-            <Preference
-                android:key="gesture_double_tap"
-                android:title="@string/gesture_double_tap_title"
-                android:persistent="false"
-                android:dependency="enable_dt2w" />
-        </PreferenceCategory>
-
-        <PreferenceCategory
             android:key="haptic"
             android:title="@string/haptic_feedback_title" >
 

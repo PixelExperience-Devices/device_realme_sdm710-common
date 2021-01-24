@@ -32,7 +32,6 @@ import java.io.File;
 public final class KernelControl {
 
     private static String GESTURE_PATH = "/proc/touchpanel/gesture_enable";
-    private static String DT2W_PATH = "/proc/touchpanel/double_tap_enable";
 
     private KernelControl() {
         // this class is not supposed to be instantiated
@@ -44,12 +43,6 @@ public final class KernelControl {
     public static void enableGestures(boolean enable) {
             if (new File(GESTURE_PATH).exists()) {
                 Utils.writeLine(GESTURE_PATH, enable ? "1" : "0");
-            }
-    }
-
-    public static void enableDt2w(boolean enable) {
-            if (new File(GESTURE_PATH).exists()) {
-                Utils.writeLine(DT2W_PATH, enable ? "1" : "0");
             }
     }
 

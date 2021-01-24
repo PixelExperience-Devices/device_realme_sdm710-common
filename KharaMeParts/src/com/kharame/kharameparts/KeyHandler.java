@@ -59,7 +59,6 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final boolean DEBUG = true;
 
     // Supported scancodes
-    private static final int GESTURE_DOUBLE_TAP_SCANCODE = 248;
     private static final int GESTURE_W_SCANCODE = 246;
     private static final int GESTURE_M_SCANCODE = 247;
     private static final int GESTURE_CIRCLE_SCANCODE = 249;
@@ -138,13 +137,6 @@ public class KeyHandler implements DeviceKeyHandler {
             KeyEvent event = (KeyEvent) msg.obj;
             String action = null;
             switch(event.getScanCode()) {
-            case GESTURE_DOUBLE_TAP_SCANCODE:
-                action = getGestureSharedPreferences()
-                        .getString(ScreenOffGesture.PREF_GESTURE_DOUBLE_TAP,
-                        ActionConstants.ACTION_WAKE_DEVICE);
-                        doHapticFeedback();
-                break;
-
             case GESTURE_W_SCANCODE:
                 action = getGestureSharedPreferences()
                         .getString(ScreenOffGesture.PREF_GESTURE_W,

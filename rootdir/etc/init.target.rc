@@ -474,10 +474,6 @@ service energy-awareness /system/vendor/bin/energy-awareness
     oneshot
 
 on boot
-# Permissions for Double tap to wake
-    chown system system /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/double_tap_enable
-
 # Permissions for gesture enable
     chown system system /proc/touchpanel/gesture_enable
     chmod 0660 /proc/touchpanel/gesture_enable

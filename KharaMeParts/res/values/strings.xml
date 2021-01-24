@@ -27,7 +27,6 @@
     <string name="enable_gestures_title">Enable gestures</string>
     <string name="enable_gestures_summary">Enable screen off gestures</string>
     <string name="gestures_title">Gestures</string>
-    <string name="gesture_double_tap_title">Gesture Double Tap</string>
     <string name="gesture_w_title">Gesture W</string>	
     <string name="gesture_m_title">Gesture M</string>
     <string name="gesture_s_title">Gesture S</string>
@@ -45,9 +44,6 @@
     <string name="KharaMeParts_summary">Gestures and Tweaks</string>
     <string name="screen_off_gestures">Screen-off gestures</string>
     <string name="gestures">Gestures</string>
-    <string name="enable_dt2w_title">Enable Double Tap</string>
-    <string name="enable_dt2w_summary">Enable Double Tap Gestures</string>
-    <string name="dt2w_title">Double Tap</string>
     <string name="haptic_feedback_title">Haptic Feedback</string>
 
     <!-- Shortcut actions -->
