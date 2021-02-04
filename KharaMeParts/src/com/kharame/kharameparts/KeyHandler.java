@@ -63,14 +63,14 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final int GESTURE_M_SCANCODE = 247;
     private static final int GESTURE_CIRCLE_SCANCODE = 249;
     private static final int GESTURE_TWO_SWIPE_SCANCODE = 250;
-    private static final int GESTURE_UP_ARROW_SCANCODE = 252;
-    private static final int GESTURE_DOWN_ARROW_SCANCODE = 251;
-    private static final int GESTURE_LEFT_ARROW_SCANCODE = 254;
-    private static final int GESTURE_RIGHT_ARROW_SCANCODE = 253;
-    private static final int GESTURE_SWIPE_UP_SCANCODE = 256;
-    private static final int GESTURE_SWIPE_DOWN_SCANCODE = 255;
-    private static final int GESTURE_SWIPE_LEFT_SCANCODE = 258;
-    private static final int GESTURE_SWIPE_RIGHT_SCANCODE = 257;
+    private static final int GESTURE_UP_ARROW_SCANCODE = 251;
+    private static final int GESTURE_DOWN_ARROW_SCANCODE = 252;
+    private static final int GESTURE_LEFT_ARROW_SCANCODE = 253;
+    private static final int GESTURE_RIGHT_ARROW_SCANCODE = 254;
+    private static final int GESTURE_SWIPE_UP_SCANCODE = 255;
+    private static final int GESTURE_SWIPE_DOWN_SCANCODE = 256;
+    private static final int GESTURE_SWIPE_LEFT_SCANCODE = 257;
+    private static final int GESTURE_SWIPE_RIGHT_SCANCODE = 258;
 
     private final Context mContext;
     private final AudioManager mAudioManager;
