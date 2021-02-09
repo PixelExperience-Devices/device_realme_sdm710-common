@@ -757,7 +757,6 @@ vendor/lib64/libqti-perfd.so|22ae99db39f1be4d3602c657bb7a5d96457f02d8
 vendor/lib64/libperfioctl.so|7bf289a68671f675ded7fb62e561e59832983138
 vendor/lib64/libqti-util.so|003df67dcd57aaa67b7e80ad2640555dcebe5287
 vendor/lib64/libqti-utils.so|e734331e086c9b78852871312429ce69092775ca
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|72b78413ee1d6fbfb38c58942d224c7f8f0cf00b
 vendor/lib64/vendor.qti.hardware.perf@2.1.so|65a22320eace1f7781510de4c7f21185773c7fc3
 vendor/lib64/vendor.qti.hardware.perf@2.2.so|9504a8618f79ceba7f4dad838c80f8804210a806
 vendor/lib/libperfconfig.so|a6e5536fad3158e78696efbb8ed8eb0cb7815e16
@@ -767,7 +766,6 @@ vendor/lib/libqti-perfd-client.so|1b0c70391d684ad95c79bc24ecb5ac8096d39019
 vendor/lib/libqti-perfd.so|1870851617af7e1f87c95bfe77d375ba3f05d3d0
 vendor/lib/libqti-utils.so|f0396512d699825cd405cd87f59b019ae05e3f81
 vendor/lib/libqti-util.so|e0e2823d1f2414b171ed72245a147fef2b6a4e69
-vendor/lib/vendor.qti.hardware.perf@2.0.so|81feb5db9c39a87394c9452909539de7cf9de0bd
 vendor/lib/vendor.qti.hardware.perf@2.1.so|c7c7088be2ad6c8050798c981b0abf3e3264b924
 vendor/lib/vendor.qti.hardware.perf@2.2.so|6452c97202a60759849cd19fb870a470f164ddbf
 -framework/QPerformance.jar|b7ab031100af40016c4d67cab090b85880c20462
@@ -786,7 +784,6 @@ system_ext/lib/libqti_performance.so|f2470a993511b5df21fd97b16ade8127a989aaf4
 system_ext/lib/libqti_workloadclassifiermodel.so|f87a792f4bfd4006d2db30fb3078ee918b283158
 system_ext/lib/libskewknob_system.so|6ff6812c50fa49a903afccda8edb63727b166e21
 system_ext/lib/vendor.qti.hardware.iop@2.0.so|f9cbd935fa6f42211d206496f8a6151e6e71fc7a
-system_ext/lib/vendor.qti.hardware.perf@2.0.so|98edd3e2a989be2eab4a240f2348978d23e66a94
 system_ext/lib/vendor.qti.hardware.perf@2.1.so|496655cb33a6a32d8e3f58d70c1facf8565a788a
 system_ext/lib/vendor.qti.hardware.perf@2.2.so|9a3073b9bd62883bcf23c2c1653a03bfbab408b6
 system_ext/lib/vendor.qti.qspmhal@1.0.so|d1e5cf0e8dbc7519ad3539e711c22bf9c3d96dfd
@@ -800,7 +797,6 @@ system_ext/lib64/libqti_performance.so|e2a7a488bbe1c3edfe16f9912f2fd5306855b9c8
 system_ext/lib64/libqti_workloadclassifiermodel.so|08737b6ea15c7fe6215214f0749717210ee69d27
 system_ext/lib64/libskewknob_system.so|bc72e80a47e2207a748766a6205108b0ee676022
 system_ext/lib64/vendor.qti.hardware.iop@2.0.so|1b7c5710c22595570c6581aa877d2b9ef6b20b58
-system_ext/lib64/vendor.qti.hardware.perf@2.0.so|72a36ce5f0d218b7150809280b52d1db44bfba8b
 system_ext/lib64/vendor.qti.hardware.perf@2.1.so|d5d5a1e6bbc2d6e44478330529a89619257bfbc6
 system_ext/lib64/vendor.qti.hardware.perf@2.2.so|a8df3ed7f434fb97f2c8e7877c1f90d5fc149fc4
 system_ext/lib64/vendor.qti.qspmhal@1.0.so|538e34410e38e11e397a7ae5a1b8915196f08bfc
