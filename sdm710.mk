@@ -127,6 +127,15 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
+    BluetoothResCommon \
+    libbthost_if \
+    libldacBT_dec \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
