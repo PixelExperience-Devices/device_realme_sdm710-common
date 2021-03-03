@@ -173,6 +173,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
 
+# SoC
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM710
+
 # Usb
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.vendor.usb.config.extra=none \
