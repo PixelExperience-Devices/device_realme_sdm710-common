@@ -202,4 +202,7 @@
     <string name="kcal_hue">Hue</string>
     <string name="kcal_value">Value</string>
 
+    <!-- Vibration intensity -->
+    <string name="vib_strength_title">Vibration intensity</string>
+
 </resources>
