@@ -109,6 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
     vendor.gralloc.disable_ubwc=0 \
+    ro.config.avoid_gfx_accel=true \
     ro.hardware.vulkan=adreno \
     ro.hardware.egl=adreno
 
