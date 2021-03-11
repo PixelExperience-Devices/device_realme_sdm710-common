@@ -1,6 +1,5 @@
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
 
-#add_hwservice(hal_fingerprint_default, hal_oppo_hwservice);
 allow hal_fingerprint_default hal_oppo_hwservice:hwservice_manager find;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default goodix_device:chr_file rw_file_perms;

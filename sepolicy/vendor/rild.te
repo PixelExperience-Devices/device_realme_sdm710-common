@@ -1,5 +1,8 @@
 allow rild hal_oppo_hwservice:hwservice_manager find;
 
+allow rild block_device:dir search;
+allow rild cache_file:file { write };
+
 get_prop(rild, oppo_debug_prop);
 
 r_dir_file(rild, proc_devinfo);
