@@ -36,7 +36,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.kharame.kharameparts.R;
-import com.kharame.kharameparts.kcal.Utils;
+import com.kharame.kharameparts.Utils;
 
 public class SeekBarPreference extends Preference {
 

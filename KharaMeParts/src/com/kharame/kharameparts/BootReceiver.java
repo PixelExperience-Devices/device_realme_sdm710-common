@@ -63,7 +63,6 @@ public class BootReceiver extends BroadcastReceiver {
         }
 		DozeUtils.checkDozeService(context);
                 VibratorStrengthPreference.restore(context);
-		context.startService(new Intent(context, DisplayCalibration.class));
     }
 
     private String getPreferenceString(Context context, String key, String defaultValue) {
