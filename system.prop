@@ -55,6 +55,10 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 # LMKD
 ro.config.low_ram=false
 
+# Iorap
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
+
 # Media
 audio.offload.video=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
