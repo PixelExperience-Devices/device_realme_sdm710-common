@@ -69,7 +69,6 @@ public class FPSInfoService extends Service {
                 if(msg.obj == null || msg.what != 1) {
                     return;
                 }
-
                 String msgData = (String) msg.obj;
                 msgData = msgData.trim().split("\\s+")[1];
                 mFps = msgData + " FPS";
@@ -81,13 +80,13 @@ public class FPSInfoService extends Service {
         FPSView(Context c) {
             super(c);
             float density = c.getResources().getDisplayMetrics().density;
-            int paddingPx = Math.round(5 * density);
+            int paddingPx = Math.round(9 * density);
             setPadding(paddingPx, paddingPx, paddingPx, paddingPx);
-            setBackgroundColor(Color.argb(0x60, 0, 0, 0));
+            setBackgroundColor(Color.argb(0x0, 0, 0, 0));
 
-            final int textSize = Math.round(12 * density);
+            final int textSize = Math.round(16 * density);
 
-            Typeface typeface = Typeface.create("monospace", Typeface.NORMAL);
+            Typeface typeface = Typeface.create("googlesans", Typeface.BOLD);
 
             mOnlinePaint = new Paint();
             mOnlinePaint.setTypeface(typeface);
@@ -132,16 +131,16 @@ public class FPSInfoService extends Service {
             }
 
             final int W = mNeededWidth;
-            final int LEFT = getWidth()-1;
+            final int RIGHT = getWidth()-1;
 
-            int x = LEFT - mPaddingLeft;
+            int x = RIGHT - mPaddingLeft;
             int top = mPaddingTop + 2;
             int bottom = mPaddingTop + mFH - 2;
 
             int y = mPaddingTop - (int)mAscent;
 
             String s=getFPSInfoString();
-            canvas.drawText(s, LEFT-mPaddingLeft-mMaxWidth,
+            canvas.drawText(s, RIGHT-mPaddingLeft-mMaxWidth,
                     y-1, mOnlinePaint);
             y += mFH;
         }
@@ -211,7 +210,7 @@ public class FPSInfoService extends Service {
             WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
             PixelFormat.TRANSLUCENT);
         params.y = 50;
-        params.gravity = Gravity.LEFT | Gravity.TOP;
+        params.gravity = Gravity.RIGHT | Gravity.TOP;
         params.setTitle("FPS Info");
 
         startThread();
