@@ -628,6 +628,7 @@ service qcom-c_main-sh /vendor/bin/init.class_main.sh
     oneshot
 
 on property:vold.decrypt=trigger_restart_framework
+    restart vendor.audio-hal
     start qcom-c_main-sh
     # Tong.Han@PSW.Bsp.Tp, 2018/01/31, Add to aceess data fw files
     start bspFwUpdate
