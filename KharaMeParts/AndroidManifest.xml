@@ -85,6 +85,13 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.kharame.kharameparts.kcal.DisplayCalibration"
+            android:label="@string/kcal_title">
+          <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+          </intent-filter>
+        </activity>
     </application>
 
 </manifest>
