@@ -8,3 +8,4 @@ r_dir_file(system_app, proc_touchpanel);
 
 # Fps Info
 allow system_app sysfs_fps:file rw_file_perms;
+allow system_app sysfs_graphics:file rw_file_perms;
