@@ -1,7 +1,13 @@
-allow rild hal_oppo_hwservice:hwservice_manager find;
-
+allow rild hal_oppo_hwservice:hwservice_manager { find add };
 allow rild block_device:dir search;
-allow rild cache_file:file { write };
+allow rild cache_file:file { create open write };
+allow rild cache_file:dir { getattr write add_name create search };
+allow rild oppo_debug_prop:property_service set;
+
+allow rild vendor_file:file ioctl;
+typeattribute rild data_between_core_and_vendor_violators;
+allow rild tombstone_data_file:dir rw_dir_perms;
+allow rild tombstone_data_file:file rw_file_perms;
 
 get_prop(rild, oppo_debug_prop);
 
