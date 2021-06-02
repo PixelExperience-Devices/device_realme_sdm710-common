@@ -1,4 +1,5 @@
 allow rmt_storage mdmreason_device:chr_file rw_file_perms;
+allow rmt_storage emmc_block_device:blk_file { read write open };
 
 get_prop(rmt_storage, oppo_debug_prop);
 
