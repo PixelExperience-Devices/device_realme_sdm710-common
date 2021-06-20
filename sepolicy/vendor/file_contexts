@@ -14,6 +14,11 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                             u:object_r:persist_camera_file:s0
 
+# Fingerprint
+/sys/devices/platform/soc/soc:fpc_fpc1020/irq                   u:object_r:sysfs_hal_fingerprint_default:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/irq_enable            u:object_r:sysfs_hal_fingerprint_default:s0
+/sys/devices/platform/soc/soc:fpc_fpc1020/wakelock_enable       u:object_r:sysfs_hal_fingerprint_default:s0
+
 # Sensors
 /persist/sensors(/.*)?          u:object_r:sensors_persist_file:s0
 
