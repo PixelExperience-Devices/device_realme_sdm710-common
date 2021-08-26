@@ -9,3 +9,9 @@ r_dir_file(system_app, proc_touchpanel);
 # Fps Info
 allow system_app sysfs_fps:file rw_file_perms;
 allow system_app sysfs_graphics:file rw_file_perms;
+
+# Battery Health
+allow system_app sysfs_battery_supply:dir { search };
+allow system_app sysfs_battery_supply:file { read };
+allow system_app sysfs_battery_supply:file { open };
+allow system_app sysfs_battery_supply:file { getattr };
