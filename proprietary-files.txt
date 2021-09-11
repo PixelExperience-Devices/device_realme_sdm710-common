@@ -738,8 +738,6 @@ vendor/lib/libperipheral_client.so|4f4700270730d4043580a1e76566fd0124b01e18
 vendor/lib/libspcom.so|b50bdf06832965b7e7a0371eb1232e1b171eb4fd
 
 # Perf
--system_ext/app/PerformanceMode/PerformanceMode.apk
--system_ext/app/workloadclassifier/workloadclassifier.apk
 system_ext/bin/perfservice
 system_ext/bin/qspmsvc
 system_ext/etc/init/perfservice.rc
