@@ -346,7 +346,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
     $(LOCAL_PATH)/configs/vendor.qti.hardware.iop@2.0-service-disable.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service-disable.rc
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
@@ -423,7 +423,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qcrilhook
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Tethering
@@ -469,7 +469,7 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_PACKAGES += \
