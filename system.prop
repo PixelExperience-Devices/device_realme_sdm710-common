@@ -96,6 +96,7 @@ persist.vendor.radio.cs_srv_type=1
 persist.vendor.radio.rat_on=combine
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
+persist.sys.fflag.override.settings_provider_model=false
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 
