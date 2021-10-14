@@ -171,6 +171,7 @@ PRODUCT_PACKAGES += \
     init.qti.ims.sh \
     init.qti.chg_policy.sh \
     init.qti.qseecomd.sh \
+    fix_ex_sdcard.sh \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.oppo.debug.diag.rc \
