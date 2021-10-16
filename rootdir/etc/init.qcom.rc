@@ -963,7 +963,7 @@ on property:vendor.wifi.sar.idx=*
 on property:sys.boot_completed=1
     start qcom-post-boot
     start qti-testscripts
-    start fix_ex_sdcard.sh
+    start fix_ex_sdcard
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
