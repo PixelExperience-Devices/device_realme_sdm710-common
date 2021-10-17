@@ -964,6 +964,7 @@ on property:sys.boot_completed=1
     start qcom-post-boot
     start qti-testscripts
     start fix_ex_sdcard
+    exec_background u:object_r:update_engine_exec:s0 root root -- /vendor/bin/fix_ex_sdcard.sh
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
