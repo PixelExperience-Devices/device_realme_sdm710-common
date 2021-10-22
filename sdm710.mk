@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 RELAX_USES_LIBRARY_CHECK := true
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
