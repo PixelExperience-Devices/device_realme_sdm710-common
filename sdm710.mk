@@ -188,6 +188,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     apex_metadata.rc
 
+# Crypto
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-service \
