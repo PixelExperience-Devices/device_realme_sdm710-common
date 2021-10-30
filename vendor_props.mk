@@ -169,6 +169,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
 
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.usb.config.extra=adb
+
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.aware.interface=wifi-aware0
