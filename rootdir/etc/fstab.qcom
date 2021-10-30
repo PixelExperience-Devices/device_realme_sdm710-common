@@ -8,8 +8,8 @@
 #<src>                                                 <mnt_point>               <type>  <mnt_flags and options>                            <fs_mgr_flags>
 /dev/block/bootdevice/by-name/system                    /                        ext4    ro,barrier=1,discard                                 wait,avb
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1,async_discard                               wait,check
-/dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,async_discard,lazytime,errors=panic       latemount,wait,check,fileencryption=ice,resize,quota,reservedsize=128M
-/dev/block/bootdevice/by-name/userdata                  /data                    f2fs    nosuid,nodev,noatime,inline_xattr,data_flush,fsync_mode=nobarrier                       latemount,wait,check,fileencryption=ice,quota
+/dev/block/bootdevice/by-name/userdata                  /data                    ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,async_discard,lazytime,errors=panic       latemount,wait,check,encryptable=footer,reservedsize=128M
+/dev/block/bootdevice/by-name/userdata                  /data                    f2fs    nosuid,nodev,noatime,inline_xattr,data_flush,fsync_mode=nobarrier                       latemount,wait,check,encryptable=footer
 /dev/block/bootdevice/by-name/modem                     /vendor/firmware_mnt     vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337 wait
 /dev/block/bootdevice/by-name/dsp                       /vendor/dsp              ext4    ro,nosuid,nodev,barrier=1,async_discard                            wait
 /dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist               ext4    nosuid,noatime,nodev,barrier=1,async_discard                       wait,check
