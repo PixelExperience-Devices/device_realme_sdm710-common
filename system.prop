@@ -39,7 +39,7 @@ persist.rmnet.data.enable=true
 ro.use_data_netmgrd=true
 
 # Graphics
-debug.sf.enable_hwc_vds=1
+debug.sf.disable_hwc_vds=1
 persist.debug.wfd.enable=1
 persist.hwc.enable_vds=1
 persist.demo.hdmirotationlock=false
