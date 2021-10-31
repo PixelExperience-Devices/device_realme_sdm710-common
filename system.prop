@@ -79,6 +79,9 @@ iop.enable_uxe=0
 ro.vendor.qti.core_ctl_min_cpu=2
 ro.vendor.qti.core_ctl_max_cpu=4
 
+# One handed mode
+ro.support_one_handed_mode=true
+
 # RCS and IMS
 persist.data.iwlan.enable=true
 persist.rcs.supported=0
