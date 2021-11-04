@@ -49,8 +49,6 @@ import /vendor/etc/init/hw/init.oppo.reserve.rc
 import /vendor/etc/init/hw/init.oppo.debug.diag.rc
 #endif /*VENDOR_EDIT*/
 on early-init
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
 
   # create symlink for vendor mount points
     symlink /vendor/firmware_mnt /firmware
