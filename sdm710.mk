@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    init.safailnet.rc \
     init.perf.rc \
     ueventd.qcom.rc \
     apex_metadata.rc
