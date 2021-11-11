@@ -473,3 +473,5 @@ case "$lcd_info" in
     *)
         setprop persist.vendor.display.lcd.panel true;;
 esac
+
+rm -rf /data/system/storage.xml
