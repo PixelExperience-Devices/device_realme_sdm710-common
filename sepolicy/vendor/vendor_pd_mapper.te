@@ -1,2 +1,4 @@
 allow vendor_pd_mapper property_socket:sock_file { write };
 allow vendor_pd_mapper init:unix_stream_socket { connectto };
+allow vendor_pd_mapper vfat:dir { search open read };
+allow vendor_pd_mapper vfat:file { open read };

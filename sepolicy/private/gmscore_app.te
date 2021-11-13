@@ -1,0 +1,1 @@
+allow gmscore_app adbd_prop:file { read getattr open };

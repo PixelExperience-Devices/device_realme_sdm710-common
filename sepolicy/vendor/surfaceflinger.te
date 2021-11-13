@@ -1,1 +1,2 @@
 allow surfaceflinger firmware_file:dir { search };
+allow surfaceflinger vfat:dir search;

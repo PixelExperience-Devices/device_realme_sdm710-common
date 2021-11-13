@@ -6,3 +6,10 @@ allow qti_init_shell proc_devinfo:dir{ getattr open read search };
 
 dontaudit qti_init_shell self:capability dac_override;
 dontaudit qti_init_shell qti_init_shell:capability { dac_read_search };
+
+allow qti_init_shell proc_devinfo:file { getattr open read };
+allow qti_init_shell sysfs:file setattr;
+allow qti_init_shell sysfs_leds:file setattr;
+allow qti_init_shell vfat:file { getattr open read };
+allow qti_init_shell vendor_camera_data_file:dir { getattr open read add_name create write };
+allow qti_init_shell vfat:dir search;
