@@ -58,6 +58,9 @@ ro.config.low_ram=false
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
 
+# VSync
+debug.cpurend.vsync=false
+
 # Media
 audio.offload.video=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
