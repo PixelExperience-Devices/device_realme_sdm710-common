@@ -13,7 +13,7 @@ RELAX_USES_LIBRARY_CHECK := true
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
+$(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
