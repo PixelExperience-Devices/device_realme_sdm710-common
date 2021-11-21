@@ -1,3 +1,1 @@
 get_prop(hal_power_stats_default, wifi_hal_prop)
-allow hal_power_stats_default sysfs:dir { open read };
-allow hal_power_stats_default sysfs:file { open read };

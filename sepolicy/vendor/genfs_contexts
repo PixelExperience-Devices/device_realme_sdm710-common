@@ -13,9 +13,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.q
 # Devinfo
 genfscon proc /devinfo        u:object_r:proc_devinfo:s0
 
-# Vibrator
-#genfscon sysfs /class/leds/vibrator/vmax_mv u:object_r:vibrator_sysfs:s0
-
 # Flash
 genfscon proc /qcom_flash         u:object_r:proc_flash:s0
 genfscon proc /qcom_flash1        u:object_r:proc_flash:s0

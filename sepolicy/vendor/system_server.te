@@ -1,5 +1,4 @@
 allow system_server hal_light_default:process signal;
-allow system_server sysfs:file { getattr };
 allow system_server app_zygote:process { getpgid };
 allow system_server sysfs_battery_supply:file { read open getattr };
 allow system_server sysfs_battery_supply:file rw_file_perms;

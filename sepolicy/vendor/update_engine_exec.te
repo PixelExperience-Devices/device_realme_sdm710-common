@@ -20,7 +20,6 @@ allow update_engine_exec self:dir search;
 allow update_engine_exec self:lnk_file read;
 allow update_engine_exec self:process { fork getsched sigchld };
 allow update_engine_exec selinuxfs:filesystem getattr;
-allow update_engine_exec sysfs:dir search;
 allow update_engine_exec system_data_file:dir { search write };
 allow update_engine_exec system_data_file:file { getattr read };
 allow update_engine_exec system_file:dir { getattr read };
