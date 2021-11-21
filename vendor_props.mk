@@ -173,10 +173,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
 
-# USB
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.usb.config.extra=adb
-
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.aware.interface=wifi-aware0
