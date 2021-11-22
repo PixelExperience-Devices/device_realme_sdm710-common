@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"          
           android:sharedUserId="android.uid.system"
           package="com.kharame.kharameparts"
           android:versionCode="1"
           android:versionName="1" >
 
-    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"
+          tools:ignore="ProtectedPermissions"/>
     <uses-permission android:name="android.permission.DEVICE_POWER" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -16,22 +18,24 @@
     <protected-broadcast android:name="com.kharame.kharameparts.CUST_UPDATE" />
 
     <uses-sdk
-        android:minSdkVersion="27"
-        android:targetSdkVersion="27"/>
+        android:targetSdkVersion="31"/>
 
     <application
             android:icon="@android:drawable/sym_def_app_icon"
             android:label="@string/KharaMeParts"
-            android:theme="@style/AppTheme"
+            android:theme="@style/Theme.SubSettingsBase"
             >
 
         <!-- stub to ensure its loaded - DO NOT REMOVE -->
-        <activity android:name=".KeyHandler" />
+        <activity android:name=".KeyHandler"
+                  android:exported="true"
+                  android:theme="@style/Theme.SubSettingsBase" />
 
         <activity
             android:name=".KharaMePartsActivity"
             android:label="@string/KharaMeParts"
-            android:exported="false">
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -41,6 +45,7 @@
         <activity-alias
             android:name=".KharaMeParts"
             android:label="@string/KharaMeParts"
+            android:exported="true"
             android:targetActivity="KharaMePartsActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -58,27 +63,57 @@
 
         <activity
             android:name=".settings.ScreenOffGestureSettings"
-            android:label="@string/screen_off_gestures">
+            android:label="@string/screen_off_gestures"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
           <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
           </intent-filter>
         </activity>
 
-        <receiver android:name=".BootReceiver" >
+        <receiver android:name=".BootReceiver"
+                  android:exported="true" >
           <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
           </intent-filter>
         </receiver>
 
+        <activity
+            android:name=".dirac.DiracActivity"
+            android:label="@string/dirac_title"
+            android:exported="true"
+            android:icon="@drawable/ic_headphone"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.sound" />
+        </activity>
+
+        <service
+            android:name=".dirac.DiracTileService"
+            android:icon="@drawable/ic_headphone"
+            android:label="@string/dirac_qs_tile_title"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
         <service android:name=".doze.DozeService"
-                 android:permission="RealmeDozeService">
+                 android:permission="RealmeDozeService"
+                 android:exported="true">
         </service>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.kharame.kharameparts.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -87,7 +122,9 @@
 
         <activity
             android:name="com.kharame.kharameparts.kcal.DisplayCalibration"
-            android:label="@string/kcal_title">
+            android:label="@string/kcal_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
           <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
           </intent-filter>
@@ -95,14 +132,15 @@
     
         <service
             android:name=".fpsinfo.FPSInfoService"
-            android:exported="false">
+            android:exported="true">
         </service>
 
         <service
             android:name=".fpsinfo.FPSTileService"
             android:icon="@drawable/ic_fps"
             android:label="@string/fps_info_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
             <intent-filter>
                 <action
                     android:name="android.service.quicksettings.action.QS_TILE"/>

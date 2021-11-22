@@ -16,19 +16,19 @@
 
 package com.kharame.kharameparts.settings;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class ScreenOffGestureSettings extends Activity {
+public class ScreenOffGestureSettings extends CollapsingToolbarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
                 new ScreenOffGesture()).commit();
-        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

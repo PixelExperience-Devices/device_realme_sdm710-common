@@ -22,6 +22,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.appcompat_appcompat \
+    androidx.core_core \
     androidx.legacy_legacy-support-v13 \
     androidx.palette_palette \
     androidx.preference_preference \
@@ -40,6 +41,8 @@ LOCAL_USE_AAPT2 := true
 LOCAL_PROGUARD_ENABLED := disabled
 LOCAL_DEX_PREOPT := false
 LOCAL_PRIVATE_PLATFORM_APIS := true
+
+LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include frameworks/base/packages/SettingsLib/common.mk
 

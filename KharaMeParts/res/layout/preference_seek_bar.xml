@@ -25,24 +25,7 @@
     android:clipToPadding="false"
     android:orientation="horizontal" >
 
-    <LinearLayout
-        android:id="@+id/icon_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="56dp"
-        android:gravity="start|center_vertical"
-        android:orientation="horizontal"
-        android:clipToPadding="false"
-        android:paddingEnd="12dp"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp">
-        <com.android.internal.widget.PreferenceImageView
-            android:id="@android:id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxWidth="48dp"
-            android:maxHeight="48dp" />
-    </LinearLayout>
+    <include layout="@layout/settingslib_icon_frame"/>
 
     <LinearLayout
         android:layout_width="match_parent"
