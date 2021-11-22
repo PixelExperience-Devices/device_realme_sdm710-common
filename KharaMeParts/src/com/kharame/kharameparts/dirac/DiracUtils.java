@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kharame.kharamedirac;
+package com.kharame.kharameparts.dirac;
 
 import android.content.Context;
 import android.content.Intent;
@@ -53,7 +53,7 @@ public final class DiracUtils {
         }
         final List<MediaController> sessions
                 = mMediaSessionManager.getActiveSessionsForUser(
-                null, UserHandle.USER_ALL);
+                null, UserHandle.ALL);
         for (MediaController aController : sessions) {
             if (PlaybackState.STATE_PLAYING ==
                     getMediaControllerPlaybackState(aController)) {
