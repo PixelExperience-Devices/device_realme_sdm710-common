@@ -81,6 +81,10 @@ iop.enable_uxe=0
 ro.vendor.qti.core_ctl_min_cpu=2
 ro.vendor.qti.core_ctl_max_cpu=4
 
+# Processor Model
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.processor.model = SD712
+
 # One handed mode
 ro.support_one_handed_mode=true
 
