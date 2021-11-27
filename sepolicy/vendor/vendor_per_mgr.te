@@ -1,0 +1,4 @@
+allow vendor_per_mgr vfat:dir { search open read };
+allow vendor_per_mgr vfat:file { read };
+allow vendor_per_mgr vendor_per_mgr_state_prop:file { getattr open };
+allow vendor_per_mgr vfat:file open;

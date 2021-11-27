@@ -9,6 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     audio.deep_buffer.media=true \
     audio.offload.video=true \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
     persist.vendor.audio.fluence.audiorec=true \
     persist.vendor.audio.fluence.speaker=true \
     persist.vendor.audio.fluence.tmic.enabled=false \
@@ -21,7 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.af.client_heap_size_kbyte=7168 \
     ro.vendor.audio.sdk.fluencetype=none \
     ro.vendor.audio.sdk.ssr=false \
-    vendor.audio_hal.period_size=192 \
+    vendor.audio_hal.period_size=240 \
     vendor.audio.apptype.multirec.enabled=false \
     vendor.audio.record.multiple.enabled=false \
     vendor.audio.tunnel.encode=false \
@@ -42,6 +43,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.noisy.broadcast.delay=600 \
     vendor.audio.offload.pstimeout.secs=3 \
     vendor.voice.path.for.pcm.voip=true
+
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.dexopt.ab-ota=speed-profile \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-filter=speed \
+    ro.vendor.qti.am.reschedule_service=true \
+    ro.sys.fw.dex2oat_thread_count=8 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-threads=4
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -92,7 +104,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
+    debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
     persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
@@ -125,6 +137,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.add_power_save=1
+    persist.vendor.radio.mt_sms_ack=30
+
+# IORap app launch prefetching using Perfetto traces and madvise
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true
 
 # Keystore
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -151,6 +168,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
+
+# Recovery
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+
+# SoC
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM710
+
+# Usb
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.vendor.usb.config.extra=none \
+    vendor.usb.dpl.inst.name=dpl \
+    vendor.usb.rmnet.func.name=rmnet_bam \
+    vendor.usb.rmnet.inst.name=rmnet \
+    vendor.usb.rndis.func.name=rndis_bam
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \

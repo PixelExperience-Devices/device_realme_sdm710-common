@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:settings="http://schemas.android.com/apk/res-auto"
+                  android:title="@string/KharaMeParts">
 
     <PreferenceCategory
             android:title="@string/gestures">
@@ -25,6 +27,16 @@
                 android:title="@string/ambient_display_gestures_title" />
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/kcal">
+         <PreferenceScreen
+                android:key="kcal"
+                android:fragment="com.lineageos.settings.lepref.DisplayCalibration"
+                android:summary="@string/kcal_summary"
+                android:icon="@drawable/ic_kcal"
+                android:title="@string/kcal_title" />
+     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/vibrator_intensity_control">

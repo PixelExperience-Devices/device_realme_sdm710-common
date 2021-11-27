@@ -39,6 +39,7 @@ static const device_t devices[] = {
     {"RMX1901", "Realme X"},
     {"RMX1921", "Realme XT"},
     {"RMX1971", "Realme 5 Pro"},
+    {"RMX1851", "Realme 3 Pro"},
 };
 
 static inline const char *BtmGetDefaultName()

@@ -1,3 +1,5 @@
 allow fsck block_device:blk_file { ioctl };
 allow fsck fsck:capability { kill };
 allow fsck modem_efs_partition_device:blk_file { read open write ioctl };
+allow fsck emmc_block_device:blk_file { ioctl open read write };
+allow fsck self:capability { sys_admin };

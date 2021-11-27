@@ -34,6 +34,7 @@ import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
+import /vendor/etc/init/hw/init.camera_firmware.rc
 
 #ifdef VENDOR_EDIT
 #Fei.Mo@BSP.senosor 2018/10/30 add for init.oppo.vendor.motor.rc
@@ -220,6 +221,11 @@ on boot
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
+    # Enable qcrild and data services on boot so process starts in main
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 

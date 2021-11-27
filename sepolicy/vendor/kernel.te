@@ -1,1 +1,3 @@
 allow kernel kernel:socket { create };
+allow kernel vfat:file open;
+allow kernel vfat:dir search;

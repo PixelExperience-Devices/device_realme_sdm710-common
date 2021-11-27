@@ -1,5 +1,11 @@
-#allow system_app vibrator_sysfs:file rw_file_perms;
 allow system_app proc_touchpanel:file rw_file_perms;
+allow system_app oppo_debug_prop:file { read open getattr };
+
+allow system_app sysfs_kcal:dir search;	
+allow system_app sysfs_kcal:file rw_file_perms;
 
 r_dir_file(system_app, proc_touchpanel);
-#r_dir_file(system_app, vibrator_sysfs);
+
+# Fps Info
+allow system_app sysfs_fps:file rw_file_perms;
+allow system_app sysfs_graphics:file rw_file_perms;

@@ -176,6 +176,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+    
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
@@ -185,7 +186,8 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    
+     <hal format="hidl">
         <name>android.hardware.tetheroffload.control</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -194,6 +196,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
@@ -401,6 +404,15 @@
         <version>1.0</version>
         <interface>
             <name>IFmHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.iop</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IIop</name>
             <instance>default</instance>
         </interface>
     </hal>

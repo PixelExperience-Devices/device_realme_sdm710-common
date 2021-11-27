@@ -1,0 +1,2 @@
+get_prop(cnd, wifi_hal_prop)
+allow cnd cnd_vendor_prop:file { getattr open };

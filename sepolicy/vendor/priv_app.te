@@ -1,1 +1,2 @@
 allow priv_app unlabeled:dir { search read open getattr search };
+allow priv_app system_data_file:dir { read open };
