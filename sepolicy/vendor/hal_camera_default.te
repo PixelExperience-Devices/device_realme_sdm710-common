@@ -7,7 +7,6 @@ allow hal_camera_default wifi_config_prop:file { getattr };
 allow hal_camera_default wifi_hal_prop:file { getattr open };
 allow hal_camera_default vendor_wifi_ftmd_prop:file { getattr open };
 allow hal_camera_default vendor_wifi_prop:file { getattr open };
-allow hal_camera_default vendor_wifi_version:file { getattr open };
 
 get_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, oppo_debug_prop)
