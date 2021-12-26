@@ -20,3 +20,5 @@ get_prop(vendor_init, persist_debug_prop)
 allow vendor_init oppo_wlan_prop:file { open read getattr };
 
 set_prop(vendor_init, freq_prop);
+
+allow vendor_init apex_metadata_file:dir create_dir_perms;
