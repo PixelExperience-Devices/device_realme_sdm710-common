@@ -12,3 +12,6 @@ ro.surface_flinger.supports_background_blur=0
 
 # Dex
 ro.sys.fw.dex2oat_thread_count=8
+
+# Graphics
+debug.hwui.renderer=skiavk
