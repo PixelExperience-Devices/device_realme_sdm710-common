@@ -181,6 +181,7 @@ PRODUCT_PACKAGES += \
     init.oppo.vendor.motor.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
+    init.recovery.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
