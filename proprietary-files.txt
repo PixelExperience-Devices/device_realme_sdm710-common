@@ -606,6 +606,14 @@ vendor/lib/vendor.qti.latency@2.0.so|cb646d01025ed3cee91c409cff273732a1dab987
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|175371fdae2fe46606113497621e1f7083574493
 vendor/lib64/vendor.qti.latency@2.0.so|1589280034898a0ab3052234ef90b7c674d5be5b
 
+# Libdolphin - from alioth - 12/SKQ1.210908.001/21.10.12
+system_ext/lib/libdolphin.so|4212332e6f596d61060a69cd5b6380684d39e2af
+system_ext/lib64/libdolphin.so|e899d86d91956a728b684ccf3b6f89594d631376
+
+# Libbeluga - from alioth - 12/SKQ1.210908.001/21.10.12
+system_ext/lib/libbeluga.so|8c471c924e3da8433ffb20ec86e2539d440a502c
+system_ext/lib64/libbeluga.so|ee3c1b68bc44372cbc63d074a786ca460605fc45
+
 # Listen - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/lib/libadpcmdec.so|491fedbdcf9a395340ce4142c277156c0056bcf8
 vendor/lib/libcapiv2svacnn.so|da98f2be1e8bd1aba364610063e70c34cab844d2
