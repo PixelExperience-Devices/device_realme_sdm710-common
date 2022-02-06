@@ -91,7 +91,7 @@ ro.support_one_handed_mode=true
 
 # RCS and IMS
 persist.data.iwlan.enable=true
-persist.rcs.supported=0
+persist.rcs.supported=1
 persist.vendor.ims.disableUserAgent=0
 persist.dbg.ims_volte_enable=1
 
@@ -108,6 +108,7 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 persist.sys.fflag.override.settings_provider_model=false
 telephony.lteOnCdmaDevice=1
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # SSR
