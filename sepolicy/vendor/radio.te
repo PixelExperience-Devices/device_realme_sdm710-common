@@ -1,9 +1,11 @@
 allow radio qcom_ims_prop:file { read open getattr };
+get_prop(radio, vendor_persist_camera_prop);
 
 allow radio { hal_datafactory_hwservice hal_iwlan_hwservice }:hwservice_manager find;
 allow radio { cameraserver_service mediaextractor_service mediaserver_service mediametrics_service drmserver_service audioserver_service }:service_manager find;
 allow radio gpuservice:binder call;
 allow radio vendor_mpctl_prop:file read;
+allow radio { hal_camera_default mediacodec hal_imsrtp }:fd use;
 
 binder_call(radio, cnd)
 
