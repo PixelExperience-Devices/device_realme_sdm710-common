@@ -16,7 +16,7 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 $(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
