@@ -1,0 +1,56 @@
+#ifdef OPLUS_QDSS_DIAG
+#ZhuYan@Network.RF, 2020/10/10, Add for qdss system
+on boot
+    chown root oem_2902 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+    chmod 660 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+
+    #enable coresight for diag_mdlog_system over qdss
+    write /sys/bus/coresight/devices/coresight-tmc-etr/buffer_size 0x2000000
+    write /sys/bus/coresight/devices/coresight-tmc-etr/enable_sink 1
+    write /sys/bus/coresight/devices/coresight-stm/enable_source 1
+    write /sys/bus/coresight/devices/coresight-stm/hwevent_enable 0
+    #disable ftrace
+    write /sys/bus/coresight/reset_source_sink 1
+    write /sys/kernel/tracing/instances/usb/tracing_on 0
+    write /sys/kernel/debug/tracing/tracing_on 0
+    write /sys/kernel/debug/tracing/events/enable 0
+#endif /* OPLUS_QDSS_DIAG */
+
+#ifdef OPLUS_FEATURE_DEVICE_LOG
+#ZhuYan@NetWork.RF, 2020/09/27, Add for device log qdss system
+on post-fs-data
+    mkdir /data/vendor/oppo 0777 system system
+    mkdir /data/vendor/oppo/log 0777 system system
+    mkdir /data/vendor/oppo/log/device_log 0777 system system
+    mkdir /data/vendor/oppo/log/device_log/config 0777 system system
+    mkdir /data/vendor/oppo/log/device_log/diag_logs 0777 system system
+
+service oppo_diag_mdlog_start /system/system_ext/bin/diag_mdlog_system -c -u -o /data/oppo_log/diag_logs
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oppo_diag_mdlog_stop /system/system_ext/bin/diag_mdlog_system -k
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oppo_diag_mdlog_nrt /system/system_ext/bin/diag_mdlog_system -c -b -u -o /data/oppo_log/diag_logs
+    class late_start
+    user system
+    group system oem_2901 oem_2902 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+on boot
+    mkdir /data/opponvitems  0771 radio radio
+    write /proc/sys/fs/suid_dumpable 1
+    setprop persist.vendor.radio.force_on_dc true
+    chmod 0664 /dev/mdmreason
+    chown system system /dev/mdmreason
+
+#endif /*OPLUS_FEATURE_DEVICE_LOG*/
