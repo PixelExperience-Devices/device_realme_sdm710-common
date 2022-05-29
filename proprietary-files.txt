@@ -873,7 +873,6 @@ vendor/bin/tftp_server|e37e449d8c842353cfae9f30756863f54c567e08
 vendor/bin/qrtr-cfg|9786455690d4b8e60681f40ebe61fc937d2cd713
 vendor/bin/qrtr-lookup|6342b6b636327c53258d0d54c9dd93e34a3da3f7
 vendor/bin/qrtr-ns|09cff0de46c5d4eb1cd7dfa5b5bdda015e9d7a75
-vendor/bin/ATFWD-daemon|9465a6b2d9a7035de1b6e4c547fe761ad758036a
 vendor/etc/data/dsi_config.xml|3658eb99e9601bc09e0b372c9290060f708fd50a
 vendor/etc/data/netmgr_config.xml|ba23603f9ccb82cb8f745ede827a178c48a97b97
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
