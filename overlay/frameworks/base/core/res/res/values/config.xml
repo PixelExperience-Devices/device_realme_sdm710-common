@@ -96,8 +96,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">8000</integer>
 
     <!-- Specifies the amount of time to disable virtual keys after the screen is touched
          in order to filter out accidental virtual key presses due to swiping gestures
@@ -186,7 +186,7 @@
          This value may be zero in which case the screen will not dim before the
          device goes to sleep.
     -->
-    <integer name="config_maximumScreenDimDuration">18000</integer>
+    <integer name="config_maximumScreenDimDuration">7000</integer>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
 
@@ -202,7 +202,19 @@
          This value must be between 0% and 100%.  If the value is zero, the screen will not
          dim before the device goes to sleep.
     -->
-    <fraction name="config_maximumScreenDimRatio">30%</fraction>
+    <fraction name="config_maximumScreenDimRatio">20%</fraction>
+
+    <!-- Minimum screen brightness setting allowed by the power manager.
+         The user is forbidden from setting the brightness below this level. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
+
+    <!-- Maximum screen brightness allowed by the power manager.
+         The user is forbidden from setting the brightness above this level. -->
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+
+    <!-- Default screen brightness setting.
+         Must be in the range specified by minimum and maximum. -->
+     <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.4</item>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
