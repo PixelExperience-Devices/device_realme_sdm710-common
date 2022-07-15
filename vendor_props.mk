@@ -161,6 +161,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=SDM710
 
+# System
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
+
 # Usb
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.vendor.usb.config.extra=none \
