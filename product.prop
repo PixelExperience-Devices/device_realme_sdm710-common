@@ -13,6 +13,3 @@ ro.sf.blurs_are_expensive=1
 
 # Dex
 ro.sys.fw.dex2oat_thread_count=8
-
-# Graphics
-debug.hwui.renderer=skiavk
