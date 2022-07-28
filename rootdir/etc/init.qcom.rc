@@ -289,6 +289,9 @@ on boot
 on boot
     write /proc/touchpanel/tp_fw_update 1
 
+    # USB Fast Charge
+    write /sys/kernel/fast_charge/force_fast_charge 1
+
     #sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
