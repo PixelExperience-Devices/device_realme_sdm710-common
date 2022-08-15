@@ -47,6 +47,7 @@ sdm.debug.disable_dest_scalar=1
 sdm.debug.disable_inline_rotator=1
 sdm.debug.disable_inline_rotator_secure=1
 sdm.debug.prefersplit=1
+debug.performance.tuning=1
 
 # Force triple frame buffers
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
