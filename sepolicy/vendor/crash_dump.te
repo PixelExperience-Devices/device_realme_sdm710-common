@@ -1,0 +1,1 @@
+allow crash_dump selinuxfs:file { open  read };
