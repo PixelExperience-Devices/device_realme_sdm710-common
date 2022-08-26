@@ -29,4 +29,7 @@
     <!-- Set Window transition scale to 50% by default -->
     <fraction name="def_window_transition_scale">50%</fraction>
 
+    <!-- Default for Settings.Secure.VOLUME_PANEL_ON_LEFT -->
+    <bool name="def_volume_panel_on_left">true</bool>
+
 </resources>
