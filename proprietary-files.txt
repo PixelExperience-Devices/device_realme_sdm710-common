@@ -534,6 +534,10 @@ vendor/lib/libgpudataproducer.so|c8623c9b2e8f330e7f5e77e5d435677719bf5688
 vendor/lib/libgsl.so|777dab024670cceb8c60054cfadcccef33151640
 vendor/lib/libllvm-glnext.so|a20bdbe458c401e9c1726f475f50fb52f9f6fa12
 
+# Graphics - from LA.UM.9.6.2.r1-04100-89xx.0
+vendor/lib/libtinyxml.so|1303bce85570b6de6f6e60a3edff508afe3fc60f
+vendor/lib64/libtinyxml.so|e00e92ead90d45240484c159dfe20f29c9cd5b64
+
 # Graphics firmware 
 vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
