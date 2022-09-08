@@ -1,1 +1,2 @@
 allow crash_dump selinuxfs:file { open  read };
+allow crash_dump crash_dump:capability { sys_admin };

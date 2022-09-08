@@ -6,3 +6,5 @@ get_prop(hal_audio_default, oppo_debug_prop);
 # Dirac
 get_prop(hal_audio_default, dirac_prop)
 set_prop(hal_audio_default, dirac_prop)
+
+allow hal_audio_default sysfs:dir { read };
