@@ -18,3 +18,6 @@ ro.sys.fw.dex2oat_thread_count=8
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
+
+# Hearing Aid Audio Support Using Bluetooth LE
+bluetooth.profile.asha.central=true
