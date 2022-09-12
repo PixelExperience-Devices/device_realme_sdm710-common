@@ -21,12 +21,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
-    androidx.appcompat_appcompat \
-    androidx.core_core \
-    androidx.legacy_legacy-support-v13 \
-    androidx.palette_palette \
-    androidx.preference_preference \
-    androidx.recyclerview_recyclerview
+    SettingsLib
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_PACKAGE_NAME := KharaMeParts
@@ -43,8 +38,6 @@ LOCAL_DEX_PREOPT := false
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
-
-include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
 
