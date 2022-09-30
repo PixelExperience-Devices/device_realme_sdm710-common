@@ -450,6 +450,9 @@ fi
 chmod g-w /data/vendor/modem_config
 setprop ro.vendor.ril.mbn_copy_completed 1
 
+# Remove settings cache, avoids derps after dirty flash
+rm -rf /data/system/package_cache
+
 #check build variant for printk logging
 #current default minimum boot-time-default
 buildvariant=`getprop ro.build.type`
