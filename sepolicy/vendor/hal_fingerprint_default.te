@@ -24,5 +24,3 @@ r_dir_file(hal_fingerprint_default, mnt_vendor_file);
 
 set_prop(hal_fingerprint_default, oppo_fingerprint_prop);
 
-allow hal_fingerprint_default default_prop:file { read };
-allow hal_fingerprint_default default_prop:property_service { set };
