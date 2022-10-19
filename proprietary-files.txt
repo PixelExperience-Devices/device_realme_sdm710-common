@@ -96,8 +96,6 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libqtigef.so
-vendor/lib/hw/sound_trigger.primary.sdm710.so|6d25320bfbfdebf5f2eeda426edfc0548f340f74
-vendor/lib64/hw/sound_trigger.primary.sdm710.so|8a7105bdfe3f2899d89fd59c0c35b729ee46adbf
 
 # Bluetooth
 product/lib/vendor.qti.hardware.btconfigstore@1.0.so
