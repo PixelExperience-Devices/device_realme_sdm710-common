@@ -22,4 +22,11 @@
 
 <!-- Whether or not to support RCS User Capability Exchange -->
     <bool name="config_rcs_user_capability_exchange_enabled">false</bool>
+
+<!-- Package name for the default in-call UI and dialer [DO NOT TRANSLATE] -->
+    <string name="ui_default_package" translatable="false">com.android.dialer</string>
+
+<!-- Class name for the default main Dialer activity -->
+    <string name="dialer_default_class" translatable="false">com.android.dialer.DialtactsActivity</string>
+
 </resources>
