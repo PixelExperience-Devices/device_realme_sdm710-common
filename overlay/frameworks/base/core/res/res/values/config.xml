@@ -447,8 +447,4 @@
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
-
-    <!-- Set the default dialer package name. -->
-    <string name="config_defaultDialer" translatable="false">com.android.dialer</string>
-    
 </resources>
