@@ -45,3 +45,6 @@ ro.vold.umsdirtyratio=20
 ro.ril.disable.power.collapse=0
 power.saving.mode=1
 pm.sleep_mode=1
+
+# Shutdown
+ro.build.shutdown_timeout=2
