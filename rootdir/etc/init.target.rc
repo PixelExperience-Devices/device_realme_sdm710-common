@@ -117,7 +117,7 @@ on boot
     #else /*VENDOR_EDIT*/
     write /dev/cpuset/background/cpus 0-3
     #endif /*VENDOR_EDIT*/
-    write /dev/cpuset/system-background/cpus 0-7
+    write /dev/cpuset/system-background/cpus 0-3
 
     chown system system /sys/class/leds/vibrator/vmax_mv
 
