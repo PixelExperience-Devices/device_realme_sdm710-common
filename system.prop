@@ -97,6 +97,12 @@ persist.rcs.supported=1
 persist.vendor.ims.disableUserAgent=0
 persist.dbg.ims_volte_enable=1
 
+# IMS Debugging
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
+
 # RIL
 DEVICE_PROVISIONED=1
 persist.radio.atfwd.start=true
