@@ -124,3 +124,6 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
