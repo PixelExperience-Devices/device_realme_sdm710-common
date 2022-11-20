@@ -48,3 +48,6 @@ pm.sleep_mode=1
 
 # Shutdown
 ro.build.shutdown_timeout=2
+
+# IMS
+ro.telephony.block_binder_thread_on_incoming_calls=false
