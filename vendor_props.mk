@@ -165,7 +165,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1
+    persist.vendor.radio.sib16_support=1 \
+    persist.vendor.radio.enableadvancedscan=false
 
 # Recovery
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
