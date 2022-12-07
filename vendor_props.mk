@@ -48,6 +48,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
 
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.gyro.disable=0
