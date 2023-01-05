@@ -94,7 +94,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
-    debug.hwui.use_buffer_age=false \
     debug.sf.auto_latch_unsignaled=true \
     debug.sf.disable_backpressure=1 \
     persist.sys.sf.color_saturation=1.0 \
