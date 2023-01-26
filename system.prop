@@ -6,6 +6,9 @@ ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Camera
 ro.camera.hfr.enable=1
 ro.camera.relight.enable=0
