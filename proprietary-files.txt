@@ -53,10 +53,10 @@ vendor/firmware/alipay.b03
 vendor/firmware/alipay.b05
 vendor/firmware/alipay.b04
 
-# ANT+ - from LA.QSSI.13.0.r1-07400-qssi.0
+# ANT+ - from LA.QSSI.13.0.r1-08200-qssi.0
 -lib/libantradio.so|d343bed6e26f99d9870f730303096f6ea8a9bcf8
 -lib64/libantradio.so|b2a9ab62d68559c4fbdd4aed3421fc6195c345e1
-system_ext/lib/com.qualcomm.qti.ant@1.0.so|cd6d96a7db754dc31204e635b8acd9949dcca965
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|2410b23f011c2ea82d7a10675c79f524afae2b4c
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|2bdd0b1538f514f237c2ed3915d755cdbd5e2743
 vendor/lib/com.dsi.ant@1.0.so|9f8f2268e760c0c5e67b8a52c7b25b6a1364dc45
 vendor/lib64/com.dsi.ant@1.0.so|734dcbdaf57f09249489083bd26e2405b17dd062
@@ -64,7 +64,7 @@ vendor/lib/hw/com.dsi.ant@1.0-impl.so|0878e6b855e4b7495214bca404f13de9053b52f6
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b5c57fdf48447c68b6308fdcb167d0d21b5c56ed
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|7047ae2e6c796291b4c921bfdd45bce8a04a9ff0
 
-# Audio FX modules (system) - from LA.QSSI.13.0.r1-07400-qssi.0
+# Audio FX modules (system) - from LA.QSSI.13.0.r1-08200-qssi.0
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
 system_ext/framework/audiosphere.jar|3c42dff6da0571acd9ea466983c7f6354d588bb3
 
@@ -303,9 +303,9 @@ vendor/lib/vendor.display.color@1.4.so|cf82bef31cea23f288322dddf77f88e132239b81
 vendor/lib/vendor.display.color@1.5.so|f405e74f80d5fefe45694059eebb0600d62e8ffb
 vendor/lib/vendor.display.postproc@1.0.so|3a3350370df9609dbf74e6a2273174c45992ac28
 
-# DPM (system) - from LA.QSSI.13.0.r1-07400-qssi.0
+# DPM (system) - from LA.QSSI.13.0.r1-08200-qssi.0
 framework/tcmclient.jar|0402c82a800b58a2e93fd7cb8e81a24e674ebc35
-system_ext/bin/dpmd|097a21f71912ba9a2e0d37d5ee0e62469addd0ec
+system_ext/bin/dpmd|a0466968e9c7be76040b6fd09678e59c7b2eb588
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
@@ -602,7 +602,7 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Latency - from LA.QSSI.13.0.r1-07400-qssi.0
+# Latency - from LA.QSSI.13.0.r1-08200-qssi.0
 system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|711b557af2ea595e3ab08d062f04b0573c9b220b
 system_ext/framework/vendor.qti.latency-V2.0-java.jar|3aaed0b95199fa0548d9ab607279044b87257560
 system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so|97b882e07924cb2de6d62f0d180aa6d5b9e95fee
@@ -756,7 +756,7 @@ vendor/lib/libspcom.so|b50bdf06832965b7e7a0371eb1232e1b171eb4fd
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|68275fb5e4388e3d624ce3dcb941bd623d12ddfe
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|3b9a0b71944c6b8d9a0b3a976a9ff09ba3864fb4
 
-# QMI - from LA.QSSI.13.0.r1-07400-qssi.0
+# QMI - from LA.QSSI.13.0.r1-08200-qssi.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 
@@ -803,8 +803,8 @@ vendor/lib64/libqmi_cci.so|6d844e155f90aed48e9c4dd79542809167a12da4
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
 system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
-system_ext/framework/qti-telephony-common.jar|57b5cb0b7b504d459ff31918cfaf9f05f1e9fe25
--system_ext/priv-app/ims/ims.apk|ca2cad5e1bea8f306fc6f476ed3d5bded7f0e264
+system_ext/framework/qti-telephony-common.jar|3c734cf49e80aaefbb9c01233aff5e8bd5b250dd
+-system_ext/priv-app/ims/ims.apk|4ebf655d48f9924d7a00e993254044c81c497124
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|231862ec524e39c96b8b4575f27060caa36ce36b
 
 # Radio - from RUI2
@@ -922,7 +922,7 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da28
 odm/lib64/vendor.oplus.hardware.radio@1.0.so|e6127800544551cd7a4ceefe8d059c740d45dd65
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so|681ca8aeced7b61c6d815a2be800833bf804e8d4
 
-# Radio - IMS(system) - from LA.QSSI.13.0.r1-07400-qssi.0
+# Radio - IMS(system) - from LA.QSSI.13.0.r1-08200-qssi.0
 -system_ext/app/ImsRcsService/ImsRcsService.apk|6a5d645d0361447f5c5d31807d646aa38cc31824
 -system_ext/app/uceShimService/uceShimService.apk|d6de9593cf743440f861f041d4724ec9488e4139
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
@@ -952,10 +952,10 @@ system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so|62633d9ab39a016b6ab6f67a6d7c
 system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so|0cb27b69be029e400800fa3fe5d2daaa52472d97
 system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so|b9f8804bdeaedd6124f712f6c378fdce7bc667cb
 system_ext/lib64/lib-imsvideocodec.so|b66ccec78025517c86ad9fb3cf03d083e62fe6f9
-system_ext/lib64/lib-imsvt.so|8b20b749d61043fef36caa94174a6d0e4c073748
+system_ext/lib64/lib-imsvt.so|1ea25552e520f110e92f6750d0f371d7f2ed69c9
 system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
-system_ext/lib64/lib-imsvtutils.so|6df6279955493da11860bb048db38f01ec05c2aa
-system_ext/lib64/libdiag_system.so|856f094563871f9772da559354b4ecb82666d64e
+system_ext/lib64/lib-imsvtutils.so|3ed0180cee3849f63fb7bbbd68a3767693aba2dc
+system_ext/lib64/libdiag_system.so|e8587e587fd052ba03b0e9efad16f4622be37da0
 system_ext/lib64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
 system_ext/lib64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
 system_ext/lib64/vendor.qti.diaghal@1.0.so|92555fd8ae83569d61a26ea3ab33e3f2d89a5729
