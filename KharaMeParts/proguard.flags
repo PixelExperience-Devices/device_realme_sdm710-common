@@ -9,6 +9,4 @@
 -keepclassmembers public class com.kharame.kharameparts.KeyHandler {
     *;
 }
--keep class com.kharame.kharameparts.dirac.* {
-  *;
-}
+

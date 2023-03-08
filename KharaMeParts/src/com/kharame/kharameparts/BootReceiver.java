@@ -29,7 +29,6 @@ import com.kharame.kharameparts.util.Utils;
 import com.kharame.kharameparts.doze.DozeUtils;
 import com.kharame.kharameparts.vibration.VibratorStrengthPreference;
 import com.kharame.kharameparts.kcal.DisplayCalibration;
-import com.kharame.kharameparts.dirac.DiracUtils;
 import java.io.File;
 import androidx.preference.PreferenceManager;
 
@@ -54,7 +53,6 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        new DiracUtils(context).onBootCompleted();
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
                 enableComponent(context, ScreenOffGesture.class.getName());
                 SharedPreferences screenOffGestureSharedPreferences = context.getSharedPreferences(

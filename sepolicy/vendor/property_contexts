@@ -54,8 +54,6 @@ persist.oppo.wlan.                      u:object_r:oppo_wlan_prop:s0
 # Thermal
 vendor.thermal.config                            u:object_r:vendor_thermal_prop:s0
 
-# Dirac
-persist.audio.dirac                           u:object_r:dirac_prop:s0
 
 ro.bluetooth.ftm_enabled             u:object_r:oppo_debug_prop:s0
 persist.env.fastdorm.enabled                  u:object_r:oppo_debug_prop:s0
