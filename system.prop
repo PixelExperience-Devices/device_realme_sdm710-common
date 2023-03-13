@@ -69,6 +69,7 @@ ro.lmk.log_stats=false
 # LMK tuning
 ro.lmk.filecache_min_kb=153600
 ro.lmk.stall_limit_critical=40
+ro.lmk.kill_timeout_ms=50
 
 # Iorap
 vendor.iop.enable_prefetch_ofr=0
