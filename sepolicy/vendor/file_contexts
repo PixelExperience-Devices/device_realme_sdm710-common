@@ -5,12 +5,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.realme_sdm710    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service              u:object_r:hal_fingerprint_default_exec:s0       
 
-# Data files
-/data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
-
-# Dolby
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                        u:object_r:hal_dms_default_exec:s0
-
 # Light Hal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.realme_sdm710                      u:object_r:hal_light_default_exec:s0
 
