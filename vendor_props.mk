@@ -46,6 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     vendor.qcom.bluetooth.soc=cherokee
 
 # Cached app compaction
