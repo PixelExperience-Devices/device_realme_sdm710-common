@@ -128,6 +128,17 @@ telephony.lteOnCdmaDevice=1
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1 
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1 
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100 
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
+
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
