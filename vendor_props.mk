@@ -111,6 +111,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true \
     debug.sf.predict_hwc_composition_strategy=0 \
     ro.hardware.vulkan=adreno \
+    ro.hwui.render_ahead=20 \
     ro.hardware.egl=adreno
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
