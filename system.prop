@@ -4,7 +4,7 @@ ro.kernel.ebpf.supported=true
 # Bluetooth
 ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 
 # Camera
 ro.camera.hfr.enable=1
