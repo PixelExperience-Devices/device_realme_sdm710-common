@@ -103,4 +103,8 @@
 
     <!-- Integer delay in milliseconds before set wlan interface up during watchdog recovery -->
     <integer name="config_wifi_framework_recovery_timeout_delay">3000</integer>
+
+    <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
+    <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
+
 </resources>
