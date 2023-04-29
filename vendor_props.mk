@@ -114,6 +114,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.predict_hwc_composition_strategy=0 \
     ro.hardware.vulkan=adreno \
     ro.hwui.render_ahead=20 \
+    debug.sf.treat_170m_as_sRGB=1 \
     ro.hardware.egl=adreno
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
