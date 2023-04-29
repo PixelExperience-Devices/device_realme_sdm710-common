@@ -14,6 +14,12 @@ ro.sf.blurs_are_expensive=1
 # Dex
 ro.sys.fw.dex2oat_thread_count=8
 
+# Google Photos
+debug.photos.eraser_camo=1
+debug.photos.eraser_suggestion=1
+debug.photos.force_pixel_eol=1
+debug.photos.p_editr.eraser=1
+
 # OpenGL
 debug.hwui.renderer=opengl
 
