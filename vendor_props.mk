@@ -109,6 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_hint_manager=true \
     debug.hwui.target_cpu_time_percent=30 \
     ro.config.avoid_gfx_accel=true \
+    ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.protected_contents=true \
     debug.sf.predict_hwc_composition_strategy=0 \
     ro.hardware.vulkan=adreno \
