@@ -53,10 +53,10 @@ vendor/firmware/alipay.b03
 vendor/firmware/alipay.b05
 vendor/firmware/alipay.b04
 
-# ANT+ - from LA.QSSI.13.0.r1-09400.01-qssi.0
+# ANT+ - from LA.QSSI.13.0.r1-09700-qssi.0
 -lib/libantradio.so|d343bed6e26f99d9870f730303096f6ea8a9bcf8
 -lib64/libantradio.so|b2a9ab62d68559c4fbdd4aed3421fc6195c345e1
-system_ext/lib/com.qualcomm.qti.ant@1.0.so|892363e0971d0d1ac88485f86bcff499b8e7c90f
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|ef2c19734749bee9662a6f6e1cd924387c5bbb9c
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|2bdd0b1538f514f237c2ed3915d755cdbd5e2743
 vendor/lib/com.dsi.ant@1.0.so|9f8f2268e760c0c5e67b8a52c7b25b6a1364dc45
 vendor/lib64/com.dsi.ant@1.0.so|734dcbdaf57f09249489083bd26e2405b17dd062
