@@ -149,6 +149,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
+# Logs
+persist.log.tag.GoogleTagManager=S
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.recorder-max-base-layer-fps=60
