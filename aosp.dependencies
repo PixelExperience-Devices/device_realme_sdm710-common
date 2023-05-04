@@ -1,0 +1,13 @@
+[
+    {
+        "repository":   "kernel_realme_sdm710",
+        "target_path":  "kernel/realme/sdm710",
+        "branch":       "thirteen"
+    },
+    {
+        "repository":   "vendor_realme_sdm710-common",
+        "target_path":  "vendor/realme/sdm710-common",
+        "branch":       "thirteen",
+        "remote":       "pixel-devices-blobs"
+    }
+]
