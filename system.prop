@@ -142,6 +142,9 @@ ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
 
+# Service Tracker
+sys.vendor.qti.servicetracker.disable=true
+
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
