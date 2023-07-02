@@ -94,6 +94,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.callstack=1 \
