@@ -1,4 +1,5 @@
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
+binder_call(hal_fingerprint_default, hal_perf_default)
 
 allow hal_fingerprint_default hal_oppo_hwservice:hwservice_manager find;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
