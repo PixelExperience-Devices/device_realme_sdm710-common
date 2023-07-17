@@ -7,7 +7,7 @@
     {
         "repository":   "vendor_realme_sdm710-common",
         "target_path":  "vendor/realme/sdm710-common",
-        "branch":       "thirteen",
+        "branch":       "thirteen-wip",
         "remote":       "pixel-devices-blobs"
     }
 ]
