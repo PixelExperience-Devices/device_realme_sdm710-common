@@ -119,7 +119,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     ro.hardware.vulkan=adreno \
-    ro.hwui.render_ahead=20 \
     debug.sf.treat_170m_as_sRGB=1 \
     ro.hardware.egl=adreno
 
