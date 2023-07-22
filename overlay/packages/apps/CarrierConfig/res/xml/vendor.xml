@@ -2180,6 +2180,26 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
+    <carrier_config mcc="515" mnc="01">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="03">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="05">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="515" mnc="66">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
     <carrier_config mcc="310" mnc="01">
         <boolean name="rtt_auto_upgrade_bool" value="true" />
         <boolean name="rtt_supported_bool" value="true" />
