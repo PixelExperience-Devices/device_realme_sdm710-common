@@ -75,6 +75,19 @@ ro.lmk.stall_limit_critical=40
 ro.lmk.kill_timeout_ms=50
 ro.lmk.use_minfree_levels=true
 
+# Logs
+persist.log.tag.AnalyticsService=S
+persist.log.tag.KernelCpuUidActiveTimeReader=S
+persist.log.tag.Tracer=S
+persist.log.tag.NearbySharing=S
+persist.log.tag.IntervalStats=S
+persist.log.tag.CompatibilityChangeReporter=S
+persist.log.tag.SQLiteLog=S
+persist.log.tag.wificond=S
+persist.log.tag.b/223498680=S
+persist.log.tag.TrafficStats=S
+persist.log.tag.ContrastColorUtil=S
+
 # Iorap
 vendor.iop.enable_prefetch_ofr=0
 iorapd.perfetto.enable=false
