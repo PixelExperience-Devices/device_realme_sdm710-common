@@ -109,6 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_saturation=1.0 \
     ro.opengles.version=196610 \
     vendor.gralloc.disable_ubwc=0 \
+    vendor.gralloc.disable_ahardware_buffer=1 \
     debug.hwui.use_hint_manager=true \
     debug.hwui.target_cpu_time_percent=30 \
     ro.config.avoid_gfx_accel=true \
